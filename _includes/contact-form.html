@@ -1,0 +1,64 @@
+<!-- contact form -->
+<div class="container-fluid">
+
+    <div class="row bg-primary">
+        <div class="col-md-4 ml-auto mr-auto col-12 p-5">
+            <h2>
+                In need of some design needs for your business? If you like my work then send me a message via the form
+            </h2>
+        </div>
+
+        <div class="col-md-6 col-12 p-5 bg-secondary">
+            <form name="contact-form" method="POST" accept-charset="UTF-8" action="/contact-me/success/" netlify-honeypot="bot-field" data-netlify="true">
+				<p hidden>
+					<label>Don't fill this out if your human: <input name="bot-field" /></label>
+				</p>
+                <div class="form-group">
+                    <label for="name">Hey my name is...</label>
+                    <input type="text" class="form-control" id="name" placeholder="Full Name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">I can be reached by my email here:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your valid email address" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Or I can be reached also via my number here:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your number here (123) 456-7890" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="reason">I request service for:</label>
+                    <select name="reason" size="1">
+                        <option value="web_design">Custom Web Design</option>
+                        <option value="web_development">Web Development</option>
+                        <option value="web_hosting">Web Hosting</option>
+                        <option value="content">Content Management</option>
+                        <option value="design_development">Web Design &amp; Development</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="website">My website is:</label>
+                    <input type="text" class="form-control" id="website" name="website" placeholder="My current website or N/A">
+                </div>
+                <div class="form-group">
+                    <label for="message">I also want to tell you:</label>
+                    <textarea class="form-control" name="message" rows="4" cols="20"></textarea>
+                </div>
+                <br>
+
+                <div class="row">
+
+                    <div class="col-auto mr-auto">
+                        <input type="submit" value="Send" class="btn btn-primary">
+                    </div>
+
+                    <div class="ml-auto">
+                        <input type="reset" value="Clear" class="btn btn-secondary">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
+  <!-- contact form -->

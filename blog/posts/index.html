@@ -1,0 +1,115 @@
+---
+
+layout: default
+title: Posts
+excerpt: "View all of the articles and posts made so far on the Shack"
+blogfeed: true
+
+---
+
+<div id="bw-recent-news-home" class="container">
+<h3 class="text-center">
+	<a href="{{ site.baseurl }}/posts/">Recent Posts</a>
+</h3>
+
+<!-- each post has own row -->
+<div class="container-fluid">
+  <div class="row post-row mt-5 mb-5">
+	  {% for post in paginator.posts %}
+	  
+        <!-- each post has own row -->
+        <div class="row post-row">
+            <div class="col-md-2 col-12">
+                <a href="{{ post.url }}">
+                    <img src="{{ post.featured_image }}" class="img-fluid small-feature-img">
+                </a>
+            </div>
+
+            <div class="col-md-8 col-12 mt-5 mt-md-0">
+                <small class="text-muted text-uppercase">{{ post.date | date: '%B %d, %Y' }}</small>
+                <a href="{{ post.url }}">
+                    <h4>{{ post.title }}</h4>
+                </a>
+                <p>{{ post.excerpt }}</p>
+
+                {% if post.tags %}
+                <div class="post-tag">
+                    <ul class="list-inline">
+                        {% for tag in post.tags %}
+                        <li class="list-inline-item">
+                            <a href="/tag/{{ tag }}">
+                                <nobr>{{ tag }}</nobr>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>	  
+	  {% endfor %}
+      
+	  <!--
+	  <div class="col-md-2 col-6">
+          <a href="{{ post.url }}">
+              <img src="{{ post.featured_image }}" class="img-fluid small-feature-img">
+          </a>
+      </div>
+
+      <div class="col-md-8 col-6">
+          <small class="text-muted text-uppercase">{{ post.date | date: '%B %d, %Y' }}</small>
+          <a href="{{ post.url }}">
+              <h4>{{ post.title }}</h4>
+          </a>
+          <p>{{ post.excerpt }}</p>
+
+          {% if post.tags %}
+          <div class="post-tag">
+              <ul class="list-inline">
+                  {% for tag in post.tags %}
+                  <li class="list-inline-item">
+                      <a class="text-link" href="/tag/{{ tag }}">
+                          <nobr>{{ tag }}</nobr>
+                      </a>
+                  </li>
+                  {% endfor %}
+              </ul>
+          </div>
+          {% endif %}
+
+      </div>
+		-->
+  </div>
+</div>
+  <!-- each post has own row -->
+
+	<div class="col-auto mx-auto">
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+          {% else %}
+            <span>&laquo; Prev</span>
+          {% endif %}
+
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <span class="webjeda">{{ page }}</span>
+            {% elsif page == 1 %}
+              <a href="/">{{ page }}</a>
+            {% else %}
+              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+          {% else %}
+            <span>Next &raquo;</span>
+          {% endif %}
+        </div>
+        {% endif %}
+	</div>
+	
+</div>

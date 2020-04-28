@@ -1,0 +1,71 @@
+baseurl: ''
+
+title: B Whiting Designs
+tagline: I create detailed, custom, modern high-quality designs for your brand needs
+description: Freelance UI UX Designer and Developer with over 10 years of experience. A modern designer that makes near perfect designs and custom HTML, CSS designs and development projects
+url: https://www.bwhitingdesigns.com
+author: Brian Whiting
+email: brianwhiting@bwhitingdesigns.com
+home: https://www.bwhitingdesigns.com
+tel: 334-538-5644
+tel_link: +13345385644
+
+hosting_url: http://hosting.bwhitingdesigns.com
+
+logo: /images/my-logo.png
+
+google_tag: GTM-NKS3CNF
+
+timezone: America/Denver
+
+# social settings
+blog_url: https://blog.bwhitingdesigns.com
+dribbble_url: https://dribbble.com/BrianWhiting
+github_url: https://github.com/bwhitingdesigns
+github_username: bwhitingdesigns
+facebook_url:
+facebook:
+  app_id:
+  publisher:
+  admins:
+googleplus_url:
+instagram_url: https://www.instagram.com/bwhitingdesigns/
+linkedin_url: https://www.linkedin.com/in/bwdesigns/
+twitter_url:
+twitter:
+  username: ForsakenElite08
+  card: summary
+
+# plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-category-pages
+  - jekyll-admin
+
+# exclude settings
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+
+# markdown format
+markdown: kramdown
+
+# paginate structure
+paginate: 5
+paginate_path: "/blog/posts/page:num/"
+
+# collection settings
+collections:
+  authors:
+  portfolio:
+    output: true

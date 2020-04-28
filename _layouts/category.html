@@ -1,0 +1,15 @@
+---
+
+layout: default
+
+---
+
+<div class="blog list">
+	<h1 class="display-4 lead">
+		Articles under {{ page.tag }}
+	</h1>
+	
+	{% for post in site.categories[page.tag] %}
+		{% include post_preview.html %}
+	{% endfor %}
+</div>

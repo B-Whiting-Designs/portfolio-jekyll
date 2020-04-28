@@ -1,0 +1,255 @@
+		<header class="jumbotron-fluid">
+            <div class="container-fluid px-2 pt-3">
+            				
+                <nav class="navbar fixed-top d-flex flex-row-reverse">
+                    <div class="col-1">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> 
+                            <em class="fas fa-bars"></em> 
+                        </span>
+                        </button>
+                    </div>
+                    <div class="col-auto ml-auto d-none d-md-block navbar-quick-menu">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="/portfolio/">
+                                    Work
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="/services/">
+                                    What I Offer
+                                </a>
+                            </li>
+							
+							<li class="list-inline-item">
+								<a href="{{ site.blog_url }}">
+									Blog
+								</a>
+							</li>
+
+                            <li class="list-inline-item">
+                                <a href="/contact-me/">
+                                    Contact Me
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-1">
+                        <a href="{{ "" | absolute_url }}" class="navbar-brand">
+                            <span style="font-weight: bold;">Brian Whiting</span>
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarmenu">
+
+                        <div class="navbar-wrap row ml-auto mr-auto">
+                        <ul class="col list-unstyled wrap-social">
+                        <li>
+                            <a href="{{ site.dribbble_url }}"><i class="fab fa-dribbble"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ site.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        </ul>
+
+                            <div class="col-5 mx-auto d-none d-md-block">
+                                <div class="profile-pic">
+                                    <img src={{ "/images/profile-pic.jpg" | relative_url }} alt="profile pic" class="img-fluid rounded-circle w-25">
+                                </div>
+                                <div class="bw-contact-info">
+                                    <h6>contact details</h6>
+									<ul class="list-unstyled">
+										<li class="list-item">
+                                    		<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+										</li>
+										<li class="list-item">
+                                    		<a href="tel:{{ site.tel_link }}">{{ site.tel }}</a>
+										</li>
+									</ul>
+
+                                    <p class="text-muted" style="position: absolute; bottom: 0px;">&copy; 2005 - 2019 Brian Whiting</p>
+                                </div>
+                            </div>
+
+                            <ul class="navbar-nav col-md-4 col-10 ml-auto mr-5 text-right">
+                                <li class="nav-item {% if page.url == "/" %}active{% endif %}">
+                                    <a class="nav-link" href="{{ "" | absolute_url }}">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item {% if page.url == "/portfolio/" %}active{% endif %}">
+                                    <a class="nav-link" href="/portfolio/">My Work</a>
+                                </li>
+                                <li class="nav-item {% if page.url == "/services/" %}active{% endif %}">
+                                    <a class="nav-link" href="/services/">Services</a>
+                                </li>
+                                <li class="nav-item {% if page.url == "/contact-me/" %}active{% endif %}">
+                                    <a class="nav-link" href="/contact-me/">Get in Touch</a>
+                                </li>
+                                <li class="nav-item {% if page.url == "/blog/" %}active{% endif %}">
+                                    <a class="nav-link" href="/blog/">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </nav>
+            </div>
+            
+            <div class="hero">
+				
+                <div class="header-title text-center">
+					
+                    <div class="wrapper col-md-8 col-12 ml-md-auto mr-md-auto">
+						{% if page.layout == "default" %}
+						
+						{% if paginator.posts %}
+						<h6 class="tagline">Full Articles</h6>
+						<h1 class="lead display-4 pt-3">
+							Here are all the <span class="red">articles</span> that have been written on the site so far
+						</h1>
+						
+						<div class="col-auto mx-auto mt-5 mb-5">
+							<a href="/contact-me/" class="btn btn-primary">book a consultation <i class="fas fa-chevron-right"></i></a>
+						</div>
+						{% else %}
+
+                        <h6 class="tagline">{{ page.title }}</h6>
+						
+                        <h1 class="lead display-4 my-5">{{ page.tagline }}</h1>
+						
+                        <div class="row">
+							
+                            <div class="col-6">
+                                <a href="/portfolio/" class="btn btn-secondary">my work <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="/contact-me/" class="btn btn-primary">book a consultation <i class="fas fa-chevron-right"></i></a>
+                            </div>
+							
+                        </div>
+						{% endif %}
+						
+                        <ul class="list-inline social-icons mt-5">
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a>
+                            </li>
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.dribbble_url }}"><i class="fab fa-dribbble"></i></a>
+                            </li>
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+							
+                        </ul>
+						{% endif %}
+						
+						{% if page.layout == "post" %}
+                        <h6 class="tagline">
+							
+							{% assign sortedCategories = page.categories | sort %}
+                            <div class="col-10 mx-auto featured-tags">
+                                <ul class="list-inline">
+                                    {% for category in sortedCategories %}
+                                    <li class="list-inline-item">
+                                        <a href="/category/{{ category }}">
+                                            {{ category }}
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+							
+						</h6>
+						
+						<small class="text-muted text-uppercase">
+							{{ page.date | date: '%B %d, %Y' }}
+						</small>
+						
+						<h1 class="lead display-4">
+							{{ page.title }}
+						</h1>
+						
+						<div class="col-12 featured-image">
+							<img src="{{ page.featured_image }}" class="img-fluid">
+						</div>
+						
+                        <ul class="list-inline social-icons mt-5">
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a>
+                            </li>
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.dribbble_url }}"><i class="fab fa-dribbble"></i></a>
+                            </li>
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+							
+                        </ul>
+						{% endif %}
+						
+                    </div>
+					
+                </div>
+				
+            </div>
+			
+			{% if page.layout == "subpage" %}
+			<div class="hero about-me">
+				
+                <div class="header-title text-center">
+					
+                    <div class="wrapper col-md-8 col-12 ml-md-auto mr-md-auto">
+						
+                        <h6 class="tagline">{{ page.title }}</h6>
+						
+                        <h1 class="lead display-4 my-5">{{ page.tagline }}</h1>
+						
+                        <div class="row">
+							
+                            <div class="col-6">
+                                <a href="/portfolio/" class="btn btn-secondary">my work <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="/contact-me/" class="btn btn-primary">book a consultation <i class="fas fa-chevron-right"></i></a>
+                            </div>
+							
+                        </div>
+						
+                        <ul class="list-inline social-icons mt-5">
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a>
+                            </li>
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.dribbble_url }}"><i class="fab fa-dribbble"></i></a>
+                            </li>
+							
+                            <li class="list-inline-item">
+                                <a href="{{ site.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+							
+                        </ul>
+						
+                    </div>
+					
+                </div>
+				
+			</div>
+			{% endif %}
+                        
+        </header>
