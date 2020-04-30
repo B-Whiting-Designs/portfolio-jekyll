@@ -7,10 +7,6 @@
 	
 */
 
-/*
-	Hover import rule being used for the hover effects on documents
-*/
-
 html {
 	scroll-behavior: smooth;
 }
@@ -171,6 +167,7 @@ nav .navbar-nav li {
 .hero {
     padding-top: 7.5rem;
 	min-height: 100vh;
+	position: relative;
 }
 
 .hero-contact {
@@ -186,6 +183,15 @@ nav .navbar-nav li {
 	padding-top: 30vh;
 	min-height: 100vh;
 }
+
+.portfolio-header {
+	position: absolute;
+	background-size: cover; background-position: center top; background-repeat: no-repeat; background-attachment: scroll; background-image: inherit;
+	top: 0; bottom: 0; right: 0; left: 0;
+	opacity: 0.1;
+	width: 100%; height: 100%;
+}
+
 
 .hero .social-icons li, .social-icons li {
     padding: 15px;
