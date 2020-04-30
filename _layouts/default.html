@@ -9,7 +9,7 @@
       
       
     <!-- body of content here -->  
-	  <section>
+	  <section {% if page.layout == "portfolio" %} class="container-fluid"{% endif %}>
 	  
 		  {{ content }}
 		  
