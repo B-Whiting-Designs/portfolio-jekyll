@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 
-                <small>&copy; 2019 <a href="{{ "" | absolute_url }}">Brian Whiting</a>. All Rights Reserved</small>
+                <small>&copy; {{ site.time | date: '%Y' }} <a href="{{ "" | absolute_url }}">Brian Whiting</a>. All Rights Reserved</small>
                 
             </div>
         </footer>
@@ -33,7 +33,9 @@
 
         <!-- Include all compiled plugins (below), or include individual files as needed --> 
         <script src="/assets/js/bootstrap-4.0.0.js"></script>
-                
+		{% if page.layout == "portfolio" %}
+		<script src="/assets/js/functions.js"></script>
+        {% endif %}
         <script>
             $(document).on('click', '.navbar-collapse.in', function(e) {
                 if( $(e.target).is('a') ) {
