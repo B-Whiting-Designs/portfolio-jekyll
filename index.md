@@ -21,7 +21,7 @@ tagline: Hey, my name is <span class="red">Brian Whiting</span>. I create detail
             <a href="{{ project.url }}">
                 <div class="bw-card">
                     <div class="bw-card-img">
-                        <img src="{{ project.image_preview }}?nf_resize=smartcrop&h=300" alt="{{ project.preview_title }}" class="img-fluid">
+                        <img src="{{ project.image_preview }}" alt="{{ project.preview_title }}" class="img-fluid">
                     </div>
                     <div class="bw-card-block mx-auto">
                         <h6>{{ project.title }}</h6>
