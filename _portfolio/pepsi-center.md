@@ -1,25 +1,25 @@
 ---
 
 layout: portfolio
-title: Disabled In Action NYC
-preview_title: DIA
-image_preview: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-header_image: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-logo: /images/thumbs/dia-nyc-images/dia-logo.png
-tagline: Helping those with disablities each day
-permalink: /:collection/dia-nyc/
+title: Pepsi Center - Denver
+preview_title: Pepsi Center
+image_preview: /images/thumbs/pepsi-center/pepsi-center-home.png
+header_image: /images/thumbs/pepsi-center/pepsi-center-home.png
+logo: 
+tagline: No crystal pepsi here
+permalink: /:collection/pepsi-center-mockup/
 
-bio: DIA - NYC is a non-profit based in NYC that has been fighting the good fight to help bring equality with disabilities for years. They came to me through Taproot+ to help them with their website needs. I saw this website as a challenge to use the new platform that I planned to use for easier content management for non-profits and businesses needed. I loaded Jekyll onto their site which is fast loading and can be handled through Netlify.
+bio: Pepsi Center is the stable of the sporting events in Denver, CO. Home to the Denver Nuggets and many different events, it was in need of an update. The design was a bit stale and looked a bit outdated.
 
-category: [ non-profit ]
+category: [ mockup ]
 
-services: [ UI/UX Design and Development, Branding, SEO ]
+services: [ Mockup, Web Design, Rebranding ]
 
-programs: [ Adobe XD, Dreamweaver, Jekyll, Netlify ]
+programs: [ Photoshop, Adobe XD ]
 
-location: New York City, NY
+location: Denver, CO
 
-live_url: https://www.disabledinaction.org
+live_url: https://www.pepsicenter.com/
 
 ---
 
@@ -30,7 +30,7 @@ live_url: https://www.disabledinaction.org
         <div class="row">
             <div class="col-md-5 col-12">
                 <h6 class="text-muted">The challenge</h6>
-                <h4>change in platforms was a plus</h4>
+                <h4>Making it feel like an event location</h4>
                 {{ page.bio }}
             </div>
 
@@ -81,15 +81,15 @@ live_url: https://www.disabledinaction.org
         <div class="row">
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/screenshot-old.jpeg" class="img-fluid" alt="previous design">
+                <img src="/images/thumbs/pepsi-center/smartmockups_k08g8ca0.png" class="img-fluid" alt="desktop mock">
             </div>
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/full-screenshot-new.png" class="img-fluid" alt="current redesign">
+                <img src="/images/thumbs/pepsi-center/smartmockups_k08vmzqg.png" class="img-fluid" alt="current redesign">
             </div>
 
-            <div class="col-4 pt-5">
-                <img src="/images/thumbs/dia-nyc-images/dia-logo.png" class="img-fluid" alt="logo">
+            <div class="col-4">
+                <img src="/images/thumbs/pepsi-center/smartmockups_k08vo4if.png" class="img-fluid" alt="old website">
             </div>
 
         </div>
@@ -101,9 +101,13 @@ live_url: https://www.disabledinaction.org
 
         <div class="col-12 p-5">
             <h6 class="text-muted">the results</h6>
-            <h4>Jekyll without the Hyde</h4>
-            <p>With the use of Jekyll, I managed to get the overall speed and functionality of the site to go to 97 overall on desktop and an 88 overall on mobile. The site was a nice test of making a brand new website on Jekyll. The site also saw an increase in overall users and retention rates by 78% and 15% respectively with the new layout.</p>
+            <h4>website update and modernistic</h4>
+            <p>I wanted to push the limit of the design starting with the header from the very beginning. I focused on making the colors of Pepsi standout for the entire design. Showcasing of the events and having filtered letter designs and showing levels makes it modern and gives attention. This was one of my first few design challenges and also featured in an article from <a href="https://www.attentioninsight.com/why-good-design-matters/bringing-attention-to-the-small-details/" class="red">Attention Insight</a>.</p>
+			
+			<p>You can also read more about it <a href="https://blog.bwhitingdesigns.com/featured-on-attention-insight" class="red">here</a> on my blog.</p>
         </div>
 
     </div>
     <!-- the results -->
+
+</div>

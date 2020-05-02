@@ -5,6 +5,7 @@ title:
 preview_title: 
 image_preview: 
 header_image: 
+logo: 
 tagline: 
 permalink: /:collection/
 
@@ -76,24 +77,21 @@ live_url:
     <!-- intro section -->
 
     <!-- image showcase -->
-    <div class="container col-md-9 col-12 offset-md-3">
+    <div class="container col-12">
         <div class="row">
 
-            <div class="col-3">
-                <img src="/images/thumbs/ati-images/smartmockups_k06si3wn.png" class="img-fluid" alt="previous design">
+            <div class="col-4">
+                <img src="" class="img-fluid" alt="">
             </div>
 
-            <div class="col-3">
-                <img src="/images/thumbs/ati-images/smartmockups_k06sdinl.png" class="img-fluid" alt="current redesign">
+            <div class="col-4">
+                <img src="" class="img-fluid" alt="">
             </div>
 
-            <div class="col-3 pt-5">
-                <img src="/images/thumbs/ati-images/logo-v1.png" class="img-fluid" alt="new logo">
+            <div class="col-4">
+                <img src="" class="img-fluid" alt="">
             </div>
 
-            <div class="col-3 p-4">
-                <img src="/images/thumbs/ati-images/smartmockups_k08s3rln.jpg" class="img-fluid" alt="laptop mockup">
-            </div>
 
         </div>
     </div>
@@ -104,9 +102,8 @@ live_url:
 
         <div class="col-12 p-5">
             <h6 class="text-muted">the results</h6>
-            <h4>website update and modernistic</h4>
-            <p>An update of the fonts for the website made a difference in getting it up to date. With the redesign of the site the overall speed of the site for mobile users and tablet users has increased by <span class="red">24%</span> due to the changes. More responsive and faster with the updated Bootstrap framework used on top.</p>
-			<p>Upon reversion, instead focus on optimization of the currently used template and pages on WordPress was a change that also helped them get their interactions back up to par.</p>
+            <h4></h4>
+            <p></p>
         </div>
 
     </div>

@@ -76,14 +76,14 @@ live_url: https://www.craftpainters.com/
     <!-- intro section -->
 
     <!-- image showcase -->
-    <div class="container col-md-9 col-12 offset-md-3">
+    <div class="container col-12">
         <div class="row">
 
-            <div class="col-3">
+            <div class="col-4">
                 <img src="/images/thumbs/craft-images/smartmockups_k06sfbr1.png" class="img-fluid" alt="current mockup">
             </div>
 
-            <div class="col-3">
+            <div class="col-4">
                 <img src="/images/thumbs/craft-images/smartmockups_k08wo8b9.jpg" class="img-fluid" alt="laptop mockup">
             </div>
 

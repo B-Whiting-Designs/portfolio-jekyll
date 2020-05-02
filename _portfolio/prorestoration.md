@@ -1,25 +1,24 @@
 ---
 
 layout: portfolio
-title: Disabled In Action NYC
-preview_title: DIA
-image_preview: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-header_image: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-logo: /images/thumbs/dia-nyc-images/dia-logo.png
-tagline: Helping those with disablities each day
-permalink: /:collection/dia-nyc/
+title: Professional Restoration
+preview_title: Professional Restoration
+image_preview: /images/thumbs/prorestoration/new-website.png
+header_image: /images/thumbs/prorestoration/new-website.png
+tagline: Updating a modern site for growth
+permalink: /:collection/professional-restoration/
 
-bio: DIA - NYC is a non-profit based in NYC that has been fighting the good fight to help bring equality with disabilities for years. They came to me through Taproot+ to help them with their website needs. I saw this website as a challenge to use the new platform that I planned to use for easier content management for non-profits and businesses needed. I loaded Jekyll onto their site which is fast loading and can be handled through Netlify.
+bio: Professional Restoration is a local restoration company based in Denver, CO with over 25 years of experience. They came looking for a new design to their old brand and gain digital pressence more. While working with my old agency I was able to help with their goal by redesign of the current site and new branding.
 
-category: [ non-profit ]
+category: [ commercial ]
 
-services: [ UI/UX Design and Development, Branding, SEO ]
+services: [ UI/UX Design, Branding, Analytics, Content Editing  ]
 
-programs: [ Adobe XD, Dreamweaver, Jekyll, Netlify ]
+programs: [ Photoshop, WordPress, Adobe XD ]
 
-location: New York City, NY
+location: Denver, CO
 
-live_url: https://www.disabledinaction.org
+live_url: https://www.prorestoration.com/
 
 ---
 
@@ -30,7 +29,7 @@ live_url: https://www.disabledinaction.org
         <div class="row">
             <div class="col-md-5 col-12">
                 <h6 class="text-muted">The challenge</h6>
-                <h4>change in platforms was a plus</h4>
+                <h4>restoring a restoration company</h4>
                 {{ page.bio }}
             </div>
 
@@ -81,15 +80,19 @@ live_url: https://www.disabledinaction.org
         <div class="row">
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/screenshot-old.jpeg" class="img-fluid" alt="previous design">
+                <img src="/images/thumbs/prorestoration/smartmockups_k3oxfoks.png" class="img-fluid" alt="current mockup">
             </div>
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/full-screenshot-new.png" class="img-fluid" alt="current redesign">
+                <img src="/images/thumbs/prorestoration/smartmockups_k3oxgau4.png" class="img-fluid" alt="cropped mockup">
             </div>
-
-            <div class="col-4 pt-5">
-                <img src="/images/thumbs/dia-nyc-images/dia-logo.png" class="img-fluid" alt="logo">
+			
+            <div class="col-4">
+                <img src="/images/thumbs/prorestoration/smartmockups_k3owuibf.png" class="img-fluid" alt="desktop and laptop mockup">
+            </div>
+			
+            <div class="col-4">
+                <img src="/images/thumbs/prorestoration/logo.webp" class="img-fluid" alt="logo">
             </div>
 
         </div>
@@ -101,9 +104,11 @@ live_url: https://www.disabledinaction.org
 
         <div class="col-12 p-5">
             <h6 class="text-muted">the results</h6>
-            <h4>Jekyll without the Hyde</h4>
-            <p>With the use of Jekyll, I managed to get the overall speed and functionality of the site to go to 97 overall on desktop and an 88 overall on mobile. The site was a nice test of making a brand new website on Jekyll. The site also saw an increase in overall users and retention rates by 78% and 15% respectively with the new layout.</p>
+            <h4>large increase of digital footprint</h4>
+            <p>The update of the website was a large improvement for them. We made the site with WordPress as the CMS of choice for this one. The new site was a nice increase and improvement for the SEO that was a growth in 3 months time with an increase by <span class="red">15%</span> and conversion rating with the implementation of Google Ads that we setup for them. This was a true showcase that making a site update with content, design, and SEO optimization was a great and needed change.</p>
         </div>
 
     </div>
     <!-- the results -->
+
+</div>

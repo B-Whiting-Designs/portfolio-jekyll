@@ -5,6 +5,7 @@ title: Art Transforms Inc.
 preview_title: ATI
 image_preview: /images/thumbs/ati-images/ati.jpg
 header_image: /images/thumbs/ati-images/ati.jpg
+logo: /images/thumbs/ati-images/logo-v1.png
 tagline: Helping a non-profit brand expand
 permalink: /:collection/art-transforms-inc/
 
@@ -76,23 +77,19 @@ live_url: https://www.arttransforms.org
     <!-- intro section -->
 
     <!-- image showcase -->
-    <div class="container col-md-9 col-12 offset-md-3">
+    <div class="container col-12">
         <div class="row">
 
-            <div class="col-3">
+            <div class="col-4">
                 <img src="/images/thumbs/ati-images/smartmockups_k06si3wn.png" class="img-fluid" alt="previous design">
             </div>
 
-            <div class="col-3">
+            <div class="col-4">
                 <img src="/images/thumbs/ati-images/smartmockups_k06sdinl.png" class="img-fluid" alt="current redesign">
             </div>
 
-            <div class="col-3 pt-5">
+            <div class="col-4 pt-5">
                 <img src="/images/thumbs/ati-images/logo-v1.png" class="img-fluid" alt="new logo">
-            </div>
-
-            <div class="col-3 p-4">
-                <img src="/images/thumbs/ati-images/smartmockups_k08s3rln.jpg" class="img-fluid" alt="laptop mockup">
             </div>
 
         </div>

@@ -1,25 +1,25 @@
 ---
 
 layout: portfolio
-title: Disabled In Action NYC
-preview_title: DIA
-image_preview: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-header_image: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-logo: /images/thumbs/dia-nyc-images/dia-logo.png
-tagline: Helping those with disablities each day
-permalink: /:collection/dia-nyc/
+title: Fixed NC
+preview_title: Fixed NC
+image_preview: /images/thumbs/fixed-nc-images/fixednc.png
+header_image: /images/thumbs/fixed-nc-images/fixednc.png
+logo: /images/thumbs/fixed-nc-images/fnc-logo.webp
+tagline: Restoration with upscale design
+permalink: /:collection/fixed-nc/
 
-bio: DIA - NYC is a non-profit based in NYC that has been fighting the good fight to help bring equality with disabilities for years. They came to me through Taproot+ to help them with their website needs. I saw this website as a challenge to use the new platform that I planned to use for easier content management for non-profits and businesses needed. I loaded Jekyll onto their site which is fast loading and can be handled through Netlify.
+bio: Fixed NC is a North Carolina restoration company that was established in 2018. They have over 30 years of staffing experience combined. A restoration company that wanted to get a restoration of their website design.
 
-category: [ non-profit ]
+category: [ commercial ]
 
-services: [ UI/UX Design and Development, Branding, SEO ]
+services: [ UI/UX Design, Branding, Content Editing ]
 
-programs: [ Adobe XD, Dreamweaver, Jekyll, Netlify ]
+programs: [ Photoshop, WordPress ]
 
-location: New York City, NY
+location: Greenville, NC
 
-live_url: https://www.disabledinaction.org
+live_url: https://www.fixednc.com/
 
 ---
 
@@ -30,7 +30,7 @@ live_url: https://www.disabledinaction.org
         <div class="row">
             <div class="col-md-5 col-12">
                 <h6 class="text-muted">The challenge</h6>
-                <h4>change in platforms was a plus</h4>
+                <h4>major update in design</h4>
                 {{ page.bio }}
             </div>
 
@@ -81,16 +81,17 @@ live_url: https://www.disabledinaction.org
         <div class="row">
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/screenshot-old.jpeg" class="img-fluid" alt="previous design">
+                <img src="/images/thumbs/fixed-nc-images/smartmockups_k08wx1m4.png" class="img-fluid" alt="mockup 1">
             </div>
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/full-screenshot-new.png" class="img-fluid" alt="current redesign">
+                <img src="/images/thumbs/fixed-nc-images/smartmockups_k08ww6kc.png" class="img-fluid" alt="mockup 2">
             </div>
 
-            <div class="col-4 pt-5">
-                <img src="/images/thumbs/dia-nyc-images/dia-logo.png" class="img-fluid" alt="logo">
+            <div class="col-4">
+                <img src="/images/thumbs/fixed-nc-images/fnc-logo.webp" class="img-fluid" alt="logo">
             </div>
+
 
         </div>
     </div>
@@ -101,9 +102,11 @@ live_url: https://www.disabledinaction.org
 
         <div class="col-12 p-5">
             <h6 class="text-muted">the results</h6>
-            <h4>Jekyll without the Hyde</h4>
-            <p>With the use of Jekyll, I managed to get the overall speed and functionality of the site to go to 97 overall on desktop and an 88 overall on mobile. The site was a nice test of making a brand new website on Jekyll. The site also saw an increase in overall users and retention rates by 78% and 15% respectively with the new layout.</p>
+            <h4>restoration with upscale design</h4>
+            <p>Update of their old site was easy to do as it was a small scale site that was in need of a change. Making a unified site structure was an improvement overall for their design. With a unified structure it helped with user interaction and increase in traffic and calls to their business locally for work. I say that was a job well done in my book, if I do say so myself.</p>
         </div>
 
     </div>
     <!-- the results -->
+
+</div>

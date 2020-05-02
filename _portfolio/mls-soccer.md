@@ -1,25 +1,25 @@
 ---
 
 layout: portfolio
-title: Disabled In Action NYC
-preview_title: DIA
-image_preview: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-header_image: /images/thumbs/dia-nyc-images/full-screenshot-new.png
-logo: /images/thumbs/dia-nyc-images/dia-logo.png
-tagline: Helping those with disablities each day
-permalink: /:collection/dia-nyc/
+title: MLS Soccer League
+preview_title: MLS Soccer
+image_preview: /images/thumbs/mls-images/mls-homepage.png
+header_image: /images/thumbs/mls-images/mls-homepage.png
+logo: /images/thumbs/mls-images/MLS-logo.png
+tagline: Bring soccer into a modern era
+permalink: /:collection/mls-soccer-mockup/
 
-bio: DIA - NYC is a non-profit based in NYC that has been fighting the good fight to help bring equality with disabilities for years. They came to me through Taproot+ to help them with their website needs. I saw this website as a challenge to use the new platform that I planned to use for easier content management for non-profits and businesses needed. I loaded Jekyll onto their site which is fast loading and can be handled through Netlify.
+bio: MLS - Major League Soccer (GO Atlanta United) - has been around for some time with their design. I saw the website after I was in need of a design challenge. The task at hand I set forth was to improve the design but not take away from the heavy use of images they use throughout their site.
 
-category: [ non-profit ]
+category: [ mockup ]
 
-services: [ UI/UX Design and Development, Branding, SEO ]
+services: [ Mockup, Web Design, Rebranding ]
 
-programs: [ Adobe XD, Dreamweaver, Jekyll, Netlify ]
+programs: [ Adobe XD, Photoshop ]
 
-location: New York City, NY
+location: N/A
 
-live_url: https://www.disabledinaction.org
+live_url: https://www.mlssoccer.com/
 
 ---
 
@@ -30,7 +30,7 @@ live_url: https://www.disabledinaction.org
         <div class="row">
             <div class="col-md-5 col-12">
                 <h6 class="text-muted">The challenge</h6>
-                <h4>change in platforms was a plus</h4>
+                <h4>improving on a long lasting design</h4>
                 {{ page.bio }}
             </div>
 
@@ -81,16 +81,17 @@ live_url: https://www.disabledinaction.org
         <div class="row">
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/screenshot-old.jpeg" class="img-fluid" alt="previous design">
+                <img src="/images/thumbs/mls-images/smartmockups_k08tzsdl.png" class="img-fluid" alt="new design">
             </div>
 
             <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/full-screenshot-new.png" class="img-fluid" alt="current redesign">
+                <img src="/images/thumbgs/mls-images/smartmockups_k08u0yyh.png" class="img-fluid" alt="old design">
             </div>
 
-            <div class="col-4 pt-5">
-                <img src="/images/thumbs/dia-nyc-images/dia-logo.png" class="img-fluid" alt="logo">
+            <div class="col-4">
+                <img src="/images/thumbgs/mls-images/MLS-logo.png" class="img-fluid" alt="logo">
             </div>
+
 
         </div>
     </div>
@@ -101,9 +102,11 @@ live_url: https://www.disabledinaction.org
 
         <div class="col-12 p-5">
             <h6 class="text-muted">the results</h6>
-            <h4>Jekyll without the Hyde</h4>
-            <p>With the use of Jekyll, I managed to get the overall speed and functionality of the site to go to 97 overall on desktop and an 88 overall on mobile. The site was a nice test of making a brand new website on Jekyll. The site also saw an increase in overall users and retention rates by 78% and 15% respectively with the new layout.</p>
+            <h4>keeping up with the times</h4>
+            <p>Update of the design with the addition of a featured news section and a ticket tracker for stats on the left was a nice improvement. Due to being a sport that has a full Fantasy League that was a needed improvement for easy stat tracking. Use of large images more but spaced out makes it easier to follow and mobile friendly.</p>
         </div>
 
     </div>
     <!-- the results -->
+
+</div>
