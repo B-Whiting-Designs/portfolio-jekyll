@@ -1,14 +1,15 @@
 <!-- contact form -->
-<div class="container-fluid">
+<div class="{% if page.url == "/contact-me/" %}container{% endif %}{% if page.url != "/contact-me/" %}container-fluid{% endif %}">
 
-    <div class="row bg-primary">
-        <div class="col-md-4 ml-auto mr-auto col-12 p-5">
+    <div class="row {% if page.url != "/contact-me/" %}bg-primary{% endif %}">
+		
+        <div class="col-md-4 ml-auto mr-auto col-12 p-5 {% if page.url == "/contact-me/" %}d-none{% endif %}">
             <h2>
                 In need of some design needs for your business? If you like my work then send me a message via the form
             </h2>
         </div>
 
-        <div class="col-md-6 col-12 p-5 bg-secondary">
+        <div class="col-12 p-5 {% if page.url != "/contact-me/" %}col-md-6 bg-secondary{% endif %}">
             <form name="contact-form" method="POST" accept-charset="UTF-8" action="/contact-me/success/" netlify-honeypot="bot-field" data-netlify="true">
 				<p hidden>
 					<label>Don't fill this out if your human: <input name="bot-field" /></label>
