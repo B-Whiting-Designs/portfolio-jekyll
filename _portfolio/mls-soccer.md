@@ -85,11 +85,11 @@ live_url: https://www.mlssoccer.com/
             </div>
 
             <div class="col-4">
-                <img src="/images/thumbgs/mls-images/smartmockups_k08u0yyh.png" class="img-fluid" alt="old design">
+                <img src="/images/thumbs/mls-images/smartmockups_k08u0yyh.png" class="img-fluid" alt="old design">
             </div>
 
             <div class="col-4">
-                <img src="/images/thumbgs/mls-images/MLS-logo.png" class="img-fluid" alt="logo">
+                <img src="/images/thumbs/mls-images/MLS-logo.png" class="img-fluid" alt="logo">
             </div>
 
 
