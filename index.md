@@ -10,58 +10,30 @@ tagline: Hey, my name is <span class="red">Brian Whiting</span>. I create detail
 
 <div id="showcase-work" class="container p-5 text-center">
 	
-	<h3>My Best Work</h3>
-	
+	<h3>Recent Work</h3>
+		
 	<div class="row mt-5 d-flex justify-content-center">
-	
-		<div class="col-md-4 col-12 project">
-			<figure style="padding: 3rem 0rem;">
-				<a href="/portfolio/craftpainters/">
-					<img src="/images/thumbs/craft-images/craftpainters-logo.png" class="img-fluid w-75">
-				</a>
-			</figure>
-		</div>
+			
+		<div class="row">
+		{% assign case_studies = site.portfolio | sample: 6 %}
+        {% for project in case_studies | limit: 6 %}
+        <div class="col-md-6 col-12 bw-work-2-column">
+            <a href="{{ project.url }}">
+                <div class="bw-card">
+                    <div class="bw-card-img">
+                        <img class="img-fluid" src="{{ project.image_preview }}" alt="{{ project.preview_title }}">
+                    </div>
+                    <div class="bw-card-block mx-auto">
+                        <h6>{{ project.title }}</h6>
+                        <h4>{{ project.tagline }}</h4>
+                        <span class="red">View Case Study</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+        </div>
 		
-		<div class="col-md-4 col-12 project">
-			<figure style="padding: 2rem 0rem;">
-				<a href="/portfolio/mls/">
-					<img src="/images/thumbs/mls-images/MLS-logo.png" class="img-fluid w-75">
-				</a>
-			</figure>
-		</div>
-		
-		<div class="col-md-4 col-12 project">
-			<figure style="padding: 4.5rem 0rem;">
-				<a href="/portfolio/fixednc/">
-					<img src="/images/thumbs/fixed-nc-images/fnc-logo.webp" class="img-fluid w-50">
-				</a>
-			</figure>
-		</div>
-		
-		<div class="col-md-4 col-12 project">
-			<figure style="padding: 3rem 0rem;">
-				<a href="/portfolio/ati">
-					<img src="/images/thumbs/ati-images/logo-v1.png" class="img-fluid">
-				</a>
-			</figure>
-		</div>
-		
-		<div class="col-md-4 col-12 project">
-			<figure style="padding: 3rem 0rem;">
-				<a href="/portfolio/prorestoration">
-					<img src="/images/thumbs/prorestoration/logo.webp" class="img-fluid">
-				</a>
-			</figure>
-		</div>
-		
-		<div class="col-md-4 col-12 project">
-			<figure style="padding: 1.5rem 1rem;">
-				<a href="/portfolio/dia-nyc/">
-					<img src="/images/thumbs/dia-nyc-images/dia-logo.png" class="img-fluid w-50">
-				</a>
-			</figure>
-		</div>
-	
 	</div>
 	
 	<div class="mx-auto mt-5">
