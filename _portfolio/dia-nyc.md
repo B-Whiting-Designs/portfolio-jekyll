@@ -20,6 +20,7 @@ programs: [ Adobe XD, Dreamweaver, Jekyll, Netlify ]
 location: New York City, NY
 
 live_url: https://www.disabledinaction.org
+alt_url: https://dia-nyc.netlify.app/
 
 ---
 
@@ -69,6 +70,7 @@ live_url: https://www.disabledinaction.org
                 <div class="col-md-12">
                     <h6>live website</h6>
                     <a href="{{ page.live_url }}" target="_blank" class="text-link text-muted">{{ page.live_url }}</a>
+					<a href="{{ page.alt_url }}" target="_blank" class="text-link text-muted">{{ page.alt_url }}</a> - dev version
                 </div>
             </div>
         </div>
