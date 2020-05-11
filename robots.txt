@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /admin/
+Disallow: /baby/
+Disallow: /zohoverify/
+
+Sitemap: https://www.bwhitingdesigns.com/sitemap.xml
