@@ -12,10 +12,10 @@ gem "jekyll", "~> 4.0.0"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-paginate"
-  gem "jekyll-paginate-v2"
   gem "jekyll-seo-tag"
   gem 'jekyll-category-pages', '~> 1.0', '>= 1.0.1'
   gem "jekyll-admin"
+  gem 'jekyll-lazy-load-image', require: 'jekyll-lazy-load-image/auto-execution'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
