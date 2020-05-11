@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem 'jekyll-category-pages', '~> 1.0', '>= 1.0.1'
   gem "jekyll-admin"
   gem 'jekyll-lazy-load-image', require: 'jekyll-lazy-load-image/auto-execution'
+  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,19 +1,39 @@
 ---
 
 layout: null
+sitemap:
+  exclude: 'yes'
 
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {% for page in site.pages %}
-	{% if page.sitemap != null and page.sitemap != empty %}
+    {% unless page.sitemap.exlude == "yes" %}
 	<url>
-		<loc>{{ site.url }}{{ page.url }}</loc>
-		<lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-		<chagefreq>{{ page.sitemap.changefreq }}</chagefreq>
+		<loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+		
+		{% if page.sitemap.lastmod %}
+		<lastmod>{{ page.sitemap.lastmod | date: "%d-%m-%Y" }}</lastmod>
+			{% else if page.date %}
+		<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+			{% else %}
+		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+		{% endif %}
+		
+		{% if page.sitemap.changefreq %}
+		<changefreq>{{ page.sitemap.changefreq }}</changefreq>
+			{% else %}
+		<changefreq>monthly</changefreq>
+		{% endif %}
+		
+		{% if page.sitemap.priority %}
 		<priority>{{ page.sitemap.priority }}</priority>
+			{% else %}
+		<priority>0.3</priority>
+		{% endif %}
+		
 	</url>
-	{% endif %}
+	{% endunless %}
 {% endfor %}
 </urlset>

@@ -43,6 +43,7 @@ plugins:
   - jekyll-category-pages
   - jekyll-admin
   - jekyll-lazy-load-image
+  - jekyll-sitemap
 
 # exclude settings
 exclude:
