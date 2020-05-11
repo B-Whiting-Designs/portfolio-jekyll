@@ -4,6 +4,7 @@ layout: portfolio
 title: Craft Painters
 preview_title: Craft Painters
 image_preview: /images/thumbs/craft-images/craftpainters.png
+image_real:
 header_image: /images/thumbs/craft-images/craftpainters.png
 tagline: SMB Growth
 permalink: /:collection/craft-painters/
