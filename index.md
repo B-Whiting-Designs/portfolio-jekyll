@@ -15,13 +15,13 @@ tagline: Hey, my name is <span class="red">Brian Whiting</span>. I create detail
 	<div class="row mt-5 d-flex justify-content-center">
 			
 		<div class="row">
-		{% assign case_studies = site.portfolio | sample: 6 %}
-        {% for project in case_studies | limit: 6 %}
+		{% assign case_studies = site.portfolio | sample: 6 | limit: 6 %}
+        {% for project in case_studies %}
         <div class="col-md-6 col-12 bw-work-2-column">
             <a href="{{ project.url }}">
                 <div class="bw-card">
                     <div class="bw-card-img">
-                        <img src="{{ project.image_preview }}" alt="{{ project.preview_title }}" class="img-fluid">
+                        <img data-src="{{ project.image_preview }}" alt="{{ project.preview_title }}" class="img-fluid lazyload blur-up">
                     </div>
                     <div class="bw-card-block mx-auto">
                         <h6>{{ project.title }}</h6>
