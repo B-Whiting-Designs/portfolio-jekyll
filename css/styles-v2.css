@@ -1060,6 +1060,19 @@ footer a:hover {
     color: #A30303;
 }
 
+/* lazy load styles */
+.blur-up {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
 @media only screen and (max-width: 576px) {
     .large-hero.hero-banner .header-title {
         top: 0px;
