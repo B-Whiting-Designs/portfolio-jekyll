@@ -4,6 +4,7 @@ layout: portfolio
 title: 
 preview_title: 
 image_preview: 
+image_real: 
 header_image: 
 logo: 
 tagline: 
