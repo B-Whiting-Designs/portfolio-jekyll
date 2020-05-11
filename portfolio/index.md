@@ -8,11 +8,11 @@ tagline: <span class="red">Designs</span>, <span class="red">branding updates</s
 
 <div class="row">
 	{% for case_studies in site.portfolio %}
-	<div class="col-md-6 col-12 bw-work-2-column">
+	<div class="col-12 my-4">
         <a href="{{ case_studies.url }}">
             <div class="bw-card">
                 <div class="bw-card-img">
-                    <img class="img-fluid" src="{{ case_studies.image_preview }}" alt="{{ case_studies.preview_title }}">
+                    <img class="img-fluid lazyload blur-up" src="{{ case_studies.image_preview }}" alt="{{ case_studies.preview_title }}">
                 </div>
                 <div class="bw-card-block mx-auto">
                     <h6>{{ case_studies.title }}</h6>
