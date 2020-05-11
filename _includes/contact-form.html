@@ -10,9 +10,9 @@
         </div>
 
         <div class="col-12 p-5 {% if page.url != "/contact-me/" %}col-md-6 bg-secondary{% endif %}">
-            <form name="contact-form" method="POST" accept-charset="UTF-8" action="/contact-me/success/" netlify-honeypot="bot-field" data-netlify="true">
+            <form name="contact-form" method="POST" accept-charset="UTF-8" action="/contact-me/success/" netlify-honeypot="false-field" data-netlify-recaptcha="true" data-netlify="true">
 				<p hidden>
-					<label>Don't fill this out if your human: <input name="bot-field" /></label>
+					<label>Don't fill this out if you're human: <input name="false-field" /></label>
 				</p>
                 <div class="form-group">
                     <label for="name">Hey my name is...</label>
@@ -45,6 +45,8 @@
                     <textarea class="form-control" name="message" rows="4" cols="20"></textarea>
                 </div>
                 <br>
+				
+				<div data-netlify-recaptcha="true"></div>
 
                 <div class="row">
 
