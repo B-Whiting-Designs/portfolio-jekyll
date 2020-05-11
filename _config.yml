@@ -39,11 +39,10 @@ twitter:
 # plugins
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-category-pages
   - jekyll-admin
+  - jekyll-lazy-load-image
 
 # exclude settings
 exclude:
@@ -64,28 +63,16 @@ markdown: kramdown
 # blog post permalink structure
 permalink: /:categories/:title/
 
-# paginate structure
-pagination:
-  enabled: true
-  debug: false
-  collection: ''
-  per_page: 6
-  permalink: '/:path/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: false
-  category: ''
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: true
-  extension: html
-  indexpage: 'index'
-
 # collection settings
 collections:
   portfolio:
     permalink: "/portfolio/:name/"
     output: true
+
+# lazy load image format
+lazy_load_image:
+  src_attr_name: data-src
+  class_attr_values:
+    - lazyload
+  ignore_selectors:
+    - ".ignore-lazy-load"
