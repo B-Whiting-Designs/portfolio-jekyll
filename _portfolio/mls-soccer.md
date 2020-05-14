@@ -3,7 +3,7 @@
 layout: portfolio
 title: MLS Soccer League
 preview_title: MLS Soccer
-image_preview: /images/thumbs/mls-images/mls-homepage.png
+image_preview: /images/folio/folio-6.jpg
 header_image: /images/thumbs/mls-images/mls-homepage.png
 logo: /images/thumbs/mls-images/MLS-logo.png
 tagline: Bring soccer into a modern era
@@ -12,6 +12,8 @@ permalink: /:collection/mls-soccer-mockup/
 bio: MLS - Major League Soccer (GO Atlanta United) - has been around for some time with their design. I saw the website after I was in need of a design challenge. The task at hand I set forth was to improve the design but not take away from the heavy use of images they use throughout their site.
 
 category: [ mockup ]
+
+tag: [ web_design, ui_design ]
 
 services: [ Mockup, Web Design, Rebranding ]
 

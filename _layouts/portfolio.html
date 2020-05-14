@@ -1,7 +1,49 @@
----
+<!DOCTYPE HTML>
+<html lang="en">
 
-layout: default
-
----
-
-{{ content }}
+{% include head.html %}
+	
+	<body>
+        <!--loader-->
+        <div class="loader-wrap color-bg">
+            <div class="loader-bg"></div>
+            <div class="loader-inner">
+                <div class="loader"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            {% include header.html %}
+            <!-- header end -->
+            <!-- wrapper -->
+            <div id="wrapper">
+                <!-- content-holder  -->	
+                <div class="content-holder scroll-content" data-pagetitle="portfolio grid">
+                    {% include nav-menu.html %} 
+                    <!--content -->
+                    <div class="content dark-content portf-wrap">
+                    	{{ content }}
+                    </div>
+                    <!--content  end -->
+                    <div class="limit-box fl-wrap"></div>
+                    <!--footer-->
+                    {% include footer.html %}
+                    <!--footer  end -->
+                </div>
+                <!-- content-holder end -->
+            </div>
+            <!--wrapper end -->
+            <!-- cursor-->
+            <div class="element">
+                <div class="element-item"></div>
+            </div>
+            <!-- cursor end-->          
+        </div>
+        <!-- Main end -->
+		
+        {% include js.html %}
+		
+    </body>
+</html>

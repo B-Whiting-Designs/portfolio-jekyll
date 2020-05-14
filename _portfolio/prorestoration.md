@@ -3,7 +3,7 @@
 layout: portfolio
 title: Professional Restoration
 preview_title: Professional Restoration
-image_preview: /images/thumbs/prorestoration/new-website.png
+image_preview: /images/folio/folio-8.jpg
 header_image: /images/thumbs/prorestoration/new-website.png
 tagline: Updating a modern site for growth
 permalink: /:collection/professional-restoration/
@@ -11,6 +11,8 @@ permalink: /:collection/professional-restoration/
 bio: Professional Restoration is a local restoration company based in Denver, CO with over 25 years of experience. They came looking for a new design to their old brand and gain digital pressence more. While working with my old agency I was able to help with their goal by redesign of the current site and new branding.
 
 category: [ commercial ]
+
+tag: [ commercial, web_design, ui_design ]
 
 services: [ UI/UX Design, Branding, Analytics, Content Editing  ]
 

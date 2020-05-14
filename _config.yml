@@ -16,22 +16,24 @@ logo: /images/my-logo.png
 
 google_tag: GTM-NKS3CNF
 
+address: Aurora, CO
 timezone: America/Denver
 
 # social settings
 blog_url: https://blog.bwhitingdesigns.com
+twitch_url: https://www.twitch.tv/forsakenelite08
 dribbble_url: https://dribbble.com/BrianWhiting
 github_url: https://github.com/bwhitingdesigns
 github_username: bwhitingdesigns
-facebook_url:
+facebook_url: https://www.facebook.com/bwhitingdesigns
 facebook:
-  app_id:
-  publisher:
-  admins:
+  app_id: 2358622077775061
+  publisher: 
+  admins: bwhiting
 googleplus_url:
 instagram_url: https://www.instagram.com/bwhitingdesigns/
 linkedin_url: https://www.linkedin.com/in/bwdesigns/
-twitter_url:
+twitter_url: https://twitter.com/ForsakenElite08
 twitter:
   username: ForsakenElite08
   card: summary

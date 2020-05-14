@@ -3,7 +3,7 @@
 layout: portfolio
 title: Pepsi Center - Denver
 preview_title: Pepsi Center
-image_preview: /images/thumbs/pepsi-center/pepsi-center-home.png
+image_preview: /images/folio/folio-7.jpg
 header_image: /images/thumbs/pepsi-center/pepsi-center-home.png
 logo: 
 tagline: No crystal pepsi here
@@ -12,6 +12,8 @@ permalink: /:collection/pepsi-center-mockup/
 bio: Pepsi Center is the stable of the sporting events in Denver, CO. Home to the Denver Nuggets and many different events, it was in need of an update. The design was a bit stale and looked a bit outdated.
 
 category: [ mockup ]
+
+tag: [ web_design, ui_design ]
 
 services: [ Mockup, Web Design, Rebranding ]
 

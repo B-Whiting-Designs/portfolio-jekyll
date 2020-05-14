@@ -3,8 +3,7 @@
 layout: portfolio
 title: Craft Painters
 preview_title: Craft Painters
-image_preview: /images/thumbs/craft-images/craftpainters.png
-image_real:
+image_preview: /images/folio/folio-2.jpg
 header_image: /images/thumbs/craft-images/craftpainters.png
 tagline: SMB Growth
 permalink: /:collection/craft-painters/
@@ -12,6 +11,8 @@ permalink: /:collection/craft-painters/
 bio: Craft Painters was a client I had the pleasure of working with during my stent at a local agency in Denver. They came to us with a goal in mind of updating their site from the table format style they had to a nice WordPress structure that flows and updated.
 
 category: [ commercial ]
+
+tag: [ commercial, ui_design ]
 
 services: [ UI/UX Design, Branding, Analytics, Content Editing  ]
 

@@ -2,25 +2,32 @@
 
 layout: portfolio
 title: Case Studies
-tagline: <span class="red">Designs</span>, <span class="red">branding updates</span>, and <span class="red">development</span> case studies
 
 ---
 
-<div class="row">
-	{% for case_studies in site.portfolio %}
-	<div class="col-12 my-4">
-        <a href="{{ case_studies.url }}">
-            <div class="bw-card">
-                <div class="bw-card-img">
-                    <img class="img-fluid lazyload blur-up" src="{{ case_studies.image_preview }}" alt="{{ case_studies.preview_title }}">
-                </div>
-                <div class="bw-card-block mx-auto">
-                    <h6>{{ case_studies.title }}</h6>
-                    <h4>{{ case_studies.tagline }}</h4>
-                    <span class="red">View Case Study</span>
-                </div>
-            </div>
-        </a>
+<!-- content -->
+<div class="content dark-content portf-wrap">
+	<!--fixed-top-panel-->
+    <div class="fixed-top-panel filter-panel fl-wrap">
+        <div class="fixed-filter-panel_title color-bg">
+            Works Filter <i class="fal fa-long-arrow-right"></i>
+        </div>
+        <div class="gallery-filters inline-dark-filters">
+            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All projects</a>
+            <a href="#" class="gallery-filter " data-filter=".ui_design">UI/UX Design</a>
+			<a href="#" class="gallery-filter " data-filter=".web_dev">Development</a>
+			<a href="#" class="gallery-filter " data-filter=".non_profit">Non Profit</a>
+			<a href="#" class="gallery-filter " data-filter=".commercial">Commercial</a>
+        </div>
+        <div class="folio-counter">
+            <div class="num-album"></div>
+            <div class="all-album"></div>
+        </div>
     </div>
-	{% endfor %}
+    <!--fixed-top-panel end -->
+    <!-- portfolio start -->
+    <div class="gallery-items min-pad  four-column   fl-wrap  ">
+        {% include gallery-filters.html %}
+    </div>
+<!-- portfolio end -->
 </div>

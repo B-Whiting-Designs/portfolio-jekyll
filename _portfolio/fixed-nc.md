@@ -3,7 +3,7 @@
 layout: portfolio
 title: Fixed NC
 preview_title: Fixed NC
-image_preview: /images/thumbs/fixed-nc-images/fixednc.png
+image_preview: /images/folio/folio-4.jpg
 header_image: /images/thumbs/fixed-nc-images/fixednc.png
 logo: /images/thumbs/fixed-nc-images/fnc-logo.webp
 tagline: Restoration with upscale design
@@ -12,6 +12,8 @@ permalink: /:collection/fixed-nc/
 bio: Fixed NC is a North Carolina restoration company that was established in 2018. They have over 30 years of staffing experience combined. A restoration company that wanted to get a restoration of their website design.
 
 category: [ commercial ]
+
+tag: [ commercial, web_design ]
 
 services: [ UI/UX Design, Branding, Content Editing ]
 

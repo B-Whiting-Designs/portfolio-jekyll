@@ -1,0 +1,21 @@
+{% for case_studies in site.portfolio %}
+<!-- gallery-item-->
+<div class="gallery-item {{ case_studies.tag | join: " " }}">
+    <div class="grid-item-holder hov_zoom">
+        <img src="{{ case_studies.image_preview }}" alt="">
+        <a href="{{ case_studies.header_image }}" class="box-media-zoom   image-popup"><i class="fal fa-search"></i></a>
+        <div class="grid-det">
+            <div class="grid-det_category">
+				{% for tags in case_studies.tag %}
+				<a href="#">{{ tags | join: " " }}</a>
+				{% endfor %}
+			</div>
+            <div class="grid-det-item">
+                <a href="{{ case_studies.url }}" class="ajax grid-det_link">{{ case_studies.title }}<i class="fal fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="pr-bg"></div>
+</div>
+<!-- gallery-item end-->
+{% endfor %}

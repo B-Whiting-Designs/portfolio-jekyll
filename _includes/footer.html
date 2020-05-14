@@ -1,53 +1,58 @@
-        <footer class="pt-5 pb-3 text-center">
-            <div class="container">
-                
-                <div class="row">
-                   <div class="col-md-8 offset-md-2">
-                       <ul class="list-inline">
-						   
-                           <li class="list-inline-item">   
-                               <a href="{{ site.dribbble_url }}">my dribbble</a>
-                           </li>
-                           
-                           <li class="list-inline-item">
-                               <a href="{{ site.blog_url }}">my random thoughts</a>
-                           </li>
-                           
-                           <li class="list-inline-item">
-                               <a href="{{ site.hosting_url }}">my hosting platform</a>
-                           </li>
-                           
-                       </ul>
+<!--footer-->
+<div class="height-emulator fl-wrap"></div>
+<footer class="main-footer fixed-footer">
+    <div class="container">
+        <div class="footer-inner fl-wrap">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-box fl-wrap">
+                        <div class="footer-title fl-wrap">
+                            <span>001.</span>
+                            Last Tweets
+                        </div>
+                        <div class="footer-box-item fl-wrap">
+                            <div class="twitter-swiper-container fl-wrap" id="twitts-container"></div>
+                        </div>
                     </div>
                 </div>
-                
-                <small>&copy; {{ site.time | date: '%Y' }} <a href="{{ "" | absolute_url }}">Brian Whiting</a>. All Rights Reserved</small>
-                
+                <div class="col-md-6">
+                    <div class="footer-title fl-wrap">
+                        <span>002.</span>
+                        Subscribe / Contacts
+                    </div>
+                    <div class="footer-box-item fl-wrap">
+                        <p>Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                        <div class="subcribe-form fl-wrap">
+                            <form id="subscribe" class="fl-wrap" data-netlify="true">
+                                <input class="enteremail" name="email" id="subscribe-email" placeholder="Your Email" spellcheck="false" type="text">
+                                <button type="submit" id="subscribe-button" class="subscribe-button color-bg"><i class="fal fa-paper-plane"></i> Send </button>
+                                <label for="subscribe-email" class="subscribe-message"></label>
+                            </form>
+                        </div>
+                        <!-- footer-contacts-->
+                        <div class="footer-contacts fl-wrap">
+                            <ul>
+                                <li><i class="fal fa-phone"></i><span>Phone :</span><a href="#">{{ site.tel_link }}</a></li>
+                                <li><i class="fal fa-envelope"></i><span>Email :</span><a href="#">{{ site.email }}</a></li>
+                                <li><i class="fal fa-map-marker"></i><span>Address</span><a href="#">{{ site.address }}</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer end -->                                    
+                    </div>
+                </div>
             </div>
-        </footer>
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-        <!-- Include all compiled plugins (below), or include individual files as needed --> 
-        <script src="/assets/js/bootstrap-4.0.0.js"></script>
-		<script src="/assets/js/lazysizes.js" async=""></script>
-		{% if page.layout == "portfolio" %}
-		<script src="/assets/js/functions.js"></script>
-        {% endif %}
-        <script>
-            $(document).on('click', '.navbar-collapse.in', function(e) {
-                if( $(e.target).is('a') ) {
-                    $(this).collapse('hide');
-                }
-            });
-        </script>
-		
-		<script>
-			$('.navbar-collapse').click(function(){
-            	$(".navbar-collapse").collapse('hide');
-        	});
-		</script>
-
+        </div>
+        <div class="subfooter fl-wrap">
+            <!-- policy-box-->
+            <div class="policy-box">
+                <span>&#169; Brian Whiting {{ site.time | date: '%Y' }}  /  All rights reserved. </span>
+            </div>
+            <!-- policy-box end-->                     
+            <div class="to-top to-top-btn color-bg"><span>To top</span></div>
+        </div>
+    </div>
+    <div class="sec-lines"></div>
+    <div class="footer-canvas">
+        <div class="dots gallery__dots" data-dots=""></div>
+    </div>
+</footer>

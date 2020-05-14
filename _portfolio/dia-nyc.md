@@ -3,7 +3,7 @@
 layout: portfolio
 title: Disabled In Action NYC
 preview_title: DIA
-image_preview: /images/thumbs/dia-nyc-images/full-screenshot-new.png
+image_preview: /images/folio/folio-3.jpg
 header_image: /images/thumbs/dia-nyc-images/full-screenshot-new.png
 logo: /images/thumbs/dia-nyc-images/dia-logo.png
 tagline: Helping those with disablities each day
@@ -12,6 +12,8 @@ permalink: /:collection/dia-nyc/
 bio: DIA - NYC is a non-profit based in NYC that has been fighting the good fight to help bring equality with disabilities for years. They came to me through Taproot+ to help them with their website needs. I saw this website as a challenge to use the new platform that I planned to use for easier content management for non-profits and businesses needed. I loaded Jekyll onto their site which is fast loading and can be handled through Netlify.
 
 category: [ non-profit ]
+
+tag: [ non_profit, web_design, ui_design, web_dev ]
 
 services: [ UI/UX Design and Development, Branding, SEO ]
 
