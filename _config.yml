@@ -43,8 +43,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-category-pages
-  - jekyll-admin
-  - jekyll-lazy-load-image
   - jekyll-sitemap
 
 # exclude settings
@@ -71,11 +69,3 @@ collections:
   portfolio:
     permalink: "/portfolio/:name/"
     output: true
-
-# lazy load image format
-lazy_load_image:
-  src_attr_name: data-src
-  class_attr_values:
-    - lazyload
-  ignore_selectors:
-    - ".ignore-lazy-load"

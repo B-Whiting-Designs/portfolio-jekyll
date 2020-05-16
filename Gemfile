@@ -14,8 +14,6 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
   gem 'jekyll-category-pages', '~> 1.0', '>= 1.0.1'
-  gem "jekyll-admin"
-  gem 'jekyll-lazy-load-image', require: 'jekyll-lazy-load-image/auto-execution'
   gem 'jekyll-sitemap'
 end
 
