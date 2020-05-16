@@ -7,7 +7,7 @@
         <div class="grid-det">
             <div class="grid-det_category">
 				{% for tags in case_studies.tag %}
-				<a href="#">{{ tags | join: " " }}</a>
+				<a href="#">{{ tags | join: " " | replace: '_', ' ' }}</a>
 				{% endfor %}
 			</div>
             <div class="grid-det-item">

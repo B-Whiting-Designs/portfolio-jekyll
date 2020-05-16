@@ -1,113 +1,56 @@
 ---
 
-layout: portfolio
+layout: folio-single
 title: One Hour Chef
 preview_title: OHC
+client: One Hour Chef
+
 image_preview: /images/folio/folio-9.jpg
+
+slide_1: /images/thumbs/ohc-images/landing_page.jpg
+slider_1_caption: <span>Local chefs</span> brought  <br> straight to your home <br> in under an <span>hour</span>
+mini_caption: A competition for the current food delivery platforms that we wanted to make into a possibility.
+
+slide_2: /images/thumbs/ohc-images/smartmockups_k5m0v0yl.png
+slide_3: 
+
 header_image: /images/thumbs/ohc-images/landing_page.jpg
+
 logo: /images/thumbs/ohc-images/logo.png
-tagline: Helping those with disablities each day
+
 permalink: /:collection/ohc/
 
-bio: DIA - NYC is a non-profit based in NYC that has been fighting the good fight to help bring equality with disabilities for years. They came to me through Taproot+ to help them with their website needs. I saw this website as a challenge to use the new platform that I planned to use for easier content management for non-profits and businesses needed. I loaded Jekyll onto their site which is fast loading and can be handled through Netlify.
+tagline: Bring the chef home with you
 
-category: [ non-profit ]
+intro: One Hour Chef was an idea that was brought about to help bring a chef to your home to rival that of UberEats and DoorDash with their method. I was signed on to help with bringing about a new way to bring the idea to a possibility.
+
+header_1: a competition ignitor
+
+header_1_content: The project was meant to be a way to challenge the competition and bring chefs locally in many areas to get business by offering an at-home luxury service. This also applied to restaurants that wanted to offer a luxury stay at home meal with all the essentials. The process went about that you ordered the chef through an app (web or mobile) amd then they would start the timer at one hour delivery once they receive it and started the order. This way you don't have it saying confirmed and then waiting hours on end for the food to arrive.
+
+header_2: focus on the landing pages
+
+header_2_content: The landing pages for the website was made to be an easy come to the site and choose what you needed. The structure was built around Bootstrap so that it can be mobile ready from the start and easy on the eyes, as much as possible. I worked on making the site design in about a weeks time and then hand coded the website from scratch in about a month time with the content provided and adding in parts that would fit.
+
+header_3: application intergration
+
+header_3_content: Also with the website we needed to have an application setup so that it can be easy to order the food and get the services of all the businesses offered. So I worked on making an application setup with a driver notification system that alerts when the driver is on the way, who the driver is, and how far they are at the time. All of this ran through WordPress for that so the businesses and chefs can add their services and food on a menu system for people to choose from ahead of time. Also worked on an api connection for Stripe Connect so that people can sign up and get paid that are providing their services on the platform. The hardest part of the project was the application and intergration as it was some setbacks when SSL is not active and secured on the domain.
+
+category: [ commercial ]
 
 tag: [ commercial, web_design, ui_design, web_dev ]
 
-services: [ UI/UX Design and Development, Branding, SEO ]
+services: [ UI/UX Design, Branding, Analytics, Content Editing, Web Development  ]
 
-programs: [ Adobe XD, Dreamweaver ]
+programs: [ Adobe XD, Bootstrap Framework ]
 
 location: Denver, CO
 
 live_url: https://www.onehourchef.com
-alt_url:
+live_text: onehourchef.com
+
+completed: 2020-02-14
+
 
 ---
 
-<div id="intro">
-    <!-- intro -->
-    <div class="container col-md-9 col-12 ml-md-auto mr-md-auto p-5">
-
-        <div class="row">
-            <div class="col-md-5 col-12">
-                <h6 class="text-muted">The challenge</h6>
-                <h4>change in platforms was a plus</h4>
-                {{ page.bio }}
-            </div>
-
-            <div class="col-md-5 col-12 ml-md-auto p-4">
-                <div class="col-md-12">
-                    <h6>services</h6>
-					{% if page.services %}
-                    <ul class="list-unstyled list-inline">
-						{% for services in page.services %}
-                        <li class="list-inline-item">
-							{{ services }}
-						</li>
-						{% endfor %}
-                    </ul>
-					{% endif %}
-                </div>
-				
-                <div class="col-md-12">
-                    <h6>tools used</h6>
-					{% if page.programs %}
-                    <ul class="list-unstyled list-inline">
-						{% for programs in page.programs %}
-                        <li class="list-inline-item">
-							{{ programs }}
-						</li>
-						{% endfor %}
-                    </ul>
-					{% endif %}
-                </div>
-
-                <div class="col-md-12">
-                    <h6>location</h6>
-                    <p>{{ page.location }}</p>
-                </div>
-
-                <div class="col-md-12">
-                    <h6>live website</h6>
-                    <a href="{{ page.live_url }}" target="_blank" class="text-link text-muted">{{ page.live_url }}</a>
-					<a href="{{ page.alt_url }}" target="_blank" class="text-link text-muted">{{ page.alt_url }}</a> - dev version
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- intro section -->
-
-    <!-- image showcase -->
-    <div class="container col-12">
-        <div class="row">
-
-            <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/screenshot-old.jpeg" class="img-fluid" alt="previous design">
-            </div>
-
-            <div class="col-4">
-                <img src="/images/thumbs/dia-nyc-images/full-screenshot-new.png" class="img-fluid" alt="current redesign">
-            </div>
-
-            <div class="col-4 pt-5">
-                <img src="/images/thumbs/dia-nyc-images/dia-logo.png" class="img-fluid" alt="logo">
-            </div>
-
-        </div>
-    </div>
-    <!-- image showcase -->
-
-    <!-- the results -->
-    <div class="container col-md-9 col-12 offset-md-3">
-
-        <div class="col-12 p-5">
-            <h6 class="text-muted">the results</h6>
-            <h4>Jekyll without the Hyde</h4>
-            <p>With the use of Jekyll, I managed to get the overall speed and functionality of the site to go to 97 overall on desktop and an 88 overall on mobile. The site was a nice test of making a brand new website on Jekyll. The site also saw an increase in overall users and retention rates by 78% and 15% respectively with the new layout.</p>
-        </div>
-
-    </div>
-    <!-- the results -->

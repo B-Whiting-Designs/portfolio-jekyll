@@ -1,113 +1,55 @@
 ---
 
-layout: portfolio
+layout: folio-single
 title: 
 preview_title: 
+client:
+
 image_preview: 
-image_real: 
+
+slide_1: 
+slider_1_caption: 
+mini_caption: 
+
+slide_2: 
+slide_3: 
+
 header_image: 
+
 logo: 
+
+permalink: /:collection/.../
+
 tagline: 
-permalink: /:collection/
 
-bio: 
+intro: 
 
-category: [  ]
+header_1: 
 
-services: [  ]
+header_1_content: 
 
-programs: [  ]
+header_2: 
+
+header_2_content: 
+
+header_3: 
+
+header_3_content: 
+
+category: [ non-profit ]
+
+tag: [ non_profit, web_design, ui_design ]
+
+services: [ Web Design, Development, Branding, SEO ]
+
+programs: [ Adobe XD, Photoshop, Creative Suite, WordPress ]
 
 location: 
 
 live_url: 
+live_text: 
+
+completed: 
 
 ---
 
-<div id="intro">
-    <!-- intro -->
-    <div class="container col-md-9 col-12 ml-md-auto mr-md-auto p-5">
-
-        <div class="row">
-            <div class="col-md-5 col-12">
-                <h6 class="text-muted">The challenge</h6>
-                <h4>A non-profit in need of change</h4>
-                {{ page.bio }}
-            </div>
-
-            <div class="col-md-5 col-12 ml-md-auto p-4">
-                <div class="col-md-12">
-                    <h6>services</h6>
-					{% if page.services %}
-                    <ul class="list-unstyled list-inline">
-						{% for services in page.services %}
-                        <li class="list-inline-item">
-							{{ services }}
-						</li>
-						{% endfor %}
-                    </ul>
-					{% endif %}
-                </div>
-				
-                <div class="col-md-12">
-                    <h6>tools used</h6>
-					{% if page.programs %}
-                    <ul class="list-unstyled list-inline">
-						{% for programs in page.programs %}
-                        <li class="list-inline-item">
-							{{ programs }}
-						</li>
-						{% endfor %}
-                    </ul>
-					{% endif %}
-                </div>
-
-                <div class="col-md-12">
-                    <h6>location</h6>
-                    <p>{{ page.location }}</p>
-                </div>
-
-                <div class="col-md-12">
-                    <h6>live website</h6>
-                    <a href="{{ page.live_url }}" target="_blank" class="text-link text-muted">{{ page.live_url }}</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- intro section -->
-
-    <!-- image showcase -->
-    <div class="container col-12">
-        <div class="row">
-
-            <div class="col-4">
-                <img src="" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="" class="img-fluid" alt="">
-            </div>
-
-
-        </div>
-    </div>
-    <!-- image showcase -->
-
-    <!-- the results -->
-    <div class="container col-md-9 col-12 offset-md-3">
-
-        <div class="col-12 p-5">
-            <h6 class="text-muted">the results</h6>
-            <h4></h4>
-            <p></p>
-        </div>
-
-    </div>
-    <!-- the results -->
-
-</div>

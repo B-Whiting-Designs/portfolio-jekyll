@@ -20,8 +20,9 @@
             <!-- wrapper -->
             <div id="wrapper">
                 <!-- content-holder  -->	
-                <div class="content-holder scroll-content" data-pagetitle="Portofolio Single {{ page.title }}">
-                    {% include nav-menu.html %} 
+                <div class="content-holder scroll-content" data-pagetitle="case study: {{ page.title }}">
+                    {% include nav-menu.html %}
+					{% include hero-wrap-home.html %}
                     <!--content -->
                     <div class="content">
                         <!-- section --> 
@@ -33,50 +34,42 @@
                                     <div class="row">
                                         <div class="col-md-8 sin-anim">
                                             <h3 class="pr-subtitle"> {{ page.title }}</h3>
-											<h6>{{ page.tagline }}</h6>
                                             <p>{{ page.intro }}</p>
+											{% if page.header_1 %}
                                             <h3 class="pr-subtitle mar-top"> The Brief</h3>
                                             <!-- accordion-->                            
                                             <div class="accordion mar-top">
-												{% if page.header_1 %}
                                                 <a class="toggle act-accordion" href="#"> {{ page.header_1 }}  <span></span></a>
                                                 <div class="accordion-inner visible">
                                                     <p>{{ page.header_1_content }}</p>
                                                 </div>
-												{% endif %}
-												{% if page.header_2 != "nul" %}
+												{% if page.header_2 %}
                                                 <a class="toggle" href="#"> {{ page.header_2 }}  <span></span></a>
                                                 <div class="accordion-inner">
                                                     <p>{{ page.header_2_content }}</p>
                                                 </div>
 												{% endif %}
-												{% if page.header_3 != "nul" %}
+												{% if page.header_3 %}
                                                 <a class="toggle" href="#"> {{ page.header_3 }}  <span></span></a>
                                                 <div class="accordion-inner">
                                                     <p>{{ page.header_3_content }}</p>
                                                 </div>
 												{% endif %}
                                             </div>
-                                            <!-- accordion end -->                                                        
+                                            <!-- accordion end -->
+											{% endif %}
                                         </div>
                                         <div class="col-md-4">
                                             <div class="pr-bg pr-bg-white"></div>
                                             <div class="project-details fl-wrap">
                                                 <ul>
-                                                    <li><span>Date :</span> {{ page.completed | date_to_long_string }} </li>
+                                                    <li><span>Date :</span> {% if page.completed %}{{ page.completed | date_to_long_string }} {% else %} In Progress {% endif %} </li>
                                                     <li><span>Client :</span> {{ page.client }}</li>
-                                                    <li><span>Category : </span>
-														<ul class="list-unstyled list-inline">
-                                                            {% for categories in page.category %}
-                                                            <li class="list-inline-item">
-                                                                {{ categories }}
-                                                            </li>
-                                                            {% endfor %}
-                                                        </ul>
-													</li>
-                                                    <li><span>Online : </span>  {{ page.live_url }}</li>
+													<li><span>Category :</span> {{ page.category }}</li>
+                                                    <li><span>Online : </span>  {{ page.live_text }}</li>
+													{% if page.alt_url %}<li><span>Dev Site: </span> <a href="{{ page.alt_url }}" target="_blank">{{ page.alt_text }}</a></li>{% endif %}
                                                 </ul>
-                                                <a href="{[ page.live_url ]}" class="btn color-bg fl-wrap">View Project</a>
+                                                <a href="{{ page.live_url }}" class="btn color-bg fl-wrap" target="_blank">View Project</a>
                                             </div>
                                         </div>
                                     </div>
@@ -86,18 +79,22 @@
                                         <div class="pr-bg pr-bg-white"></div>
                                         <div class="content-nav">
                                             <ul>
-                                                <li>
-                                                    <a href="portfolio-single2.html" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span>Prev - Project Title</span></a>
+												{% if page.previous.url %}
+                                                <li {% unless page.next.url %}style="width: 100%;"{% endunless %}>
+                                                    <a href="{{ page.previous.url }}" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span>Prev - {{ page.previous.title }}</span></a>
                                                     <div class="content-nav-media">
-                                                        <div class="bg"  data-bg="images/bg/1.jpg"></div>
+                                                        <div class="bg"  data-bg="{{ page.previous.image_preview }}"></div>
                                                     </div>
                                                 </li>
-                                                <li>
-                                                    <a href="portfolio-single3.html" class="rn ajax"><span >Next - Project Title</span> <i class="fal fa-long-arrow-right"></i></a>
+												{% endif %}
+												{% if page.next.url %}
+                                                <li {% unless page.previous.url %}style="width: 100%;"{% endunless %}>
+                                                    <a href="{{ page.next.url }}" class="rn ajax"><span >Next - {{ page.next.title }}</span> <i class="fal fa-long-arrow-right"></i></a>
                                                     <div class="content-nav-media">
-                                                        <div class="bg"  data-bg="images/bg/1.jpg"></div>
+                                                        <div class="bg"  data-bg="{{ page.next.image_preview }}"></div>
                                                     </div>
                                                 </li>
+												{% endif %}
                                             </ul>
                                         </div>
                                     </div>

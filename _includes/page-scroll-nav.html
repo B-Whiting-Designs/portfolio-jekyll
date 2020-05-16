@@ -1,3 +1,4 @@
+{% if page.layout == "default" %}
 <!--page-scroll-nav-->
 <div class="page-scroll-nav fl-wrap">
     <nav class="scroll-init color2-bg">
@@ -12,3 +13,18 @@
     <div class="arrowpagenav"></div>
 </div>
 <!--page-scroll-nav end-->
+{% endif %}
+
+{% if page.layout == "contact" and page.url != "/contact-me/success/" %}
+<div class="fixed-top-panel fl-wrap">
+    <div class="sp-fix-header fl-wrap">
+        <div class="scroll-down-wrap">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+            <span>Scroll down  to discover</span>
+        </div>
+        <a href="{{ "" | absolute_url }}" class="ajax back-to-home-btn"><span>Back to home</span></a>
+    </div>
+</div>
+{% endif %}

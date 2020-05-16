@@ -149,7 +149,7 @@
                         <a href="{{ page.slide_1 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
                         <div class="half-hero-wrap">
                             <div class="fcw-dec"></div>
-                            <div class="rotate_text">{{ page.completed }}</div>
+                            <div class="rotate_text">{% if page.completed %}{{ page.completed | date_to_long_string }} {% else %} In Progress {% endif %}</div>
                             <h1>{{ page.slider_1_caption }}</h1>
 							{% if page.mini_caption %}
                             <h4>{{ page.mini_caption }}</h4>

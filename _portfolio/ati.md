@@ -3,6 +3,7 @@
 layout: folio-single
 title: Art Transforms Inc.
 preview_title: ATI
+client: Wanda Best
 
 image_preview: /images/folio/folio-1.jpg
 
@@ -46,6 +47,7 @@ programs: [ Adobe XD, Photoshop, Creative Suite, WordPress ]
 location: Southeast Queens, NY
 
 live_url: https://www.arttransforms.org
+live_text: arttransforms.org
 
 completed: 2019-10-14
 

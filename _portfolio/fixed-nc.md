@@ -1,15 +1,39 @@
 ---
 
-layout: portfolio
+layout: folio-single
 title: Fixed NC
 preview_title: Fixed NC
-image_preview: /images/folio/folio-4.jpg
-header_image: /images/thumbs/fixed-nc-images/fixednc.png
-logo: /images/thumbs/fixed-nc-images/fnc-logo.webp
-tagline: Restoration with upscale design
-permalink: /:collection/fixed-nc/
+client: Native Rank
 
-bio: Fixed NC is a North Carolina restoration company that was established in 2018. They have over 30 years of staffing experience combined. A restoration company that wanted to get a restoration of their website design.
+image_preview: /images/folio/folio-4.jpg
+
+slide_1: /images/folio/folio-4.jpg
+slider_1_caption: Restoration company  <br> based in  <span>North Carolina</span>
+mini_caption: Restoration company that is based in Greenville, NC that I worked on under Native Rank. The site was an updated change for their company on the WordPress CMS.
+
+slide_2: /images/thumbs/fixed-nc/smartmockups_k08ww6kc.png
+slide_3: /images/thumbs/fixed-nc/smartmockups_k08wx1m4.png
+
+header_image: /images/thumbs/fixed-nc-images/fixednc.png
+
+logo: /images/thumbs/fixed-nc-images/fnc-logo.webp
+
+permalink: /:collection/fixed-nc/
+tagline: Restoration with upscale design
+
+intro: Fixed NC is a North Carolina restoration company that was established in 2018. They have over 30 years of staffing experience combined. A restoration company that wanted to get a restoration of their website design. The original focus on my design was to give it a whitespace and use of background layers behind the images.
+
+header_1: first bit of my own style injected
+
+header_1_content: I started with a simple change in a design and implanted my own version of it inside. The use of rounded borders made it a bit welcoming to me and the touch of the faded green behind the images was a nice change to get it modern. A box shadow around the box was meant to be there for helping show an effect when it is hovered over. I also helped with writing the code behind the layered box effect with the images and the content boxes using the psuedo ::before and ::after styles. A challenge but was fun to make it so it can be coded and responsive instead of an image each time.
+
+header_2: restoration with upscale design
+
+header_2_content: Update of their old site was easy to do as it was a small scale site that was in need of a change. Making a unified site structure was an improvement overall for their design. With a unified structure it helped with user interaction and increase in traffic and calls to their business locally for work. I say that was a job well done in my book, if I do say so myself.
+
+header_3: 
+
+header_3_content: 
 
 category: [ commercial ]
 
@@ -22,93 +46,9 @@ programs: [ Photoshop, WordPress ]
 location: Greenville, NC
 
 live_url: https://www.fixednc.com/
+live_text: fixednc.com
+
+completed: 2019-07-18
 
 ---
 
-<div id="intro">
-    <!-- intro -->
-    <div class="container col-md-9 col-12 ml-md-auto mr-md-auto p-5">
-
-        <div class="row">
-            <div class="col-md-5 col-12">
-                <h6 class="text-muted">The challenge</h6>
-                <h4>major update in design</h4>
-                {{ page.bio }}
-            </div>
-
-            <div class="col-md-5 col-12 ml-md-auto p-4">
-                <div class="col-md-12">
-                    <h6>services</h6>
-					{% if page.services %}
-                    <ul class="list-unstyled list-inline">
-						{% for services in page.services %}
-                        <li class="list-inline-item">
-							{{ services }}
-						</li>
-						{% endfor %}
-                    </ul>
-					{% endif %}
-                </div>
-				
-                <div class="col-md-12">
-                    <h6>tools used</h6>
-					{% if page.programs %}
-                    <ul class="list-unstyled list-inline">
-						{% for programs in page.programs %}
-                        <li class="list-inline-item">
-							{{ programs }}
-						</li>
-						{% endfor %}
-                    </ul>
-					{% endif %}
-                </div>
-
-                <div class="col-md-12">
-                    <h6>location</h6>
-                    <p>{{ page.location }}</p>
-                </div>
-
-                <div class="col-md-12">
-                    <h6>live website</h6>
-                    <a href="{{ page.live_url }}" target="_blank" class="text-link text-muted">{{ page.live_url }}</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- intro section -->
-
-    <!-- image showcase -->
-    <div class="container col-12">
-        <div class="row">
-
-            <div class="col-4">
-                <img src="/images/thumbs/fixed-nc-images/smartmockups_k08wx1m4.png" class="img-fluid" alt="mockup 1">
-            </div>
-
-            <div class="col-4">
-                <img src="/images/thumbs/fixed-nc-images/smartmockups_k08ww6kc.png" class="img-fluid" alt="mockup 2">
-            </div>
-
-            <div class="col-4">
-                <img src="/images/thumbs/fixed-nc-images/fnc-logo.webp" class="img-fluid" alt="logo">
-            </div>
-
-
-        </div>
-    </div>
-    <!-- image showcase -->
-
-    <!-- the results -->
-    <div class="container col-md-9 col-12 offset-md-3">
-
-        <div class="col-12 p-5">
-            <h6 class="text-muted">the results</h6>
-            <h4>restoration with upscale design</h4>
-            <p>Update of their old site was easy to do as it was a small scale site that was in need of a change. Making a unified site structure was an improvement overall for their design. With a unified structure it helped with user interaction and increase in traffic and calls to their business locally for work. I say that was a job well done in my book, if I do say so myself.</p>
-        </div>
-
-    </div>
-    <!-- the results -->
-
-</div>
