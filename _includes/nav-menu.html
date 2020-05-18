@@ -7,16 +7,21 @@
             <nav class="nav-inner" id="menu">
                 <ul>
                     <li>
-                        <a href="{{ "" | absolute_url }}" class="{% if page.url == "/" %}act-link{% endif %}">Home</a>
+                        <a href="{{ "" | absolute_url }}" class="ajax {% if page.url == "/" %}act-link{% endif %}">Home</a>
                     </li>
                     <li>
-                        <a href="/portfolio/" class="{% if page.url == "/portfolio/" %}act-link{% endif %}">Portfolio</a>
+                        <a href="/portfolio/" class="ajax {% if page.url == "/portfolio/" %}act-link{% endif %}">Portfolio</a>
                     </li>
                     <li>
 						<a href="/contact-me/" class="ajax {% if page.url == "/contact-me/" %}act-link{% endif %}">Contact Me</a>
 					</li>
                     <li>
-						<a href="{{ site.blog_url }}" class="ajax">Blog</a>
+						<a href="#">Blog</a>
+						<!-- subsection -->
+						<ul>
+							<li><a href="{{ site.blog_url }}" class="ajax">Design Shack</a></li>
+							<li><a href="{{ site.blog_url }}/posts/" class="ajax">All Articles</a></li>
+						</ul>
 					</li>
                 </ul>
             </nav>
