@@ -1,0 +1,85 @@
+                            {% for post in paginator.posts %}
+                            <!--section -->
+                            <section   class="hidden-section article bot-element">
+                                <div class="col-wc_dec"></div>
+                                <div class="container">
+                                    <div class="section-title fl-wrap post-title">
+										<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                                        <div class="post-header"> 
+                                            <a href="#">{{ post.date | date_to_long_string }}</a>
+                                            <span>Category : </span> {% for category in post.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% endfor %}
+                                        </div>
+                                    </div>
+                                    <!-- media-wrap-->
+                                    <div class="media-wrap  lightgallery  fl-wrap">
+                                        <div class="single-slider-wrap">
+                                            <div class="single-slider fl-wrap">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper lightgallery" style="height: 380px;">
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ post.featured_image }}" alt="">
+                                                            <a href="{{ post.featured_image }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% if post.slide_2 %}
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ post.slide_2 }}" alt="">
+                                                            <a href="{{ post.slide_2 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% endif %}
+                                                        {% if post.slide_3 %}
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ post.slide_3 }}" alt="">
+                                                            <a href="{{ post.slide_3 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                                {% if post.slide_2 %}
+                                                <div class="ss-slider-cont ss-slider-cont-prev  "><i class="fal fa-long-arrow-left"></i></div>
+                                                <div class="ss-slider-cont ss-slider-cont-next  "><i class="fal fa-long-arrow-right"></i></div>
+                                                <div class="ss-slider-controls">
+                                                    <div class="ss-slider-pagination"></div>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- media-wrap end --> 
+                                    <div class="post-block fl-wrap">
+                                        <div class="post-opt fl-wrap">
+                                            <ul>
+                                                <li><a href="#"><i class="fal fa-user"></i> {{ post.author }}</a></li>
+                                            </ul>
+                                        </div>
+                                        {{ post.excerpt }}
+                                        <a href="{{ post.url }}" class="btn ajax  fl-btn color-bg">Read more</a>
+                                    </div>
+                                    <div class="sec-number">{{ forloop.index | prepend: '0' }}</div>
+                                </div>
+                            </section>
+                            <!--section end -->
+                            <div class="section-separator bot-element"><span class="fl-wrap"></span></div>
+                            {% endfor %}
+
+							{% if paginator.total_pages > 1 %}
+                            <!--pagination-->   
+                            <div class="pagination bot-element">
+                                <div class="pr-bg pr-bg-white"></div>
+                                <div class="container">
+									{% if paginator.previous_page %}
+                                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prevposts-link"><i class="fal fa-long-arrow-left"></i></a>
+									{% endif %}
+									{% if paginator.page_trail %}
+										{% for trail in paginator.page_trail %}
+										<a href="{{ trail.path | prepend: site.baseurl }}" {% if page.url == trail.path %}class="current-page"{% endif %} title="{{ trail.title }}">{{ trail.num }}</a>
+										{% endfor %}
+									{% endif %}
+									{% if paginator.next_page %}
+                                    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="nextposts-link"><i class="fal fa-long-arrow-right"></i></a>
+									{% endif %}
+                                </div>
+                            </div>
+                            <!--pagination end-->
+							{% endif %}
+
+                            <div class="limit-box fl-wrap"></div>

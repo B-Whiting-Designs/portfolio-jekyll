@@ -11,74 +11,19 @@
 	Hover import rule being used for the hover effects on documents
 */
 
-#newsletter-form input {
-	width: 100%;
-	border-radius: 1rem;
-	padding: 2px 1rem; margin: 0.5rem 0.25rem;
+.swiper-wrapper {
+	height: 360px !important;
 }
 
-.featured-image {
-	height: 340px;
-	overflow: hidden;
-	padding: 2rem 0px;
-	transition: opacity 0.3s ease-in-out;
+.post-block figure img {
+	width: calc(100vw - (100vw - 100%));
 }
 
-
-.featured-image:hover {
-	opacity: 0.6;
+.post-block figcaption {
+	margin-top: 1em; margin-bottom: 1em;
 }
 
-.featured-image img {
-	border-radius: 1rem;
-}
-
-.featured-excerpt {
-	margin-top: 2rem;
-}
-
-.featured-tags {
-	padding-top: 1rem;
-}
-
-.featured-tags a, #bw-recent-news-home .post-tag a {
-	color: #d62828;
-}
-
-.featured-link {
-	padding-top: 1rem; padding-bottom: 1rem;
-}
-
-
-#bw-recent-news-home img {
-	border-radius: 1rem;
-	margin-top: 1rem;
-}
-
-.post-row {
-	margin-top: 0.5rem; margin-bottom: 0.5rem;
-}
-
-#post-details .excerpt {
-	padding: 1rem;
-}
-
-.author-card {
-	border: 1px solid rgba(255,253,253,0.20);
-	border-radius: 6px;
-	padding: 1rem 2rem;
-}
-
-.author-card .pic {
-	
-}
-
-.author-card .detail {
-	padding: 1.5rem;
-}
-
-.author-card .detail p {
-	font-family: 'Quicksand', 'sans-serif';
-	font-weight: 300;
-	color: rgba(255,253,253,0.50);
+.post-block ul {
+	text-align: left;
+	padding: 1.5em;
 }

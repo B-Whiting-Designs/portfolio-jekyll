@@ -1,0 +1,36 @@
+<div class="fixed-top-panel fl-wrap">
+    <div class="sp-fix-header fl-wrap">
+        <div class="scroll-down-wrap hide_onmobile">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+            <span>Scroll down  to discover</span>
+        </div>
+        <div class="search-btn"><i class="fal fa-search"></i><span>Search</span></div>
+		{% if page.tags != empty %}
+        <!-- filter tag   -->
+        <div class="tag-filter blog-btn-filter">
+            <div class="blog-btn">Tags <i class="fa fa-tags" aria-hidden="true"></i></div>
+            <ul>
+				{% for tag in page.tags %}
+                <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+				{% endfor %}
+            </ul>
+        </div>
+		{% endif %}
+        <!-- filter tag end  -->
+		{% if page.categories != empty %}
+        <!-- filter category    -->
+        <div class="category-filter blog-btn-filter">
+            <div class="blog-btn">Categories <i class="fa fa-list-ul" aria-hidden="true"></i></div>
+            <ul>
+				{% for category in page.categories %}
+                <li><a href="/category/{{ category }}">{{ category }}</a></li>
+				{% endfor %}
+            </ul>
+        </div>
+        <!-- filter category end  -->
+		{% endif %}
+    </div>
+    <div class="blog-search-wrap"><input name="se" id="se" type="text" class="search" placeholder="Type and click Enter to search.." value="" /></div>
+</div>

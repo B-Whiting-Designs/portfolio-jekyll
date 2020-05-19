@@ -1,0 +1,180 @@
+                            {% if page.layout == "blog-default" %}
+								{% for post in site.posts %}
+                            <!--section -->
+                            <section   class="hidden-section article bot-element">
+                                <div class="col-wc_dec"></div>
+                                <div class="container">
+                                    <div class="section-title fl-wrap post-title">
+                                        <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                                        <div class="post-header"> 
+                                            <a href="#">{{ post.date | date_to_long_string }}</a>
+                                            <span>Category : </span> {% for category in post.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% endfor %}
+                                        </div>
+                                    </div>
+                                    <!-- media-wrap-->
+                                    <div class="media-wrap  lightgallery  fl-wrap">
+                                        <div class="single-slider-wrap">
+                                            <div class="single-slider fl-wrap">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper lightgallery">
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ post.featured_image }}" alt="">
+                                                            <a href="{{ post.featured_image }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% if post.slide_2 %}
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ post.slide_2 }}" alt="">
+                                                            <a href="{{ post.slide_2 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% endif %}
+                                                        {% if post.slide_3 %}
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ post.slide_3 }}" alt="">
+                                                            <a href="{{ post.slide_3 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                                {% if post.slide_2 %}
+                                                <div class="ss-slider-cont ss-slider-cont-prev  "><i class="fal fa-long-arrow-left"></i></div>
+                                                <div class="ss-slider-cont ss-slider-cont-next  "><i class="fal fa-long-arrow-right"></i></div>
+                                                <div class="ss-slider-controls">
+                                                    <div class="ss-slider-pagination"></div>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- media-wrap end --> 
+                                    <div class="post-block fl-wrap">
+                                        <div class="post-opt fl-wrap">
+                                            <ul>
+                                                <li><a href="#"><i class="fal fa-user"></i> {{ post.author | replace: '_', ' ' }}</a></li>
+                                            </ul>
+                                        </div>
+										<p>{{ post.preview }}</p>
+                                        <a href="{{ post.url }}" class="btn ajax  fl-btn color-bg">Read more</a>
+                                    </div>
+                                    <div class="sec-number">{{ forloop.index | prepend: '0' }}</div>
+                                </div>
+                            </section>
+                            <!--section end -->
+                            <div class="section-separator bot-element"><span class="fl-wrap"></span></div>
+                            	{% endfor %}
+							{% endif %}
+
+							{% if page.layout == "post" %}
+                            <!--section -->
+                            <section   class="hidden-section bot-element">
+                                <div class="col-wc_dec"></div>
+                                <div class="container">
+                                    <div class="section-title fl-wrap post-title">
+                                        <h3>{{ page.title }}</h3>
+                                        <div class="post-header"> 
+											<a href="#">{{ page.date | date_to_long_string }}</a>
+											<span>Category : </span>{% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% endfor %}
+										</div>
+                                    </div>
+                                    <!-- media-wrap-->
+                                    <div class="media-wrap  lightgallery  fl-wrap">
+                                        <div class="single-slider-wrap">
+                                            <div class="single-slider fl-wrap">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper lightgallery">
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ page.featured_image }}" alt="">
+                                                            <a href="{{ page.featured_image }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% if page.slide_2 %}
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ page.slide_2 }}" alt="">
+                                                            <a href="{{ page.slide_2 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% endif %}
+                                                        {% if page.slide_3 %}
+                                                        <div class="swiper-slide hov_zoom">
+                                                            <img src="{{ page.slide_3 }}" alt="">
+                                                            <a href="{{ page.slide_3 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                                        </div>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                                {% if page.slide_2 %}
+                                                <div class="ss-slider-cont ss-slider-cont-prev  "><i class="fal fa-long-arrow-left"></i></div>
+                                                <div class="ss-slider-cont ss-slider-cont-next  "><i class="fal fa-long-arrow-right"></i></div>
+                                                <div class="ss-slider-controls">
+                                                    <div class="ss-slider-pagination"></div>
+                                                </div>
+												{% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- media-wrap end --> 
+                                    <div class="post-block fl-wrap">
+                                        <div class="post-opt fl-wrap">
+                                            <ul>
+                                                <li><a href="#"><i class="fal fa-user"></i> {{ page.author | replace: '_', ' ' }}</a></li>
+                                            </ul>
+                                        </div>
+                                        {{ content }}
+                                    </div>
+                                    <!-- post-author--> 
+									{% assign author = site.authors | where: 'name', page.author | first %} 
+									{% if page.author %}
+                                    <div class="post-author">
+                                        <div class="author-img">
+                                            <img alt='' src="images/team/2.jpg">	
+                                        </div>
+                                        <div class="author-content">
+                                            <h5><a href="#">{{ author.display_name }}</a></h5>
+                                            {{ author.content | markdownify }}
+											{% if author.web %}
+                                            <div class="author-social">
+                                                <ul>
+													{% if author.facebook %}<li><a href="{{ author.facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>{% endif %}
+                                                    {% if author.instagram %}<li><a href="{{ author.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a></li>{% endif %}
+                                                    {% if author.twitter %}<li><a href="{{ author.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a></li>{% endif %}
+                                                    {% if author.dribbble %}<li><a href="{{ author.dribbble }}" target="_blank"><i class="fab fa-dribbble"></i></a></li>{% endif %}
+                                                </ul>
+                                            </div>
+											{% endif %}
+                                        </div>
+                                    </div>
+									{% endif %}
+                                    <!--post-author end-->
+									{% if site.disqus.shortname %}
+									<!-- comments -->
+									{% include disqus-comment.html %}                                    
+									<!--comments end -->
+									{% endif %}
+                                    <!--content-nav_holder-->            
+                                    <div class="content-nav_holder fl-wrap blog-nav">
+                                        <div class="pr-bg pr-bg-white"></div>
+                                        <div class="content-nav">
+                                            <ul>
+												{% if page.previous.url %}
+                                                <li {% unless page.next.url %}style="width: 100%;"{% endunless %}>
+                                                    <a href="{{ page.previous.url }}" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span>Prev - {{ page.previous.title }}</span></a>
+                                                    <div class="content-nav-media">
+                                                        <div class="bg"  data-bg="{{ page.previous.featured_image }}"></div>
+                                                    </div>
+                                                </li>
+												{% endif %}
+												{% if page.next.url %}
+                                                <li {% unless page.previous.url %}style="width: 100%;"{% endunless %}>
+                                                    <a href="{{ page.next.url }}" class="rn ajax"><span >Next - {{ page.next.title }}</span> <i class="fal fa-long-arrow-right"></i></a>
+                                                    <div class="content-nav-media">
+                                                        <div class="bg"  data-bg="{{ page.next.featured_image }}"></div>
+                                                    </div>
+                                                </li>
+												{% endif %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--content-nav_holder end -->                                          
+                                    <div class="sec-number">01.</div>
+                                </div>
+                                <div class="col-wc_dec col-wc_dec2 col-wc_dec3"></div>
+                            </section>
+                            <!--section end -->
+							{% endif %}
