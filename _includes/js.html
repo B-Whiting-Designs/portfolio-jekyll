@@ -2,3 +2,16 @@
 <script src="/assets/js/jquery.min.js"></script>      
 <script src="/assets/js/plugins.js"></script>
 <script src="/assets/js/scripts.js"></script> 
+
+<!--=============== Netlify CMS script ================-->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
