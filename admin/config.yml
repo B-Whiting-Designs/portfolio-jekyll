@@ -16,8 +16,8 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featured_image", widget: "image"}
       - {label: "Image Caption", name: "image_caption", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Category", name: "categories", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Category", name: "categories", widget: "list"}
       - {label: "Excerpt", name: "preview", widget: "markdown"}
       - {label: "Permalink", name: "permalink", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
