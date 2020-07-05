@@ -126,7 +126,7 @@
                                             <img alt='' src="images/team/2.jpg">	
                                         </div>
                                         <div class="author-content">
-                                            <h5><a href="#">{{ author.display_name }}</a></h5>
+                                            <h5><a href="#">{{ author.display_name | replace: '_', ' ' }}</a></h5>
                                             {{ author.content | markdownify }}
 											{% if author.web %}
                                             <div class="author-social">
