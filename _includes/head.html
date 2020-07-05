@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link type="text/css" rel="stylesheet" href="/css/plugins.css">
     <link type="text/css" rel="stylesheet" href="/css/style.css">
     <link type="text/css" rel="stylesheet" href="/css/color.css">
-	{% if page.layout == "blog-default" or "post" or "pagination" %}
+	{% if page.layout == "blog-default" or page.layout == "post" or page.layout == "pagination" %}
 	<link type="text/css" rel="stylesheet" href="/css/main-styles.css">
 	{% endif %}
 

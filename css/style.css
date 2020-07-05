@@ -3164,6 +3164,7 @@ section {
 	float: left;
 	overflow: hidden;
 }
+
 .gallery-item-second,
 .grid-sizer-second {
 	width: 66.6%;
@@ -3171,7 +3172,8 @@ section {
 .four-column .gallery-item {
 	width: 25%;
 }
-.four-column .gallery-item.gallery-item-second   , .two-column .gallery-item{
+.four-column .gallery-item.gallery-item-second, .four-column .gallery-item:nth-child(3),
+.two-column .gallery-item {
 	width: 50%;
 }
 .gallery-item img,
