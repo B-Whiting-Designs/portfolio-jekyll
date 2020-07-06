@@ -70,7 +70,7 @@
                                                     <li><span>Date :</span> {% if page.completed %}{{ page.completed | date_to_long_string }} {% else %} In Progress {% endif %} </li>
                                                     <li><span>Client :</span> {{ page.client }}</li>
 													<li><span>Category :</span> {{ page.category }}</li>
-                                                    <li><span>Online : </span>  {{ page.live_text }}</li>
+                                                    <li><span>Online : </span>  <a href="{{ page.live_url }}" target="_blank">{{ page.live_text }}</a></li>
 													{% if page.alt_url %}<li><span>Dev Site: </span> <a href="{{ page.alt_url }}" target="_blank">{{ page.alt_text }}</a></li>{% endif %}
                                                 </ul>
                                                 <a href="{{ page.live_url }}" class="btn color-bg fl-wrap" target="_blank">View Project</a>

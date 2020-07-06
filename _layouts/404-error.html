@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		{% include head.html %}
+		
+	</head>
+	
+<body>
+    <!--loader-->
+    <div class="loader-wrap color-bg">
+        <div class="loader-bg"></div>
+        <div class="loader-inner">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <!--loader end-->
+	<!-- Main -->
+	<div id="main">
+		<!-- header -->
+		{% include header.html %}
+		<!-- header end -->
+            <!-- wrapper -->
+            <div id="wrapper">
+                <!-- content-holder  -->	
+                <div class="content-holder scroll-content" data-pagetitle="welcome to my portfolio">
+					{% include nav-menu.html %}
+					<!-- fixed-column-wrap --> 					
+                    <div class="fixed-column-wrap">
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar color-bg"></div>
+                        </div>
+                        <div class="column-image fl-wrap full-height">
+                            <div class="bg bg-scroll"  data-bg="/images/bg/coding.jpg"></div>
+                            <div class="overlay"></div>
+                            <div class="column-image-anim"></div>
+                        </div>
+                        <div class="fcw-dec"></div>
+                        <div class="fixed-column-tilte fdct fcw-title"><span  id="quote">About me</span></div>
+                    </div>
+                    <!-- fixed-column-wrap end-->
+					{% include hero-wrap-home.html %}
+                    <!--content  end -->
+                    <!--footer-->
+					{% include footer.html %}
+                    <!--footer  end -->
+                </div>
+                <!-- content-holder end -->
+            </div>
+            <!--wrapper end -->
+            <!-- cursor-->
+            <div class="element">
+                <div class="element-item"></div>
+            </div>
+            <!-- cursor end-->          
+        </div>
+        <!-- Main end -->
+		
+		{% include js.html %}
+	
+	</body>    
+</html>

@@ -202,3 +202,23 @@
 <!-- hero-slider-wrap  end--> 
 
 {% endif %}
+
+{% if page.layout == "404-error" %}
+<!-- hero-wrap -->
+<div class="hero-wrap fl-wrap full-height">
+    <div class="bg"  data-bg="images/bg/1.jpg"></div>
+    <div class="overlay"></div>
+    <div class="error-wrap fl-wrap">
+        <div class="container">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.tagline }}</p>
+            <div class="clearfix"></div>
+            <a href="{{ "" | absolute_url }}" class="btn color-bg">Back to Home Page</a>
+        </div>
+    </div>
+    <div class="hero-corner"></div>
+    <div class="hero-corner2"></div>
+    <div class="hero-corner3"></div>
+</div>
+<!-- hero-wrap end -->
+{% endif %}
