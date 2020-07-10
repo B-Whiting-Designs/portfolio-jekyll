@@ -6,18 +6,14 @@ featured_image: /images/uploads/dnd.jpg
 image_caption: Dungeon and Dragons
 categories:
   - Writing
-preview: So I am working on a new idea for a story novel that I used to write
-  back in highschool and make it now. I used to write novels and had a whole
-  binder (2 to 3) full of stories that I made while bored.
+preview: This story is an advancement of my prior story that I wrote back in
+  high school. Let's see if I still have my talent for writing stories that I
+  had in the past so many years ago.
 author: brian_whiting
 tags:
   - Godslayer's Awakening
   - Story time
-permalink: /blog/new-story/
+permalink: /blog/godslayer-awakening-part-1/
 comments: true
 ---
-
-I am working on a new story based on my comic I made called Godslayer's Awakening back in like late 2006 to 2007 when I worked on video games before. I am deciding to take up the idea once more and make a full story out of it due to my love of DnD and wanting to finish it finally. It might not really get much exposure, but this would be for my own personal pleasure.
-
-So this post will be just to give a taste of what the idea of comic/story being created and posted here for others to see whenever they want.
-
+Story will go here
