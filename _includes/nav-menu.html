@@ -6,23 +6,29 @@
             <!-- nav -->
             <nav class="nav-inner" id="menu">
                 <ul>
-                    <li>
-                        <a href="{{ "" | absolute_url }}" class="ajax {% if page.url == "/" %}act-link{% endif %}">Home</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio/" class="ajax {% if page.url == "/portfolio/" %}act-link{% endif %}">Portfolio</a>
-                    </li>
-                    <li>
-						<a href="#">Blog</a>
-						<!-- subsection -->
-						<ul>
-							<li><a href="/blog/" class="ajax">Design Shack</a></li>
-							<li><a href="/blog/posts/" class="ajax">All Articles</a></li>
-						</ul>
-					</li>
-                    <li>
-						<a href="/contact-me/" class="ajax {% if page.url == "/contact-me/" %}act-link{% endif %}">Contact Me</a>
-					</li>
+                    {% assign links = site.data.nav %}
+                    {% for link in links %}
+                        {% if link.subnav %}
+                            <li class="{% if page.url == link.subnav.url %}act-link{% endif %}">
+                                <a href="#">{{ link.title }}</a>
+                                <ul>
+                                {% for sublink in link.subnav %}
+                                    <li>
+                                        <a href="{{ sublink.url }}" class="ajax">
+                                            {{ sublink.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                                </ul>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="{{ link.url }}" class="ajax {% if link.url == page.url %}act-link{% endif %}">
+                                    {{ link.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
             </nav>
             <!-- nav end-->

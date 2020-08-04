@@ -1,0 +1,12 @@
+- title: Home
+  url: /
+- title: Portfolio
+  url: /portfolio/
+- title: Blog
+  subnav:
+    - title: Design Shack
+      url: /blog/
+    - title: All Articles
+      url: /blog/posts/
+- title: Contact Me
+  url: /contact-me/
