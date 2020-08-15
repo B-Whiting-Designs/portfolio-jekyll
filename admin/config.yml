@@ -58,4 +58,4 @@ collections:
       - {label: "Location", name: "tag", widget: "string"}
       - {label: "Live Site", name: "live_url", widget: "string"}
       - {label: "Site Name", name: "live_text", widget: "string"}
-      - {label: "Date Completed", name: "tag", widget: "datetime"}
+      - {label: "Date Completed", name: "completed", widget: "datetime"}
