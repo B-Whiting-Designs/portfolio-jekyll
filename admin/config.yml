@@ -4,6 +4,9 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "images"
 public_folder: "/images/"
+site_url: https://www.bwhitingdesigns.com
+display_url: https://www.bwhitingdesigns.com
+logo_url: https://www.bwhitingdesigns.com/images/my-logo.png
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -21,3 +24,38 @@ collections:
       - {label: "Excerpt", name: "preview", widget: "markdown"}
       - {label: "Permalink", name: "permalink", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
+    label: "Portfolio" # Used in the UI
+    folder: "_portfolio" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "folio-single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Short Name", name: "preview_title", widget: "string"}
+      - {label: "Client", name: "client", widget: "string"}
+      - {label: "Featured Image", name: "image_preview", widget: "image"}
+      - {label: "Carousel Slide: 1", name: "slide_1", widget: "image"}
+      - {label: "Carousel Caption: 1", name: "slider_1_caption", widget: "text"}
+      - {label: "Carousel Small Caption", name: "mini_caption", widget: "text"}
+      - {label: "Carousel Slide: 2", name: "slide_2", widget: "image"}
+      - {label: "Carousel Slide: 3", name: "slide_3", widget: "image"}
+      - {label: "Folio Grid Image Full", name: "header_image", widget: "image"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Tagline", name: "tagline", widget: "string"}
+      - {label: "Introduction Paragraph", name: "intro", widget: "text"}
+      - {label: "Heading 1: Title", name: "header_1", widget: "string"}
+      - {label: "Heading 1: Content", name: "header_1_content", widget: "text"}
+      - {label: "Heading 2: Title", name: "header_2", widget: "string"}
+      - {label: "Heading 2: Content", name: "header_2_content", widget: "text"}
+      - {label: "Heading 3: Title", name: "header_3", widget: "string"}
+      - {label: "Heading 3: Content", name: "header_3_content", widget: "text"}
+      - {label: "Category", name: "category", widget: "list"}
+      - {label: "Tags", name: "tag", widget: "list"}
+      - {label: "Services", name: "services", widget: "list"}
+      - {label: "Programs", name: "programs", widget: "list"}
+      - {label: "Location", name: "tag", widget: "string"}
+      - {label: "Live Site", name: "live_url", widget: "string"}
+      - {label: "Site Name", name: "live_text", widget: "string"}
+      - {label: "Date Completed", name: "tag", widget: "datetime"}
