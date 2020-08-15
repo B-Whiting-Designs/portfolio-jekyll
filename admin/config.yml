@@ -5,7 +5,6 @@ publish_mode: editorial_workflow
 media_folder: "images"
 public_folder: "/images/"
 site_url: https://www.bwhitingdesigns.com
-display_url: https://www.bwhitingdesigns.com
 logo_url: https://www.bwhitingdesigns.com/images/my-logo.png
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
