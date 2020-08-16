@@ -77,7 +77,7 @@ collections:
         name: 'slide_1'
         widget: 'image'
         required: true
-      - label: Carousel Caption: 1
+      - label: 'Carousel Caption: 1'
         name: slide_1_caption
         widget: text
         required: true
@@ -105,22 +105,22 @@ collections:
         name: intro
         widget: text
         required: true
-      - label: Heading 1: Title 
+      - label: 'Heading 1: Title' 
         name: header_1
         widget: string
-      - label: Heading 1: Content
+      - label: 'Heading 1: Content'
         name: header_1_content
         widget: text
-      - label: Heading 2: Title
+      - label: 'Heading 2: Title'
         name: header_2
         widget: string
-      - label: Heading 2: Content
+      - label: 'Heading 2: Content'
         name: header_2_content
         widget: text
-      - label: Heading 3: Title
+      - label: 'Heading 3: Title'
         name: header_3
         widget: string
-      - label: Heading 3: Content
+      - label: 'Heading 3: Content'
         name: header_3_content
         widget: text
       - label: Category
