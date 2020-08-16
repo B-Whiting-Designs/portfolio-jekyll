@@ -124,7 +124,8 @@ collections:
         name: header_3_content
         widget: text
       - label: Category
-        name: category, widget: list
+        name: category
+        widget: list
       - label: Tags
         name: tag
         widget: list
