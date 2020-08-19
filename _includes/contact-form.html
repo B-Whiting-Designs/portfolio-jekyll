@@ -44,8 +44,11 @@
         </div>
         <div id="contact-form" class="cf-wrap">
             <div id="message"></div>
-            <form  class="custom-form" name="contact-form" method="POST" accept-charset="UTF-8" netlify-honeypot="false-field" data-netlify-recaptcha="true" data-netlify="true">
+            <form  class="custom-form" name="contact-form" method="POST" accept-charset="UTF-8" netlify-honeypot="false-field" data-netlify="true">
                 <fieldset>
+                    <p class="hidden">
+                        <label>Don't fill out this field if your human: <input name="false-field"></label>
+                    </p>
                     <div class="row">
                         <div class="col-md-6">
                             <label><i class="fal fa-user"></i></label>
