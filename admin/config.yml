@@ -3,6 +3,7 @@ backend:
   branch: master
 
 site_url: https://www.bwhitingdesigns.com
+display_url: https://www.bwhitingdesigns.com
 logo_url: https://www.bwhitingdesigns.com/images/my-logo.png
 publish_mode: editorial_workflow
 media_folder: images
