@@ -80,12 +80,12 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  jekyll (~> 4.0.0)
+  jekyll (~> 4.0.1)
   jekyll-feed (~> 0.12)
   jekyll-paginate-v2
   jekyll-seo-tag
   jekyll-sitemap
-  tzinfo (~> 1.2)
+  tzinfo (~> 1.2.7)
   tzinfo-data
   wdm (~> 0.1.1)
 
