@@ -1,0 +1,36 @@
+- cards:
+  front:
+    - title: Ui/Ux Design
+      background: "images/services/spin-the-wheel.jpg"
+      list:
+        - items: Concept
+        - items: Prototyping
+    - title: Branding
+      background: "images/services/branding.jpg"
+      list:
+        - items: Marketing
+        - items: Design
+    - title: Front-end Development
+      background: "images/services/html-codes.jpg"
+      list:
+        - items: Custom Tailored
+        - items: Content Editing
+        - items: JekyllRB/CMS
+  back:
+    - text: Making a website can be a challenge, but I am ready for it
+      icon: fa-desktop
+      price:
+        - min: '150'
+          max: '400'
+  back:
+    - text: A change can be a great start to get you back on track
+      icon: fa-pagelines
+      price:
+        - min: '100'
+          max: '300'
+  back:
+    - text: Full tailored development services with content editing support
+      icon: fa-desktop
+      price:
+        - min: '225'
+          max: '1300'

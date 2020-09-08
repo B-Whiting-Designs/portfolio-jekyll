@@ -1,92 +1,62 @@
-{% if page.layout == "default" %}
+{% assign infos = site.data.pages.home | where: "section", "about" %}
+{% for info in infos %}
 <section id="sec2" class="hidden-section scroll-con-sec bot-element">
   <div class="col-wc_dec"></div>
   <div class="container">
-      <div class="section-title fl-wrap">
-          <h3>About me</h3>
-          <p>I create detailed, custom, modern high-quality designs for your brand needs </p>
+    <div class="section-title fl-wrap">
+      <h3>{{ info.title }}</h3>
+      <p>{{ info.tagline }}</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="dec-img   fl-wrap">
+          <picture>
+            <source srcset="/images/svgs/black_man_laptop.svg" type="image/svg+xml">
+            <source srcset="/images/black_man_laptop.webp" type="image/webp">
+            <img src="/images/black_man_laptop.png" class="respimg" alt="">
+          </picture>
+        </div>
       </div>
-      <div class="row">
-          <div class="col-sm-5">
-              <div class="dec-img   fl-wrap">
-                  <img src="/images/profile-pic.jpg" class="respimg" alt="">
-              </div>
+      <div class="col-sm-7">
+        <div class="main-about fl-wrap">
+          <h5>{{ info.header }}</h5>
+          <h2>{{ info.sub_header }}</h2>
+          <p>{{ info.content }}</p>
+          <div class="dec-list fl-wrap">
+            {% for list in info.list %}
+            <ul>
+              <li>{{ list.text }}</li>
+            </ul>
+            {% endfor %}
           </div>
-          <div class="col-sm-7">
-              <div class="main-about fl-wrap">
-                  <h5>Southern techy that moved West Coast</h5>
-                  <h2>Creative solutions <br>to boost <span> your projects </span> needs</h2>
-                  <p>Born and raised in Alabama. From the early youth of middle school I had a passion for design and all things pixel. I been working on my craft since 2005 on my own and been making it happen. Slowly I made my way west to Colorado where I currently reside. I have done many work in the field of UI/UX Design and Development. Over the years I have worked with different companies and organizations. The speciality started in small - medium businesses and have grown to specialization for non-profits.</p>
-                  <div class="dec-list fl-wrap">
-                      <ul>
-                          <li>Been designing and developing since 2005</li>
-                          <li>Detailed oriented UI/UX Designer</li>
-                          <li>Started to enjoy IE with emergence of MS Edge</li>
-                          <li>A #GirlDad and proud of his Dad jokes</li>
-                      </ul>
-                  </div>
-                  <a href="/portfolio/" class="btn ajax  fl-btn color-bg">My Portfolio</a>
-              </div>
-          </div>
+          <a href="{{ info.btn-url }}" class="btn ajax  fl-btn color-bg">{{ info.btn-text }}</a>
+        </div>
       </div>
-      <div class="sec-number">01.</div>
+    </div>
+    <div class="sec-number">{{ info.order | append: '.' }}</div>
   </div>
 </section>
 <!--section about end -->
 <!--section -->
 <section class="dark-bg bot-element">
-    <div class="container">
-        <div class="inline-facts-container fl-wrap">
-            <!-- inline-facts -->
-            <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                    <div class="milestone-counter">
-                        <div class="stats animaper">
-                            <div class="num" data-content="0" data-num="60">0</div>
-                        </div>
-                    </div>
-                    <h6>Finished projects</h6>
-                </div>
+  <div class="container">
+    <div class="inline-facts-container fl-wrap">
+      {% for inline-facts in info.facts | sample: 4 %}
+      <!-- inline-facts -->
+      <div class="inline-facts-wrap">
+        <div class="inline-facts">
+          <div class="milestone-counter">
+            <div class="stats animaper">
+              <div class="num" data-content="0" data-num="{{ inline-facts.value }}">0</div>
             </div>
-            <!-- inline-facts end -->
-            <!-- inline-facts  -->
-            <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                    <div class="milestone-counter">
-                        <div class="stats animaper">
-                            <div class="num" data-content="0" data-num="80">0</div>
-                        </div>
-                    </div>
-                    <h6>Happy customers</h6>
-                </div>
-            </div>
-            <!-- inline-facts end -->
-            <!-- inline-facts  -->
-            <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                    <div class="milestone-counter">
-                        <div class="stats animaper">
-                            <div class="num" data-content="0" data-num="1422">0</div>
-                        </div>
-                    </div>
-                    <h6>Working hours</h6>
-                </div>
-            </div>
-            <!-- inline-facts end -->
-            <!-- inline-facts  -->
-            <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                    <div class="milestone-counter">
-                        <div class="stats animaper">
-                            <div class="num" data-content="0" data-num="15">0</div>
-                        </div>
-                    </div>
-                    <h6>Years of Exp.</h6>
-                </div>
-            </div>
-            <!-- inline-facts end --> 
+          </div>
+          <h6>{{ inline-facts.title }}</h6>
         </div>
+      </div>
+      <!-- inline-facts end -->
+      {% endfor %}
     </div>
+  </div>
 </section>
 <!--section end -->
-{% endif %}
+{% endfor %}

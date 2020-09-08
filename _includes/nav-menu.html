@@ -6,7 +6,7 @@
             <!-- nav -->
             <nav class="nav-inner" id="menu">
                 <ul>
-                    {% assign links = site.data.nav %}
+                    {% assign links = site.data.nav | where: "location", "navigation" %}
                     {% for link in links %}
                         {% if link.subnav %}
                             <li class="{% if page.url == link.subnav.url %}act-link{% endif %}">
@@ -27,8 +27,8 @@
                                     {{ link.title }}
                                 </a>
                             </li>
-                        {% endif %}
-                    {% endfor %}
+                      {% endif %}
+                  {% endfor %}
                 </ul>
             </nav>
             <!-- nav end-->
@@ -42,4 +42,4 @@
 </div>
 <div class="nav-holder-dec color-bg"></div>
 <div class="nav-overlay"></div>
-<!-- nav-holder end -->  
+<!-- nav-holder end -->

@@ -1,0 +1,96 @@
+- order: '01'
+  section: about
+
+  title: About Me
+  tagline: Jekyll based designer and developer making high-quality branding
+  header: Southern techy that moved West Coast
+  sub_header: 'Creative solutions <br>to boost <span> your projects </span> needs'
+
+  content: Born and raised in Alabama. From the early youth of middle school I had a passion for design and all things pixel. I been working on my craft since 2005 on my own and been making it happen. Slowly I made my way west to Colorado where I currently reside. I have done many work in the field of UI/UX Design and Development. Over the years I have worked with different companies and organizations. The speciality started in small - medium businesses and have grown to specialization for non-profits.
+
+  list:
+    - text: 'Been designing and developing since 2005'
+    - text: 'Detailed oriented UI/UX Designer'
+    - text: 'Started to enjoy IE with emergence of MS Edge'
+    - text: 'A #GirlDad and proud of his Dad jokes'
+
+  btn-text: My Portfolio
+  btn-url: /portfolio/
+
+  facts:
+    - title: Finished projects
+      value: '60'
+    - title: Satisfied Clients
+      value: '60'
+    - title: Hours Worked
+      value: '88000'
+    - title: Experiences (Yrs.)
+      value: '15'
+
+- order: '02'
+  section: services
+
+  title: Services
+  tagline: I offer a range of services, here are my top 3 below
+  cards:
+    - title: Ui/Ux Designer
+      back_text: Making a website can be a challenge, but I am ready for it
+      icon: fal fa-desktop
+      background: "images/services/spin-the-wheel.webp"
+      price:
+        - min: '150'
+          max: '400'
+      list:
+        - items: Concept
+        - items: Prototyping
+    - title: Branding
+      back_text: A change can be a great start to get you back on track
+      icon: fab fa-pagelines
+      background: "images/services/branding.webp"
+      price:
+        - min: '100'
+          max: '300'
+      list:
+        - items: Marketing
+        - items: Design
+    - title: Front-end
+      back_text: Full tailored development services with content editing support
+      icon: fal fa-desktop
+      background: "images/services/html-codes.webp"
+      price:
+        - min: '225'
+          max: '1300'
+      list:
+        - items: Custom Tailored
+        - items: Content Editing
+
+  content:
+    - link: /contact-me/
+      link_text: Contact Me
+      text: Ready to get started on your next project? Visit my contact page or send me an email today!
+
+- order: '02'
+  section: process
+
+  title: The Process
+  text: Everyone has a process on how they work, mines is detailed oriented and it shows
+
+  content:
+    - title: Brainstorm the project
+      icon: fab fa-slideshare
+      details:
+        - heading: Talk it over with you from A to Z
+          text: 'We have a meeting via phone, video, or in-person about the project: goals, timeframe, needs of the website, ideas, and etc.'
+          number: '01'
+    - title: Sketches Abold
+      icon: fal fa-laptop
+      details:
+        - heading: From pen and paper to code
+          text: 'Start working on the design and drafts. After we have come up with the draft, then start the CMS intergration.'
+          number: '02'
+    - title: Final Improvements
+      icon: fal fa-flag-checkered
+      details:
+        - heading: Polish The Diamond
+          text: 'Testing the website for any bugs that it might have. Then once it is finished from the dev side of things I transfer it over.'
+          number: '03'

@@ -1,13 +1,14 @@
 {% if page.layout == "default" %}
+{% assign sections = site.data.page-scroll %}
 <!--page-scroll-nav-->
 <div class="page-scroll-nav fl-wrap">
     <nav class="scroll-init color2-bg">
         <ul class="no-list-style">
-            <li><a class="scroll-link fbgs" href="#sec2" data-bgscr="/images/bg/long/coding-computer.jpg" data-bgtex="about"><span>About</span></a></li>
-            <li><a class="scroll-link fbgs" href="#sec3" data-bgscr="/images/bg/long/create-manage-grow.jpg" data-bgtex="services"><span>Services</span></a></li>
-            <li><a class="scroll-link fbgs" href="#sec4" data-bgscr="/images/bg/long/coding.jpg" data-bgtex="skills"><span>Skills</span></a></li>
-            <li><a class="scroll-link fbgs" href="#sec5" data-bgscr="/images/bg/long/smartphone-google.jpg" data-bgtex="resume"><span>Resume</span></a></li>
-            <li><a class="scroll-link fbgs" href="#sec6" data-bgscr="/images/bg/long/clients.jpg" data-bgtex="clients"><span>Clients</span></a></li>
+          {% for bg-image in sections %}
+            <li>
+              <a class="scroll-link fbgs" href="{{ bg-image.url }}" data-bgscr="{{ bg-image.image }}.webp" data-bgtex="{{ bg-image.section }}"><span>{{ bg-image.title }}</span></a>
+            </li>
+            {% endfor %}
         </ul>
     </nav>
     <div class="arrowpagenav"></div>

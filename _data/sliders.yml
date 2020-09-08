@@ -1,0 +1,41 @@
+- main_caption: Brian Whiting <br> Ui/Ux <span>developer</span> and designer<br>   form <span>USA</span>
+  sub_caption: Ui/Ux Designer and Developer with over 10 years of experience, specializing in front-end development
+  rotate_text:
+    - text: Web Designer
+    - text: Ui/Ux Designer
+    - text: Marketing
+    - text: Blogger
+  url: /contact-me/
+  url_text: Let's Start Working
+  images: /images/bg/coding-computer
+
+- main_caption: Non-profit work for  <br> empowering women in   <span>New York</span>  <br> art galleries
+  sub_caption: View the case study on working with my first non-profit from Taproot on making their website update from start to finish
+  rotate_text:
+    - text: Oct 2019
+    - text: Non-profit
+    - text: Ui/Ux Design
+    - text: Ui/Ux Development
+  url: /portfolio/art-transforms-inc/
+  url_text: View Project
+  images: /images/thumbs/ati-images/smartmockups_k06sdinl
+
+- main_caption: Design  and  <br>development <br>   of <span>  restoration website</span>
+  sub_caption: Worked on making a restoration company website updated from what they normally had
+  rotate_text:
+    - text: July 2019
+    - text: Ui/Ux Designer
+  url: /portfolio/professional-restoration/
+  url_text: View Project
+  images: /images/thumbs/prorestoration/smartmockups_k3oxgau4
+
+- main_caption: First client based <br> JekyllRB <br>for a NYC non-profit <span> Disabled In Action</span>
+  sub_caption: This was a major accomplishment as it was a great way to get my process started for making websites for clients using JekyllRB
+  rotate_text:
+    - text: March 2020
+    - text: Non-profit
+    - text: Ui/Ux Designer
+    - text: Ui/Ux Developer
+  url: /portfolio/dia-nyc/
+  url_text: View Project
+  images: /images/thumbs/dia-nyc-images/full-screenshot-new

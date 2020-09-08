@@ -1,224 +1,182 @@
 {% if page.layout == "default" %}
-<!-- hero-wrap--> 
+<!-- hero-wrap-->
 <div class="hero-wrap fl-wrap full-height scroll-con-sec home-half-slider" id="sec1">
-    <!-- option-panel-->  
-    <div class="option-panel hiddec-anim">
-        <div class="swiper-counter">
-            <div id="current">01</div>
-            <div id="total"></div>
-        </div>
-        <div class="slide-progress-container">
-            <div class="slide-progress-warp">
-                <div class="slide-progress color-bg"></div>
+  <!-- option-panel-->
+  <div class="option-panel hiddec-anim">
+    <div class="swiper-counter">
+      <div id="current">01</div>
+      <div id="total"></div>
+    </div>
+    <div class="slide-progress-container">
+      <div class="slide-progress-warp">
+        <div class="slide-progress color-bg"></div>
+      </div>
+    </div>
+  </div>
+  <!--option-panel end -->
+  <!-- hero-slider-wrap -->
+  <div class="hero-slider-wrap fl-wrap full-height">
+    <div class="hero-slider fs-gallery-wrap fl-wrap full-height">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% assign sliders = site.data.sliders %}
+          {% for slider in sliders %}
+          <!-- swiper-slide-->
+          <div class="swiper-slide">
+            <div class="half-hero-wrap">
+              <div class="pr-bg"></div>
+              <div class="rotate_text hero-decor-let">
+                {% for text in slider.rotate_text %}
+                <div>{{ text.text }}</div>
+                {% endfor %}
+              </div>
+              <h1>{{ slider.main_caption }}</h1>
+              <h4>{{ slider.sub_caption }}</h4>
+              <div class="clearfix"></div>
+              <a href="{{ slider.url }}" class="btn ajax fl-btn color-bg">
+                {{ slider.url_text }}
+              </a>
             </div>
+          </div>
+          <!-- swiper-slide end-->
+          {% endfor %}
         </div>
+      </div>
     </div>
-    <!--option-panel end -->                	 
-    <!-- hero-slider-wrap --> 
-    <div class="hero-slider-wrap fl-wrap full-height">
-        <div class="hero-slider fs-gallery-wrap fl-wrap full-height">
-            <div class="swiper-container">
-                <div class="swiper-wrapper" >
-                    <!-- swiper-slide-->
-                    <div class="swiper-slide">
-                        <div class="half-hero-wrap">
-                            <div class="pr-bg"></div>
-                            <div class="pr-bg"></div>
-                            <div class="rotate_text hero-decor-let">
-                                <div>Web Design</div>
-                                <div><span>Ui/Ux Design</span></div>
-                                <div>Branding</div>
-                                <div><span>Ecommerce</span></div>
-                            </div>
-                            <h1>Brian Whiting <br> Ui/Ux <span>developer</span> and designer<br>   form <span>USA</span></h1>
-                            <h4>A self-taught designer that specialize in static site generated websites using Jekyll and Gatsby </h4>
-                            <div class="clearfix"></div>
-                            <a href="/portfolio/" class="btn ajax  fl-btn color-bg">My portfolio</a>
-                        </div>
-                    </div>
-                    <!-- swiper-slide end-->
-                    <!-- swiper-slide-->
-                    <div class="swiper-slide">
-                        <div class="half-hero-wrap">
-                            <div class="pr-bg"></div>
-                            <div class="rotate_text">Oct. 2019</div>
-                            <h1>Non-profit work for  <br> empowering women in   <span>New York</span>  <br> art galleries</h1>
-                            <h4>View the case study on working with my first non-profit from Taproot on making their website update from start to finish </h4>
-                            <div class="clearfix"></div>
-                            <a href="/portfolio/art-transforms-inc/" class="btn ajax  fl-btn color-bg">View project</a>
-                        </div>
-                    </div>
-                    <!-- swiper-slide end-->
-                    <!-- swiper-slide-->
-                    <div class="swiper-slide">
-                        <div class="half-hero-wrap">
-                            <div class="pr-bg"></div>
-                            <div class="rotate_text">July 2019</div>
-                            <h1>Design  and  <br>development <br>   of <span>  restoration website</span> </h1>
-                            <h4>Worked on making a restoration company website updated from what they normally had </h4>
-                            <div class="clearfix"></div>
-                            <a href="/portfolio/professional-restoration/" class="btn  ajax  fl-btn color-bg">View project</a>
-                        </div>
-                    </div>
-                    <!-- swiper-slide end-->
-                    <!-- swiper-slide-->
-                    <div class="swiper-slide">
-                        <div class="half-hero-wrap">
-                            <div class="pr-bg"></div>
-                            <div class="rotate_text">March 2020</div>
-                            <h1>First client based <br> JekyllRB <br>for a NYC non-profit <span> Disabled In Action</span></h1>
-                            <h4>This was a major accomplishment as it was a great way to get my process started for making websites for clients using JekyllRB </h4>
-                            <div class="clearfix"></div>
-                            <a href="/portfolio/dia-nyc/" class="btn   fl-btn color-bg">View project</a>
-                        </div>
-                    </div>
-                    <!-- swiper-slide end--> 
-                </div>
-            </div>
-        </div>
-        <div class="hero-slider_control-wrap hiddec-anim">
-            <div class="hsc hsc-prev"><span><i class="fal fa-angle-left"></i></span> </div>
-            <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
-        </div>
-        <div class="hero-slider-wrap_pagination hiddec-anim"></div>
-        <div class="hero-dec  hiddec-anim"></div>
+    <div class="hero-slider_control-wrap hiddec-anim">
+      <div class="hsc hsc-prev"><span><i class="fal fa-angle-left"></i></span> </div>
+      <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
     </div>
-    <!-- hero-slider-wrap  end--> 
-    <!-- hero-slider-img--> 
-    <div class="hero-slider-img hero-slider-wrap_halftwo">
-        <div class="sec-lines"></div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper" >
-                <!-- swiper-slide-->
-                <div class="swiper-slide">
-                    <div class="bg"  data-bg="/images/bg/coding-computer.jpg"></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- swiper-slide end-->
-                <!-- swiper-slide-->
-                <div class="swiper-slide">
-                    <div class="bg"  data-bg="/images/thumbs/ati-images/smartmockups_k06sdinl.png" ></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- swiper-slide end-->   
-                <!-- swiper-slide-->
-                <div class="swiper-slide">
-                    <div class="bg"  data-bg="/images/thumbs/prorestoration/smartmockups_k3oxgau4.png"></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- swiper-slide end-->                                        
-                <!-- swiper-slide-->
-                <div class="swiper-slide">
-                    <div class="bg"  data-bg="/images/thumbs/dia-nyc-images/full-screenshot-new.png" ></div>
-                    <div class="overlay"></div>
-                </div>
-                <!-- swiper-slide end-->   
-            </div>
+    <div class="hero-slider-wrap_pagination hiddec-anim"></div>
+    <div class="hero-dec  hiddec-anim"></div>
+  </div>
+  <!-- hero-slider-wrap  end-->
+  <!-- hero-slider-img-->
+  <div class="hero-slider-img hero-slider-wrap_halftwo">
+    <div class="sec-lines"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {% assign slider-images = site.data.sliders %}
+        {% for slide-images in slider-images %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide">
+          <div class="bg" data-bg="{{ slide-images.images }}.webp"></div>
+          <div class="overlay"></div>
         </div>
+        <!-- swiper-slide end-->
+        {% endfor %}
+      </div>
     </div>
-    <!-- hero-slider-img  end--> 
-    <!-- hero  elements--> 
-    <div class="hero-border hb-top"></div>
-    <div class="hero-border hb-bottom"></div>
-    <div class="hero-border hb-right"></div>
-    <div class="hero-corner"></div>
-    <div class="hero-corner2"></div>
-    <div class="scroll-down-wrap hiddec-anim">
-        <div class="mousey">
-            <div class="scroller"></div>
-        </div>
-        <span>Scroll down  to discover</span>
+  </div>
+  <!-- hero-slider-img  end-->
+  <!-- hero  elements-->
+  <div class="hero-border hb-top"></div>
+  <div class="hero-border hb-bottom"></div>
+  <div class="hero-border hb-right"></div>
+  <div class="hero-corner"></div>
+  <div class="hero-corner2"></div>
+  <div class="scroll-down-wrap hiddec-anim">
+    <div class="mousey">
+      <div class="scroller"></div>
     </div>
-    <!-- hero  elements end--> 
+    <span>Scroll down to discover</span>
+  </div>
+  <!-- hero  elements end-->
 </div>
 <!-- hero-wrap end-->
 {% endif %}
 
 {% if page.layout == "folio-single" %}
-<!-- hero-slider-wrap --> 
+<!-- hero-slider-wrap -->
 <div class="fs-slider-wrap full-height fl-wrap">
-    <div class="fs-slider lightgallery">
-        <div class="swiper-container">
-            <div class="swiper-wrapper" >
-				{% if page.slide_1 %}
-                <!-- swiper-slide-->
-                <div class="swiper-slide hov_zoom">
-                    <div class="fs-slider-item fl-wrap">
-                        <div class="bg"  data-bg="{{ page.slide_1 }}"></div>
-                        <div class="overlay"></div>
-                        <a href="{{ page.slide_1 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                        <div class="half-hero-wrap">
-                            <div class="fcw-dec"></div>
-                            <div class="rotate_text">{% if page.completed %}{{ page.completed | date_to_long_string }} {% else %} In Progress {% endif %}</div>
-                            <h1>{{ page.slider_1_caption }}</h1>
-							{% if page.mini_caption %}
-                            <h4>{{ page.mini_caption }}</h4>
-							{% endif %}
-                            <div class="clearfix"></div>
-                            <a href="#sec1" class="btn   fl-btn color-bg custom-scroll-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- swiper-slide-->
-				{% endif %}
-				{% if page.slide_2 %}
-                <!-- swiper-slide-->
-                <div class="swiper-slide hov_zoom">
-                    <div class="fs-slider-item fl-wrap">
-                        <div class="bg"  data-bg="{{ page.slide_2 }}"></div>
-                        <a href="{{ page.slide_2 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                    </div>
-                </div>
-                <!-- swiper-slide-->
-				{% endif %}
-				{% if page.slide_3 %}
-                <!-- swiper-slide-->
-                <div class="swiper-slide hov_zoom">
-                    <div class="fs-slider-item fl-wrap">
-                        <div class="bg"  data-bg="{{ page.slide_3 }}"></div>
-                        <a href="{{ page.slide_3 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                    </div>
-                </div>
-                <!-- swiper-slide-->
-				{% endif %}
+  <div class="fs-slider lightgallery">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {% if page.slide_1 %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide hov_zoom">
+          <div class="fs-slider-item fl-wrap">
+            <div class="bg" data-bg="{{ page.slide_1 }}"></div>
+            <div class="overlay"></div>
+            <a href="{{ page.slide_1 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+            <div class="half-hero-wrap">
+              <div class="fcw-dec"></div>
+              <div class="rotate_text">
+                {% if page.completed %}
+                  {{ page.completed | date_to_long_string }}
+                {% else %}
+                  In Progress
+                {% endif %}
+              </div>
+              <h1>{{ page.slider_1_caption }}</h1>
+              {% if page.mini_caption %}
+              <h4>{{ page.mini_caption }}</h4>
+              {% endif %}
+              <div class="clearfix"></div>
+              <a href="#sec1" class="btn   fl-btn color-bg custom-scroll-link">View Details</a>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="hero-slider_control-wrap hiddec-anim">
-        <div class="hsc hsc-prev"><span><i class="fal fa-angle-left"></i></span> </div>
-        <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
-    </div>
-    <div class="hero-slider-wrap_pagination hiddec-anim"></div>
-    <div class="hero-border hb-top"></div>
-    <div class="hero-border hb-bottom"></div>
-    <div class="hero-border hb-right"></div>
-    <div class="scroll-down-wrap scdw2 hiddec-anim">
-        <div class="mousey">
-            <div class="scroller"></div>
+        <!-- swiper-slide-->
+        {% endif %}
+        {% if page.slide_2 %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide hov_zoom">
+          <div class="fs-slider-item fl-wrap">
+            <div class="bg" data-bg="{{ page.slide_2 }}"></div>
+            <a href="{{ page.slide_2 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+          </div>
         </div>
-        <span>Scroll down  to discover</span>
+        <!-- swiper-slide-->
+        {% endif %}
+        {% if page.slide_3 %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide hov_zoom">
+          <div class="fs-slider-item fl-wrap">
+            <div class="bg" data-bg="{{ page.slide_3 }}"></div>
+            <a href="{{ page.slide_3 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+          </div>
+        </div>
+        <!-- swiper-slide-->
+        {% endif %}
+      </div>
     </div>
+  </div>
+  <div class="hero-slider_control-wrap hiddec-anim">
+    <div class="hsc hsc-prev"><span><i class="fal fa-angle-left"></i></span> </div>
+    <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
+  </div>
+  <div class="hero-slider-wrap_pagination hiddec-anim"></div>
+  <div class="hero-border hb-top"></div>
+  <div class="hero-border hb-bottom"></div>
+  <div class="hero-border hb-right"></div>
+  <div class="scroll-down-wrap scdw2 hiddec-anim">
+    <div class="mousey">
+      <div class="scroller"></div>
+    </div>
+    <span>Scroll down to discover</span>
+  </div>
 </div>
-<!-- hero-slider-wrap  end--> 
+<!-- hero-slider-wrap  end-->
 
 {% endif %}
 
 {% if page.layout == "404-error" %}
 <!-- hero-wrap -->
 <div class="hero-wrap fl-wrap full-height">
-    <div class="bg"  data-bg="images/bg/1.jpg"></div>
-    <div class="overlay"></div>
-    <div class="error-wrap fl-wrap">
-        <div class="container">
-            <h2>{{ page.title }}</h2>
-            <p>{{ page.tagline }}</p>
-            <div class="clearfix"></div>
-            <a href="{{ "" | absolute_url }}" class="btn color-bg">Back to Home Page</a>
-        </div>
+  <div class="bg" data-bg="images/bg/1.jpg"></div>
+  <div class="overlay"></div>
+  <div class="error-wrap fl-wrap">
+    <div class="container">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.tagline }}</p>
+      <div class="clearfix"></div>
+      <a href="{{ "" | absolute_url }}" class="btn color-bg">Back to Home Page</a>
     </div>
-    <div class="hero-corner"></div>
-    <div class="hero-corner2"></div>
-    <div class="hero-corner3"></div>
+  </div>
+  <div class="hero-corner"></div>
+  <div class="hero-corner2"></div>
+  <div class="hero-corner3"></div>
 </div>
 <!-- hero-wrap end -->
 {% endif %}

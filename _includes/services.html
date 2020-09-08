@@ -1,160 +1,98 @@
+{% assign services = site.data.pages.home | where: "section", "services" %}
+{% for service in services %}
 <section class="hidden-section scroll-con-sec bot-element" id="sec3">
-    <div class="container">
-        <div class="section-title fl-wrap">
-            <h3>Services</h3>
-            <p>I work to offer a range of services to help your project needs  </p>
-        </div>
-        <div class="cards-wrap fl-wrap">
-            <div class="row">
-                <!--card item --> 
-                <div class="col-md-4">
-                    <div class="content-inner fl-wrap">
-                        <div class="content-front">
-                            <div class="cf-inner">
-                                <div class="bg "  data-bg="images/services/spin-the-wheel.jpg"></div>
-                                <div class="overlay"></div>
-                                <div class="inner">
-                                    <h2>Ui/Ux Design</h2>
-                                    <ul>
-                                        <li>Concept</li>
-                                        <li>Design</li>
-                                        <li>Prototyping</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-back">
-                            <div class="cf-inner">
-                                <div class="inner">
-                                    <div class="dec-icon">
-                                        <i class="fal fa-desktop"></i>
-                                    </div>
-                                    <p>Making a website can be hard, but I work to make it easier for you</p>
-                                    <div class="serv-price-wrap"><span>Price</span>$150-$400</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--card item end -->
-                <!--card item --> 
-                <div class="col-md-4">
-                    <div class="content-inner fl-wrap">
-                        <div class="content-front">
-                            <div class="cf-inner">
-                                <div class="bg "  data-bg="images/services/branding.jpg"></div>
-                                <div class="overlay"></div>
-                                <div class="inner">
-                                    <h2>Branding</h2>
-                                    <ul>
-                                        <li>Concept</li>
-                                        <li>Design</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-back">
-                            <div class="cf-inner">
-                                <div class="inner">
-                                    <div class="dec-icon">
-                                        <i class="fab fa-pagelines"></i>
-                                    </div>
-                                    <p>A change can be a great start to get you back on track</p>
-                                    <div class="serv-price-wrap"><span>Price</span>$100-$300</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--card item end -->
-                <!--card item --> 
-                <div class="col-md-4">
-                    <div class="content-inner fl-wrap">
-                        <div class="content-front">
-                            <div class="cf-inner">
-                                <div class="bg "  data-bg="images/services/html-codes.jpg"></div>
-                                <div class="overlay"></div>
-                                <div class="inner">
-                                    <h2>Ui/Ux Development</h2>
-                                    <ul>
-                                        <li>Custom Made</li>
-                                        <li>CMS</li>
-                                        <li>Content Editing</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-back">
-                            <div class="cf-inner">
-                                <div class="inner">
-                                    <div class="dec-icon">
-                                        <i class="fal fa-desktop"></i>
-                                    </div>
-                                    <p>Full tailored development services with content editing support</p>
-                                    <div class="serv-price-wrap"><span>Price</span>$225-$1300</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--card item end -->                                                 
-            </div>
-            <div class="srv-link-text fl-wrap">
-                <h4>Ready to get started on your next project? Visit my contact page :  </h4>
-                <a href="/contact-me/" class="btn float-btn ajax  color-bg">Contacts</a>
-            </div>
-        </div>
-        <div class="sec-number"  >02.</div>
+  <div class="container">
+    <div class="section-title fl-wrap">
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.tagline }} </p>
     </div>
+    <div class="cards-wrap fl-wrap">
+      <div class="row">
+        {% assign cards = service.cards %}
+        {% for card in cards %}
+        <!--card item -->
+        <div class="col-md-4">
+          <div class="content-inner fl-wrap">
+            <div class="content-front">
+              <div class="cf-inner">
+                <div class="bg " data-bg="{{ card.background }}"></div>
+                <div class="overlay"></div>
+                <div class="inner">
+                  <h2>{{ card.title }}</h2>
+                  <ul>
+                    {% for list in card.list %}
+                    <li>{{ list.items }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="content-back">
+              <div class="cf-inner">
+                <div class="inner">
+                  <div class="dec-icon">
+                    <i class="{{ card.icon }}"></i>
+                  </div>
+                  <p>{{ card.back_text }}</p>
+                  {% for price in card.price %}
+                  <div class="serv-price-wrap">
+                    <span>Price</span>{{ price.min | append: '$' }} - {{ price.max | append: '$' }}
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card item end -->
+        {% endfor %}
+      </div>
+      <div class="srv-link-text fl-wrap">
+        {% assign contents = service.content %}
+        {% for content in contents %}
+        <h4>{{ content.text }}</h4>
+        <a href="{{ content.link }}" class="btn float-btn ajax  color-bg">{{ content.link_text }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="sec-number">{{ service.order | append: '.' }}</div>
+  </div>
 </section>
+{% endfor %}
 <!--section end -->
 <div class="section-separator"><span class="fl-wrap"></span></div>
 <!--section  -->
+{% assign progress = site.data.pages.home | where: "section", "process" %}
+{% for process in progress %}
 <section class="hidden-section bot-element">
-    <div class="container">
-        <div class="section-title fl-wrap">
-            <h3>The Process</h3>
-            <p>Everyone has a process on how they work, mines is detailed oriented and it shows  </p>
-        </div>
-        <!--process-wrap  -->
-        <div class="process-wrap fl-wrap">
-            <ul>
-                <li>
-                    <div class="time-line-icon">
-                        <i class="fab fa-slideshare"></i>
-                    </div>
-                    <h4>Discuss the project</h4>
-                    <div class="process-details">
-                        <h6>Talk it over with you from A to Z</h6>
-                        <p>We have a meeting via phone, video, or in-person about the project: goals, timeframe, needs of the website, ideas, and etc. </p>
-                    </div>
-                    <span class="process-numder">01.</span>
-                </li>
-                <li>
-                    <div class="time-line-icon">
-                        <i class="fal fa-laptop"></i>
-                    </div>
-                    <h4>Develop &amp; elaborate</h4>
-                    <div class="process-details">
-                        <h6>From pen and paper to code </h6>
-                        <p>Start working on the design and drafts. After we have come up with the draft, then start the JekyllRB process.</p>
-                    </div>
-                    <span class="process-numder">02.</span>
-                </li>
-                <li>
-                    <div class="time-line-icon">
-                        <i class="fal fa-flag-checkered"></i>
-                    </div>
-                    <h4>Final improvements</h4>
-                    <div class="process-details">
-                        <h6>Do some touch ups</h6>
-                        <p>Testing the website for any bugs that it might have. Then once it is finished from the dev side of things I transfer it over.</p>
-                    </div>
-                    <span class="process-numder">03.</span>
-                </li>
-            </ul>
-        </div>
-        <!--process-wrap   end-->                                       
+  <div class="container">
+    <div class="section-title fl-wrap">
+      <h3>{{ process.title }}</h3>
+      <p>{{ process.text }}</p>
     </div>
+    <!--process-wrap  -->
+    <div class="process-wrap fl-wrap">
+      <ul>
+        {% assign procontent = process.content %}
+        {% for procontent in procontent %}
+        <li>
+          <div class="time-line-icon">
+            <i class="{{ procontent.icon }}"></i>
+          </div>
+          <h4>{{ procontent.title }}</h4>
+          {% for details in procontent.details %}
+          <div class="process-details">
+            <h6>{{ details.heading }}</h6>
+            <p>{{ details.text }}</p>
+          </div>
+          <span class="process-numder">{{ details.number | append: '.' }}</span>
+          {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!--process-wrap   end-->
+  </div>
 </section>
+{% endfor %}
 <!--section end -->

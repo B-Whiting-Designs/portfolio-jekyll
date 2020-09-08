@@ -1,0 +1,24 @@
+- section: about
+  image: /images/bg/long/coding-computer
+  url: '#sec2'
+  title: About
+
+- section: services
+  image: /images/bg/long/create-manage-grow
+  url: '#sec3'
+  title: Services
+
+- section: skills
+  image: /images/bg/long/coding
+  url: '#sec4'
+  title: Skills
+
+- section: resume
+  image: /images/bg/long/smartphone-google
+  url: '#sec5'
+  title: Resume
+
+- section: clients
+  image: /images/bg/long/clients
+  url: '#sec6'
+  title: Clients

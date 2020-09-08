@@ -2,7 +2,7 @@ baseurl: ''
 
 title: B Whiting Designs
 tagline: I create detailed, custom, modern high-quality designs for your brand needs
-description: Freelance UI UX Designer and Developer with over 10 years of experience. A modern designer that makes near perfect designs and custom HTML, CSS designs and development projects
+description: Freelance UI/UX Designer and Front-end Dev with over 10 years of experience based in Colorado. East coast designer living on the West coast.
 url: https://www.bwhitingdesigns.com
 author: Brian Whiting
 email: brianwhiting@bwhitingdesigns.com
@@ -41,7 +41,6 @@ twitter:
 # plugins
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-sitemap
 
@@ -84,3 +83,15 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+# image compression for webp
+webp:
+  enabled: true
+  quality: 60
+  img_dir: ["/images"]
+  nested: true
+  formats: [".jpeg", ".jpg", ".png"]
+  gifs: [".gif"]
+  regenerate: false
+  webp_path: nil
+  exclude: []
+  append_ext: false

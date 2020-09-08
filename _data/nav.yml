@@ -1,8 +1,11 @@
 - title: Home
   url: /
+  location: navigation
 - title: Portfolio
   url: /portfolio/
+  location: navigation
 - title: Blog
+  location: navigation
   subnav:
     - title: Design Shack
       url: /blog/
@@ -10,3 +13,4 @@
       url: /blog/posts/
 - title: Contact Me
   url: /contact-me/
+  location: navigation
