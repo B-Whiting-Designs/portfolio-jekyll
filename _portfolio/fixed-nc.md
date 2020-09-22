@@ -18,7 +18,6 @@ header_image: /images/thumbs/fixed-nc-images/fixednc.png
 
 logo: /images/thumbs/fixed-nc-images/fnc-logo.webp
 
-permalink: /:collection/fixed-nc/
 tagline: Restoration with upscale design
 
 intro: Fixed NC is a North Carolina restoration company that was established in 2018. They have over 30 years of staffing experience combined. A restoration company that wanted to get a restoration of their website design. The original focus on my design was to give it a whitespace and use of background layers behind the images.

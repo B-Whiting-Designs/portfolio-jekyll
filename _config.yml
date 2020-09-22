@@ -60,12 +60,12 @@ exclude:
 markdown: kramdown
 
 # blog post permalink structure
-permalink: /:categories/:title/
+permalink: /blog/:categories/:title
 
 # collection settings
 collections:
   portfolio:
-    permalink: "/portfolio/:name/"
+    permalink: "/portfolio/:name"
     output: true
   authors:
     output: true

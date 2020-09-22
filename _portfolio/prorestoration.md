@@ -18,8 +18,6 @@ header_image: /images/thumbs/prorestoration/new-website.png
 
 logo: /images/thumbs/prorestoration/logo.webp
 
-permalink: /:collection/professional-restoration/
-
 tagline: Updating a modern site for growth
 
 intro: Professional Restoration is a local restoration company based in Denver, CO with over 25 years of experience. They came looking for a new design to their old brand and gain digital pressence more. While working with my old agency I was able to help with their goal by redesign of the current site and new branding.

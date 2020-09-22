@@ -9,7 +9,6 @@ image_caption: Photo by fotografierende from Pexels
 date: 2019-06-25 15:18:00 -0600
 
 preview: "Lessons learned while working as a freelancer and as well with an agency in my past life."
-permalink: "/blog/working-by-myself-vs-an-agency/"
 
 categories: [ web designer, agency, work life ]
   

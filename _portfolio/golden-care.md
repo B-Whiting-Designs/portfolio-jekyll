@@ -18,8 +18,6 @@ header_image: /images/thumbs/goldencare-inc-images/new-version-1.jpg
 
 logo: /images/thumbs/fixed-nc-images/fnc-logo.webp
 
-permalink: /:collection/golden-care-inc/
-
 tagline: Helping those with disablities each day
 
 intro: Golden Care is a non-profit organization that based on providing a wide range of support for health, psycological, and social services in a safe enviornment. They came to me with a request to help get them started in making their website a reality to help with their users and family members of the members. They came via Taproot+ and it was my second one from the company.

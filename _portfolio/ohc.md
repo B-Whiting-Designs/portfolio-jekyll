@@ -18,8 +18,6 @@ header_image: /images/thumbs/ohc-images/landing_page.jpg
 
 logo: /images/thumbs/ohc-images/logo.png
 
-permalink: /:collection/ohc/
-
 tagline: Bring the chef home with you
 
 intro: One Hour Chef was an idea that was brought about to help bring a chef to your home to rival that of UberEats and DoorDash with their method. I was signed on to help with bringing about a new way to bring the idea to a possibility.

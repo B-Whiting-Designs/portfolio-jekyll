@@ -7,7 +7,6 @@ featured_image: /images/uploads/black-and-white-blog-business-chocolate-261577.j
 image_caption: Photo by fotografierende from Pexels
 
 preview: "A new update coming to the site in the future that will be based on Jekyll static site generator. Saw them a while back and decided to make a whole new site based around their platform."
-permalink: "/blog/possible-changes"
 
 categories: [ news ]
 

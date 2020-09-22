@@ -8,7 +8,6 @@ featured_image: /images/uploads/apple-computer-desk-devices-326519.jpg
 image_caption: 
 
 preview: "When working as a designer it is a bit easy to handle your own time you work. But agency also works their best to give you some benefits to being in a stable agency."
-permalink: "/blog/freelancing-or-agency"
 
 categories: [ web designer, agency ]
   

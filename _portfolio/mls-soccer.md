@@ -18,8 +18,6 @@ header_image: /images/thumbs/mls-images/mls-homepage.png
 
 logo: /images/thumbs/mls-images/MLS-logo.png
 
-permalink: /:collection/mls-soccer-mockup/
-
 tagline: Bring soccer into a modern era
 
 intro: MLS - Major League Soccer (GO Atlanta United) - has been around for some time with their design. I saw the website after I was in need of a design challenge. The task at hand I set forth was to improve the design but not take away from the heavy use of images they use throughout their site. This site design was only a mockup of the website that I wanted to proposition as a change for the organization.

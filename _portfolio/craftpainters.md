@@ -20,8 +20,6 @@ logo: /images/thumbs/craft-images/craftpainters-logo.png
 
 tagline: SMB Growth
 
-permalink: /:collection/craft-painters/
-
 intro: Craft Painters was a client I had the pleasure of working with during my stent at a local agency in Denver. They came to us with a goal in mind of updating their site from the table format style they had to a nice WordPress structure that flows and updated.
 
 header_1: Painters in need of a retouch

@@ -18,8 +18,6 @@ header_image: /images/thumbs/pepsi-center/pepsi-center-home.png
 
 logo: 
 
-permalink: /:collection/pepsi-center-mockup/
-
 tagline: No crystal pepsi here
 
 intro: Pepsi Center is the stable of the sporting events in Denver, CO. Home to the Denver Nuggets and many different events, it was in need of an update. The design was a bit stale and looked a bit outdated.

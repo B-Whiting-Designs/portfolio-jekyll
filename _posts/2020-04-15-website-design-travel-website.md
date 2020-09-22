@@ -10,7 +10,6 @@ preview: >-
   Recently I made a design for a contest on 99designs for a Travel Agency
   website. It was done in Adobe XD but didn't make the final cut. Back to the
   drawing board again guys.
-permalink: "/blog/travel-website-99designs/"
 
 categories:
   - 99designs

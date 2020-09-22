@@ -2,15 +2,15 @@
   url: /
   location: navigation
 - title: Portfolio
-  url: /portfolio/
+  url: /portfolio
   location: navigation
 - title: Blog
   location: navigation
   subnav:
     - title: Design Shack
-      url: /blog/
+      url: /blog
     - title: All Articles
-      url: /blog/posts/
+      url: /blog/posts
 - title: Contact Me
-  url: /contact-me/
+  url: /contact-me
   location: navigation

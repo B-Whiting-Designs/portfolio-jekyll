@@ -18,8 +18,6 @@ header_image: /images/thumbs/ati-images/ati.jpg
 
 logo: /images/thumbs/ati-images/logo-v1.png
 
-permalink: /:collection/art-transforms-inc/
-
 tagline: Helping a non-profit brand expand
 
 intro: Art Transforms Inc. was founded in 2016 in Southeast Queens, New York City as a way to help people with trauma in free art classes and showcasing their talent. Naturally this was a touchup of branding. The original site was a bit in need of a redesign to match their needs. Something simple, but still artistic and unique. Although the site has gone back to their original design due to their request, the update of some content area points has made an increase for them overall.
