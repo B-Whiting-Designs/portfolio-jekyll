@@ -18,8 +18,6 @@ header_image:
 
 logo: 
 
-permalink: /:collection/.../
-
 tagline: 
 
 intro: 

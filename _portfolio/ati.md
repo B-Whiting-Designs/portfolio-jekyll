@@ -8,7 +8,7 @@ client: Wanda Best
 image_preview: /images/folio/folio-1.jpg
 
 slide_1: /images/folio/folio-1.jpg
-slider_1_caption: Non-profit work for  <br> empowering women in   <span>New York</span>  <br> art galleries
+slider_1_caption: Non-profit work for <br> empowering women in <span>New York</span> <br> art galleries
 mini_caption: This non-profit is based in Southeast Queens, NY and my first non-profit project off of Taproot+. Their goal is to empower women that has been in domestic abuse situations and use art to help them express that.
 
 slide_2: /images/thumbs/ati-images/smartmockups_k06sdinl.png
