@@ -11,7 +11,7 @@ preview: "So a while back I was asked randomly by a company if I could be featur
 
 categories: [ accomplishments ]
   
-author: brian_whiting
+author: Brian Whiting
 
 tags:
   - accomplishments

@@ -11,7 +11,7 @@ preview: "When working as a designer it is a bit easy to handle your own time yo
 
 categories: [ web designer, agency ]
   
-author: brian_whiting
+author: Brian Whiting
 
 tags:
   - freelancing

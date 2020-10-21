@@ -10,7 +10,7 @@ preview: "A new update coming to the site in the future that will be based on Je
 
 categories: [ news ]
 
-author: brian_whiting
+author: Brian Whiting
 
 tags:
   - update

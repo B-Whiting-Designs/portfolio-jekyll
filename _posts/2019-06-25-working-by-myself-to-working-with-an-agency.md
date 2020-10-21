@@ -12,7 +12,7 @@ preview: "Lessons learned while working as a freelancer and as well with an agen
 
 categories: [ web designer, agency, work life ]
   
-author: brian_whiting
+author: Brian Whiting
 
 tags:
   - agency life

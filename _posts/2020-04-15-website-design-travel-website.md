@@ -14,7 +14,7 @@ preview: >-
 categories:
   - 99designs
 
-author: brian_whiting
+author: Brian Whiting
 
 tags:
   - web designer
