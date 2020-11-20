@@ -31,6 +31,8 @@ Listen now on your [Spotify](https://open.spotify.com/episode/2DdSGl8xoz02ERoE7I
 
 <iframe src="https://anchor.fm/idiots-and-dm/embed/episodes/Idiots-and-a-DM---It-Can-Parkour-eliugs" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
 
+<iframe src="https://open.spotify.com/embed-podcast/episode/2DdSGl8xoz02ERoE7IihES" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
 - DM - Joshua
 - Arcane Knight (Paladin/Warlock) Sakis - Brian
 - Beast Master (Ranger/Warlock) Pyria - LaTashia
