@@ -1,16 +1,15 @@
 - title: Home
   url: /
   location: navigation
-- title: Portfolio
+- title: Portfolio - My Work
   url: /portfolio
   location: navigation
-- title: Blog
+- title: Blog - The Design Shack
+  url: /blog/
   location: navigation
-  subnav:
-    - title: Design Shack
-      url: /blog
-    - title: All Articles
-      url: /blog/posts
+- title: Idiots and a DM - My Podcast
+  url: /idiots-and-a-dm/
+  location: navigation
 - title: Contact Me
   url: /contact-me
   location: navigation

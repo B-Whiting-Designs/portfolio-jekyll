@@ -158,6 +158,80 @@
   </div>
 </div>
 <!-- hero-slider-wrap  end-->
+{% endif %}
+
+{% if page.layout == "podcast-single" %}
+<!-- hero-slider-wrap -->
+<div class="fs-slider-wrap full-height fl-wrap">
+  <div class="fs-slider lightgallery">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {% if page.slide_1 %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide hov_zoom">
+          <div class="fs-slider-item fl-wrap">
+            <div class="bg" data-bg="{{ page.slide_1 }}"></div>
+            <div class="overlay"></div>
+            <a href="{{ page.slide_1 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+            <div class="half-hero-wrap">
+              <div class="fcw-dec"></div>
+              <div class="rotate_text">
+                {% if page.completed %}
+                  {{ page.completed | date_to_long_string }}
+                {% else %}
+                  In Progress
+                {% endif %}
+              </div>
+              <h1>{{ page.slider_1_caption }}</h1>
+              {% if page.mini_caption %}
+              <h4>{{ page.mini_caption }}</h4>
+              {% endif %}
+              <div class="clearfix"></div>
+              <a href="#sec1" class="btn   fl-btn color-bg custom-scroll-link">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- swiper-slide-->
+        {% endif %}
+        {% if page.slide_2 %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide hov_zoom">
+          <div class="fs-slider-item fl-wrap">
+            <div class="bg" data-bg="{{ page.slide_2 }}"></div>
+            <a href="{{ page.slide_2 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+          </div>
+        </div>
+        <!-- swiper-slide-->
+        {% endif %}
+        {% if page.slide_3 %}
+        <!-- swiper-slide-->
+        <div class="swiper-slide hov_zoom">
+          <div class="fs-slider-item fl-wrap">
+            <div class="bg" data-bg="{{ page.slide_3 }}"></div>
+            <a href="{{ page.slide_3 }}" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+          </div>
+        </div>
+        <!-- swiper-slide-->
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="hero-slider_control-wrap hiddec-anim">
+    <div class="hsc hsc-prev"><span><i class="fal fa-angle-left"></i></span> </div>
+    <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
+  </div>
+  <div class="hero-slider-wrap_pagination hiddec-anim"></div>
+  <div class="hero-border hb-top"></div>
+  <div class="hero-border hb-bottom"></div>
+  <div class="hero-border hb-right"></div>
+  <div class="scroll-down-wrap scdw2 hiddec-anim">
+    <div class="mousey">
+      <div class="scroller"></div>
+    </div>
+    <span>Scroll down to discover</span>
+  </div>
+</div>
+<!-- hero-slider-wrap  end-->
 
 {% endif %}
 

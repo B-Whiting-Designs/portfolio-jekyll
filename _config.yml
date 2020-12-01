@@ -71,6 +71,9 @@ collections:
     output: true
   category:
     output: true
+  podcast:
+    permalink: "/idiots-and-a-dm/:name"
+    output: true
 
 # Pagination Settings
 pagination:

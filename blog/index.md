@@ -1,6 +1,8 @@
 ---
 
 title: Latest News
-layout: blog-default
+layout: pagination
+pagination:
+  enabled: true
 
 ---

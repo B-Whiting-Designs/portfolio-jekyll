@@ -24,7 +24,7 @@
             <!-- wrapper -->
             <div id="wrapper">
                 <!-- content-holder  -->
-                <div class="content-holder scroll-content" data-pagetitle="case study: {{ page.title }}">
+                <div class="content-holder scroll-content" data-pagetitle="podcast: {{ page.title }}">
                     {% include nav-menu.html %}
 					{% include hero-wrap-home.html %}
                     <!--content -->
@@ -40,7 +40,7 @@
                                             <h3 class="pr-subtitle"> {{ page.title }}</h3>
                                             <p>{{ page.intro }}</p>
 											{% if page.header_1 %}
-                                            <h3 class="pr-subtitle mar-top"> The Brief</h3>
+                                            <h3 class="pr-subtitle mar-top"> The Details</h3>
                                             <!-- accordion-->
                                             <div class="accordion mar-top">
                                                 <a class="toggle act-accordion" href="#"> {{ page.header_1 }}  <span></span></a>
@@ -67,37 +67,29 @@
                                             <div class="pr-bg pr-bg-white"></div>
                                             <div class="project-details fl-wrap">
                                                 <ul>
-                                                    <li><span>Date :</span> {% if page.completed %}{{ page.completed | date_to_long_string }} {% else %} In Progress {% endif %} </li>
-                                                    {% if page.client %}
-                                                    <li><span>Client :</span> {{ page.client }}</li>
-                                                    {% endif %}
-                                                    {% if page.category %}
+                                                    <li><span>Aired :</span> {% if page.completed %}{{ page.completed | date_to_long_string }} {% else %} In Progress {% endif %} </li>                    
 													<li>
                                                         <span>Category :</span> {{ page.category }}
                                                     </li>
-                                                    {% endif %}
-                                                    {% if page.services %}
                                                     <li>
-                                                        <span>Services :</span> {{ page.services }}
+                                                        <span>Website : </span>  <a href="{{ page.live_url }}" target="_blank">{{ page.live_text }}</a>
                                                     </li>
-                                                    {% endif %}
-                                                    {% if page.programs %}
                                                     <li>
-                                                        <span>Programs :</span> {{ page.programs }}
+                                                        <span>Cast :</span>
+                                                        {% if page.cast %}
+                                                        <ul>
+                                                        {% for casts in page.cast %}
+                                                            <li>
+                                                                {{ casts | join: " " | replace: '_', ' ' }}
+                                                            </li>
+                                                        {% endfor %}
+                                                        </ul>
+                                                        {% endif %}
                                                     </li>
-                                                    {% endif %}
-                                                    {% if page.live_url %}
-                                                    <li>
-                                                        <span>Online : </span>  <a href="{{ page.live_url }}" target="_blank">{{ page.live_text }}</a>
-                                                    </li>
-                                                    {% endif %}
-                                                    {% if page.alt_url %}
-                                                    <li>
-                                                        <span>Dev Site: </span> <a href="{{ page.alt_url }}" target="_blank">{{ page.alt_text }}</a>
-                                                    </li>
-                                                    {% endif %}
                                                 </ul>
-                                                <a href="{{ page.live_url }}" class="btn color-bg fl-wrap" target="_blank">View Project</a>
+                                                {% if page.live_url %}
+                                                <a href="{{ page.live_url }}" class="btn color-bg fl-wrap" target="_blank">Full Episodes</a>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
