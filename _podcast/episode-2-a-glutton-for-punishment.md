@@ -4,15 +4,15 @@ layout: podcast-single
 title: Idiots and a DM Ep. 2 - A Glutton for Punishment
 preview_title: Ep. 2 - Glutton for Punishment
 
-image_preview: /images/uploads/dnd.jpg
+image_preview: /images/logo-v1.png
 
 slide_1: /images/uploads/dnd.jpg
 slider_1_caption: The second episode of <br> <span>Idiots and a DM</span>
 mini_caption: The battle against the first trial boss for the party. Just know it is going to be a big one to beat as a starter boss.
 
-header_image: /images/uploads/dnd.jpg
+header_image: /images/logo-v1.png
 
-logo: /images/uploads/dnd.jpg
+logo: /images/logo-v1.png
 
 tagline: The big boss of the trial dungeon
 

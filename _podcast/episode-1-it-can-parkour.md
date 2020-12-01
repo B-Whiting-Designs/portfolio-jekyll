@@ -4,15 +4,15 @@ layout: podcast-single
 title: Idiots and a DM Ep. 1 - It Can Parkour
 preview_title: Ep. 1 - It Can Parkour
 
-image_preview: /images/uploads/dnd.jpg
+image_preview: /images/logo-v1.png
 
 slide_1: /images/uploads/dnd.jpg
 slider_1_caption: The first episode of <br> <span>Idiots and a DM</span>
 mini_caption: The first episode of the podcast that features the original cast of players that started it all. Oh the fun that we had and also a skeleton can apparently parkour off walls too.
 
-header_image: /images/uploads/dnd.jpg
+header_image: /images/logo-v1.png
 
-logo: /images/uploads/dnd.jpg
+logo: /images/logo-v1.png
 
 tagline: The prelude to the real story
 
