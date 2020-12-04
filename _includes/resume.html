@@ -1,92 +1,45 @@
+{% assign resumes = site.data.pages.home | where: "section", "resume" %}
+{% for resume in resumes %}
 <section class="hidden-section scroll-con-sec bot-element" id="sec5">
     <div class="container">
         <div class="section-title fl-wrap">
-            <h3>Resume</h3>
-            <p>Some of my experience I have amased over the years in Ui/Ux Design  </p>
+            <h3>{{ resume.title }}</h3>
+            <p>{{ resume.text }}</p>
         </div>
         <div class="custom-inner-holder">
-            <!-- 1 -->
+            {% for experience in resume.experience %}
+            <!-- start of {{ experience.order }} -->
             <div class="custom-inner">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="resum-header workres">
                             <i class="fa fa-briefcase"></i>
-                            <h3> B Whiting Designs</h3>
-                            <span>  2005 - present </span>
+                            <h3>{{ experience.title }}</h3>
+                            <span>{{ experience.date }}</span>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="resum-content fl-wrap">
-                            <h4>Started since middle school</h4>
-                            <p>I started working as a freelancer since middle school when I was getting my feet wet. I only was able to make websites using Notepad in basic HTML and inline CSS. Worked with over 20 different projects during my time on and off as a freelancer. While working, I dabbled in Ruby, custom video game coding languages such as Eclipse and Gen2D (SandScript), and occasional WordPress. Lately has transitioned to JekyllRB for easier and faster development process.</p>
+                            <h4>{{ experience.heading }}</h4>
+                            <p>{{ experience.info }}/p>
                             <div class="dec-list fl-wrap">
+                                {% for list in experience.description-list %}
                                 <ul>
-                                    <li>Custom developmet and design</li>
-                                    <li>Built non-profit organization websites</li>
-                                    <li>Increase overall conversion rate by 25.8% on average</li>
+                                    <li>{{ list }}</li>
                                 </ul>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 1 -->
-            <!--2 -->
-            <div class="custom-inner">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="resum-header workres">
-                            <i class="fa fa-briefcase"></i>
-                            <h3> Native Rank</h3>
-                            <span> Feb. 2019 - Aug. 2019 </span>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="resum-content fl-wrap">
-                            <h4>One of their first web designers</h4>
-                            <p>I was hired on as a web designer for their company and found out to be one of the first two web designers they hired for the position. Started working with them and worked with over 20 projects with them. Specialized on the design team and worked with the post-development team for content updates and changes, along with analytics reports. </p>
-                            <div class="dec-list fl-wrap">
-                                <ul>
-                                    <li>Second of the web designers to work with them</li>
-                                    <li>Handled large scale local business companies in restoration and services</li>
-                                    <li>Helped with design to dev tools for easier transitions amongst the teams</li>
-                                </ul>
-                            </div>
-                            <p> Worked with WordPress, Adobe XD, and Photoshop with them for all client websites</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 2 end -->
-            <!--3 -->
-            <div class="custom-inner">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="resum-header workres">
-                            <i class="fa fa-briefcase"></i>
-                            <h3> Madness Labs</h3>
-                            <span> 2014 - 2015 </span>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="resum-content fl-wrap">
-                            <h4>First agency</h4>
-                            <p>Started with them as my first agency and their first web designer. Built the company first website as a startup and helped with development projects for the clients and applications made. Got my grasp on Ruby while working with the company that later helped me with expanding my horizon with the new flat cms and static site generators.</p>
-                            <div class="dec-list fl-wrap">
-                                <ul>
-                                    <li>Used Handlebars for website developments</li>
-                                    <li>Bootstrap framework</li>
-                                    <li>Worked with AngularJS and Ionic for application development</li>
-                                </ul>
-                            </div>
-                            <p> Adobe Creative Suite experience</p>
-                        </div>
-						<a href="#" class="btn color-bg  fl-btn  ">Download resume</a>
-                    </div>
-                </div>
-            </div>
-            <!-- 3 end -->
+            <!-- end of {{ experience.order }} -->
+            {% endfor %}
+            {% for download in resume.download %}
+            <a href="{{ download.url }}" class="btn color-bg  fl-btn">{{ download.text }}</a>
+            {% endfor %}
         </div>
-        <div class="sec-number" >04.</div>
+        <div class="sec-number" >{{ resume.order | append: '.' }}</div>
     </div>
 </section>
+{% endfor %}

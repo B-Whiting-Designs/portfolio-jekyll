@@ -9,27 +9,28 @@
   url_text: Let's Start Working
   images: /images/bg/coding-computer
 
-- main_caption: Non-profit work for  <br> empowering women in   <span>New York</span>  <br> art galleries
-  sub_caption: View the case study on working with my first non-profit from Taproot on making their website update from start to finish
+- main_caption: Starting of something new <br> podcast about <span>D&D</span> called <br> <span>Idiots and a DM</span>
+  sub_caption: Making a bi-weekly podcast with friends based on adventures of D&D during the quarantine
   rotate_text:
-    - text: Oct 2019
-    - text: Non-profit
+    - text: Podcast
+    - text: Gaming
+    - text: Free Podcast
+  url: /idiots-and-a-dm/
+  url_text: View Project
+  images: /images/logo-v1
+  
+- main_caption: A local <span> Alabama </span> poet  <br> requested a revamp for <span>The Poetic Mistress</span>  <br> to show her fans a <span>new look</span>
+  sub_caption: Check out the case study on a recent poet website that I worked on with WordPress
+  rotate_text:
+    - text: Sept 2020
+    - text: Writer
     - text: Ui/Ux Design
     - text: Ui/Ux Development
-  url: /portfolio/art-transforms-inc/
+  url: /portfolio/poetic-mistress/
   url_text: View Project
-  images: /images/thumbs/ati-images/smartmockups_k06sdinl
+  images: /images/thumbs/poetic-mistress/poeticmistress-home-update
 
-- main_caption: Design  and  <br>development <br>   of <span>  restoration website</span>
-  sub_caption: Worked on making a restoration company website updated from what they normally had
-  rotate_text:
-    - text: July 2019
-    - text: Ui/Ux Designer
-  url: /portfolio/professional-restoration/
-  url_text: View Project
-  images: /images/thumbs/prorestoration/smartmockups_k3oxgau4
-
-- main_caption: First client based <br> JekyllRB <br>for a NYC non-profit <span> Disabled In Action</span>
+- main_caption: First client based <br> JekyllRB for a <br> NYC non-profit <span> Disabled In Action</span>
   sub_caption: This was a major accomplishment as it was a great way to get my process started for making websites for clients using JekyllRB
   rotate_text:
     - text: March 2020

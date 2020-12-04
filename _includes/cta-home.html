@@ -1,0 +1,30 @@
+{% if page.layout == "default" %}
+{% assign ctas = site.data.ctas | where: "section", "podcast-cta" %}
+{% for cta in ctas %}
+<section class="dark-bg bot-element">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-box dec-img fl-wrap">
+                        <img src="{{ cta.image}}" alt="" class="respimg">
+                        <a class="video-box-btn image-popup" href="{{ site.anchorfm_url }}"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-promo-text fl-wrap mar-top">
+                        <h3>{{ cta.title }} - My Podcast</h3>
+                        {% assign contents = cta.content %}
+                        {% for content in contents %}
+                        <p>{{ content.text | where: "location", "homepage" }}</p>
+                        <a href="{{ content.url }}" class="btn fl-btn    color-bg">{{ content.url_title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-corner"></div>
+</section>
+{% endfor %}
+{% endif %}

@@ -1,9 +1,10 @@
-{% if page.layout == "default" %}
+{% assign testimonials = site.data.pages.home | where: "section", "testimonial" %}
+{% for testimonial in testimonials %}
 <section class="hidden-section scroll-con-sec bot-element" id="sec6">
     <div class="container">
         <div class="section-title fl-wrap">
-            <h3>Testimonials</h3>
-            <p>Some response from clients that I have worked with recently  </p>
+            <h3>{{ testimonial.title }}</h3>
+            <p>{{ testimonial.text }}</p>
         </div>
         <div class="testimonilas-carousel-wrap fl-wrap">
             <div class="tcb-wrap">
@@ -13,19 +14,25 @@
             <div class="testimonilas-carousel fl-wrap">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
+                        {% for person in testimonial.person %}
                         <!--testi-item-->
                         <div class="swiper-slide">
                             <div class="testi-item fl-wrap">
-                                <div class="testi-avatar"><img src="images/avatar/wanda-best.jpg" alt=""></div>
-                                <span class="testi-number">.01</span>
+                                {% for image in person.image %}
+                                <div class="testi-avatar"><img src="{{ image.url }}" alt="{{ image.alt }}"></div>
+                                {% endfor %}
+                                <span class="testi-number">{{ person.number | prepend: '.' }}</span>
                                 <div class="testimonilas-text fl-wrap">
-                                    <h3>Wanda Best</h3>
-                                    <p>"He took a look at the old website and suggested immediate changes to bring the website's appearance current. He met and exceeded the needs of the organization.  He demonstrated a high level of quality, dependability, affordability and creativity.  The design was clean and user friendly.  He communicated with me so he could understand my vision for the website. With no hesitation I recommend Brian Whiting to get the best out of a website.  Not only did he design a beautiful, artsy website I learned a lot about web designing from Brian."</p>
-                                    <a href="https://www.arttransforms.org/" class="testi-link" target="_blank">Via Email</a>
+                                    <h3>{{ person.client }}</h3>
+                                    <p>{{ person.message }}</p>
+                                    {% for website in person.website %}
+                                    <a href="{{ website.url }}" class="testi-link" target="_blank">{{ website.text }}</a>
+                                    {% endfor %}
                                 </div>
                             </div>
                         </div>
-                        <!--testi-item end-->                                               
+                        <!--testi-item end-->     
+                        {% endfor %}                                          
                     </div>
                 </div>
             </div>
@@ -35,17 +42,15 @@
         <div class="fl-wrap">
             <div class="container">
                 <ul class="client-list client-list-white">
-                    <li><a href="#" target="_blank"><img src="/images/thumbs/ati-images/logo-v1.png" alt=""></a></li>
-                    <li><a href="#" target="_blank"><img src="/images/thumbs/craft-images/craftpainters-logo.png" alt=""></a></li>
-                    <li><a href="#" target="_blank"><img src="/images/thumbs/prorestoration/logo.webp" alt="" ></a></li>
-                    <li><a href="#" target="_blank"><img src="/images/thumbs/fixed-nc-images/fnc-logo.webp" alt="" ></a></li>
-                    <li><a href="#" target="_blank"><img src="/images/thumbs/dia-nyc-images/dia-logo.png" alt="" style="width: 90px;"></a></li>
+                    {% for logo in testimonial.logos %}
+                    <li><a href="{{ logo.url }}" target="_blank"><img src="{{ logo.image }}" alt="{{ logo.alt }}"></a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- client-list end-->
         </div>
-        <div class="sec-number" >05.</div>
+        <div class="sec-number" >{{ testimonial.order | append: '.' }}</div>
     </div>
     <div class="col-wc_dec col-wc_dec2"></div>
 </section>
-{% endif %}
+{% endfor %}
