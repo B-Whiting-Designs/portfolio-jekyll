@@ -4,15 +4,15 @@ layout: podcast-single
 title: Idiots and a DM Trailer
 preview_title: Season 1 Trailer
 
-image_preview: /images/logo-v1.png
+image_preview: /images/uploads/dndtavern.jpg
 
-slide_1: /images/logo-v1.png
+slide_1: /images/uploads/dndtavern.jpg
 slider_1_caption: The official trailer for the <br> <span>OG Idiots and a DM</span> <br> that started it all
 mini_caption: The start of the official trailer that made it all happen
 
-header_image: /images/logo-v1.png
+header_image: /images/uploads/dndtavern.jpg
 
-logo: /images/logo-v1.png
+logo: /images/uploads/dndtavern.jpg
 
 tagline: Ready to have some fun and go on this ride with us?
 

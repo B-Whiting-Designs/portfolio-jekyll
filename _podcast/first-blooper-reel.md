@@ -4,15 +4,15 @@ layout: podcast-single
 title: Blooper Intros
 preview_title: Season 1 Blooper Intro
 
-image_preview: /images/uploads/dnd.jpg
+image_preview: /images/uploads/dndtavern.jpg
 
-slide_1: /images/uploads/dnd.jpg
+slide_1: /images/uploads/dndtavern.jpg
 slider_1_caption: The first blooper episode of <br> <span>Idiots and a DM</span>
 mini_caption: When the DM tries to go off a script but still messes up
 
-header_image: /images/uploads/dnd.jpg
+header_image: /images/uploads/dndtavern.jpg
 
-logo: /images/uploads/dnd.jpg
+logo: /images/uploads/dndtavern.jpg
 
 tagline: We have fun sometimes guys and gals
 

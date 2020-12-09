@@ -1,26 +1,26 @@
 {% for podcasts in site.podcast %}
 <!-- gallery-item-->
-<div class="gallery-item {{ podcasts.tag | join: " " }}">
+<div class="gallery-item  {{ podcasts.tag | join: " " }}">
   <div class="grid-item-holder hov_zoom">
     {% if podcasts.image_preview_webp %}
-    <picture>
-      <source srcset="{{ podcasts.image_preview_webp }}" type="image/webp">
-      <img src="{{ podcasts.image_preview }}" alt="">
-    </picture>
+      <picture>
+        <source srcset="{{ podcasts.image_preview_webp }}" type="image/webp">
+        <img src="{{ podcasts.image_preview }}" alt="">
+      </picture>
     {% else %}
-    <img src="{{ podcasts.image_preview }}" alt="">
+      <img src="{{ podcasts.image_preview }}" alt="">
     {% endif %}
-    <a href="{{ podcasts.header_image }}" class="box-media-zoom   image-popup"><i class="fal fa-search"></i></a>
-    <div class="grid-det">
-      <div class="grid-det_category">
-        {% for tags in podcasts.tag %}
-        <a href="#">{{ tags | join: " " | replace: '_', ' ' }}</a>
-        {% endfor %}
+      <a href="{{ podcasts.header_image }}" class="box-media-zoom image-popup"><i class="fal fa-search"></i></a>
+      <div class="grid-det">
+          <div class="grid-det_category">
+            {% for tags in podcasts.tag %}
+            <a href="#">{{ tags | join: " " | replace: '_', ' ' }}</a>
+            {% endfor %}
+          </div>
+          <div class="grid-det-item">
+              <a href="{{ podcasts.url }}" class="ajax grid-det_link">{{ podcasts.preview_title }}<i class="fal fa-long-arrow-right"></i></a>
+          </div>
       </div>
-      <div class="grid-det-item">
-        <a href="{{ podcasts.url }}" class="ajax grid-det_link">{{ podcasts.title }}<i class="fal fa-long-arrow-right"></i></a>
-      </div>
-    </div>
   </div>
   <div class="pr-bg"></div>
 </div>
