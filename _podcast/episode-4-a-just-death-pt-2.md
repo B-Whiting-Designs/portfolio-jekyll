@@ -4,13 +4,13 @@ layout: podcast-single
 title: Idiots and a DM Ep. 3 2 of 2 - Just Death
 preview_title: Ep. 3 2 of 2 - A Just Death
 
-image_preview: /images/logo-v1.png
+image_preview: /images/uploads/tavernbattle.jpg
 
-slide_1: /images/uploads/dnd.jpg
+slide_1: /images/uploads/tavernbattle.jpg
 slider_1_caption: A 2 part episode of <br> <span>A Just Death</span> by <br> Idiots and a DM
 mini_caption: The team has made it out of the dungeon but what will they find on their way to start their first quest. The challenge awaits them on their journey to find their own path and work together.
 
-header_image: /images/logo-v1.png
+header_image: /images/uploads/tavernbattle.jpg
 
 logo: /images/logo-v1.png
 
