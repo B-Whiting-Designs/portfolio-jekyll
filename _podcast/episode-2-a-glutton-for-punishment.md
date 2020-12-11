@@ -1,8 +1,8 @@
 ---
 
 layout: podcast-single
-title: Idiots and a DM Ep. 2 - A Glutton for Punishment
-preview_title: Ep. 2 - Glutton for Punishment
+title: Idiots and a DM Ep. 2 - Adventure's Guild (Pt. 2)
+preview_title: Ep. 2 Adventure's Guild (Pt. 2)
 
 image_preview: /images/uploads/tavernbattle.jpg
 

@@ -36,7 +36,7 @@ cast: [ DM Rurk, Arcane Knight Sakis played by Brian W., Beast Master Pyria play
 
 category: [ season 1 blooper ]
 
-tag: [ trailer, season_1 ]
+tag: [ trailer, season_1, bloopers_extra ]
 
 live_url: https://anchor.fm/idiots-and-dm
 live_text: Anchor FM

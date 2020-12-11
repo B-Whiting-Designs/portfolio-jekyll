@@ -71,11 +71,16 @@ collections:
     permalink: "/portfolio/:name"
     output: true
   authors:
+    permalink: "/blog/author/:name"
     output: true
   category:
+    permalink: "/blog/category/:name"
     output: true
   podcast:
     permalink: "/idiots-and-a-dm/:name"
+    output: true
+  characters:
+    permalink: "/idiots-and-a-dm/cast/:name"
     output: true
 
 # Pagination Settings
@@ -92,7 +97,7 @@ pagination:
 webp:
   enabled: true
   quality: 60
-  img_dir: ["/images"]
+  img_dir: ["/images/"]
   nested: true
   formats: [".jpeg", ".jpg", ".png"]
   gifs: [".gif"]

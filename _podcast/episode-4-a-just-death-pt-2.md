@@ -1,8 +1,8 @@
 ---
 
 layout: podcast-single
-title: Idiots and a DM Ep. 3 2 of 2 - Just Death
-preview_title: Ep. 3 2 of 2 - A Just Death
+title: Idiots and a DM Ep. 4 - A Just Death (Pt. 2)
+preview_title: Ep. 4 - A Just Death (Pt. 2)
 
 image_preview: /images/uploads/tavernbattle.jpg
 

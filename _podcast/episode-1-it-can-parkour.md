@@ -1,8 +1,8 @@
 ---
 
 layout: podcast-single
-title: Idiots and a DM Ep. 1 - It Can Parkour
-preview_title: Ep. 1 - It Can Parkour
+title: Idiots and a DM Ep. 1 - Adventure's Guild (Pt. 1)
+preview_title: Ep. 1 Adventure's Guild (Pt. 1)
 
 image_preview: /images/uploads/tavernbattle.jpg
 

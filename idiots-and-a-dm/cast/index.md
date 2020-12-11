@@ -1,6 +1,6 @@
 ---
 
-title: Idiots and a DM
+title: Idiots and a DM Cast
 layout: portfolio-2
 
 ---
@@ -11,11 +11,11 @@ layout: portfolio-2
         <div class="progress-bar color-bg"></div>
     </div>
     <div class="column-image fl-wrap full-height">
-        <div class="bg" data-bg="/images/logo-v1.png"></div>
+        <div class="bg"  data-bg="images/bg/long/1.jpg"></div>
         <div class="overlay"></div>
     </div>
     <div class="fcw-dec"></div>
-    <div class="fixed-column-tilte fcw-title"><span>Idiots and a DM</span></div>
+    <div class="fixed-column-tilte fcw-title"><span>Idiots and a DM Cast</span></div>
 </div>
 <!--fixed-column-wrap end -->                        
 <!--column-wrap -->
@@ -26,12 +26,11 @@ layout: portfolio-2
             Episode Filter <i class="fal fa-long-arrow-right"></i>
         </div>
         <div class="gallery-filters inline-dark-filters">
-            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All Episodes</a>
-			<a href="#" class="gallery-filter" data-filter=".bloopers_extra">Bloopers/Extras</a>
-			<a href="#" class="gallery-filter" data-filter=".episode">Episodes</a>
-			<a href="#" class="gallery-filter" data-filter=".dragon_plungers">Dragon Plungers</a>
-			<a href="#" class="gallery-filter" data-filter=".important_npcs">Key NPCs</a>
-			<a href="#" class="gallery-filter" data-filter=".one_shots">One Shots</a>
+            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All Cast Members</a>
+            <a href="#" class="gallery-filter" data-filter=".season_1">Original Cast</a>
+			<a href="#" class="gallery-filter" data-filter=".bloopers_extra">Dragon Plungers</a>
+			<a href="#" class="gallery-filter" data-filter=".trailer">Key NPCs</a>
+			<a href="#" class="gallery-filter" data-filter=".episode">One Shots</a>
         </div>
         <div class="folio-counter">
             <div class="num-album"></div>
