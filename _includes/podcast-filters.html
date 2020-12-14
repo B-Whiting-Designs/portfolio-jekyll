@@ -26,3 +26,33 @@
 </div>
 <!-- gallery-item end-->
 {% endfor %}
+
+{% assign characters = site.characters | sort: "order" %}
+{% for cast in characters %}
+<!-- gallery-item-->
+<div class="gallery-item  {{ cast.tag | join: " " }}">
+  <div class="grid-item-holder hov_zoom">
+    {% if cast.image_preview_webp %}
+      <picture>
+        <source srcset="{{ cast.image_preview_webp }}" type="image/webp">
+        <img src="{{ cast.image_preview }}" alt="">
+      </picture>
+    {% else %}
+      <img src="{{ cast.image_preview }}" alt="">
+    {% endif %}
+      <a href="{{ cast.header_image }}" class="box-media-zoom image-popup"><i class="fal fa-search"></i></a>
+      <div class="grid-det">
+          <div class="grid-det_category">
+            {% for tags in cast.tag %}
+            <a href="#">{{ tags | join: " " | replace: '_', ' ' }}</a>
+            {% endfor %}
+          </div>
+          <div class="grid-det-item">
+              <a href="{{ cast.url }}" class="ajax grid-det_link">{{ cast.preview_title }}<i class="fal fa-long-arrow-right"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="pr-bg"></div>
+</div>
+<!-- gallery-item end-->
+{% endfor %}

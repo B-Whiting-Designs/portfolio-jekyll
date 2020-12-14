@@ -3317,6 +3317,13 @@ section {
 	height:30px;
 	background:rgba(255,255,255,0.1);
 }
+.project-details ul.custom-list li ul {
+	padding: 15px 30px !important;
+}
+.project-details ul.custom-list li ul::before,
+.project-details ul.custom-list li ul::after {
+	height: 10px !important;
+}
 .project-details ul:before {
 	bottom:0;
 }

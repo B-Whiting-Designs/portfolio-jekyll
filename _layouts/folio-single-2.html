@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+
+		{% include head.html %}
+
+	</head>
+
+	<body>
+        <!--loader-->
+        <div class="loader-wrap color-bg">
+            <div class="loader-bg"></div>
+            <div class="loader-inner">
+                <div class="loader"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            {% include header.html %}
+            <!-- header end -->
+            <!-- wrapper -->
+            <div id="wrapper">
+                <!-- content-holder  -->
+                <div class="content-holder scroll-content" data-pagetitle="case study: {{ page.title }}">
+                    {% include nav-menu.html %}
+					{% include hero-wrap-home.html %}
+                    <!--content -->
+                    <div class="content">
+                        <!-- section -->
+                        <section id="sec1">
+                            <div class="col-wc_dec"></div>
+                            <div class="container">
+                                <!-- text-block end -->
+                                <div class="text-block fl-wrap no-mar-top">
+                                    <div class="row">
+                                        <div class="col-md-8 sin-anim">
+                                            <h3 class="pr-subtitle mar-top"> Learn About {{ page.title }}</h3>
+                                            <!-- accordion-->
+                                            <div class="accordion mar-top">
+                                                <a class="toggle act-accordion" href="#"> The Backstory <span></span></a>
+                                                <div class="accordion-inner visible">
+                                                    {{ content }}
+                                                </div>
+                                                {% if page.weapon %}
+                                                <a class="toggle" href="#"> Things that make you say ouch <span></span></a>
+                                                <div class="accordion-inner">
+                                                    {{ page.weapon }}
+                                                </div>
+											    {% endif %}
+												{% if page.armor %}
+                                                <a class="toggle" href="#"> Needed Protection  <span></span></a>
+                                                <div class="accordion-inner">
+                                                    {{ page.armor }}
+                                                </div>
+                                                {% endif %}
+                                                {% if page.gear %}
+                                                <a class="toggle" href="#"> Misc. Gear <span></span></a>
+                                                <div class="accordion-inner">
+                                                    {{ page.gear }}
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                            <!-- accordion end -->
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="pr-bg pr-bg-white"></div>
+                                            <div class="project-details fl-wrap">
+                                                <ul class="custom-list">
+                                                    <li>
+                                                        <span>Name :</span> {{ page.name }}
+                                                    </li>
+													<li>
+                                                        <span>Class :</span> {{ page.class }}
+                                                    </li>
+                                                    <li>
+                                                        <span>Starting Level :</span> {{ page.starting_level }}
+                                                    </li>
+                                                    <li>
+                                                        <span>Level :</span> {{ page.level }}
+                                                    </li>
+                                                    <li>
+                                                        <span>Age :</span> {{ page.age }}
+                                                    </li>
+                                                    <li>
+                                                        <span>Race : </span>  {{ page.race }}
+                                                    </li>
+                                                    <li>
+                                                        <span>Proficiency : </span>
+                                                        <ul>
+                                                            {% for proficient in page.proficient %}
+                                                            <li>{{ proficient }}</li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <a href="{{ page.live_url }}" class="btn color-bg fl-wrap" target="_blank">View Sheet</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="limit-box2 fl-wrap"></div>
+                                    <!--content-nav_holder-->
+                                    <div class="content-nav_holder fl-wrap blog-nav">
+                                        <div class="pr-bg pr-bg-white"></div>
+                                        <div class="content-nav">
+                                            <ul>
+												{% if page.previous.url %}
+                                                <li {% unless page.next.url %}style="width: 100%;"{% endunless %}>
+                                                    <a href="{{ page.previous.url }}" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span>Prev - {{ page.previous.title }}</span></a>
+                                                    <div class="content-nav-media">
+                                                        <div class="bg"  data-bg="{{ page.previous.image_preview }}"></div>
+                                                    </div>
+                                                </li>
+												{% endif %}
+												{% if page.next.url %}
+                                                <li {% unless page.previous.url %}style="width: 100%;"{% endunless %}>
+                                                    <a href="{{ page.next.url }}" class="rn ajax"><span >Next - {{ page.next.title }}</span> <i class="fal fa-long-arrow-right"></i></a>
+                                                    <div class="content-nav-media">
+                                                        <div class="bg"  data-bg="{{ page.next.image_preview }}"></div>
+                                                    </div>
+                                                </li>
+												{% endif %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--content-nav_holder end -->
+                                </div>
+                                <!-- text-block end -->
+                            </div>
+                            <div class="sec-lines"></div>
+                            <div class="col-wc_dec col-wc_dec2 col-wc_dec3"></div>
+                        </section>
+                        <!-- section end -->
+                    </div>
+                    <!--content  end -->
+                    <!--content  end -->
+                    <div class="limit-box fl-wrap"></div>
+                    <!--footer-->
+                    {% include footer.html %}
+                    <!--footer  end -->
+                </div>
+                <!-- content-holder end -->
+            </div>
+            <!--wrapper end -->
+            <!-- cursor-->
+            <div class="element">
+                <div class="element-item"></div>
+            </div>
+            <!-- cursor end-->
+        </div>
+        <!-- Main end -->
+
+        {% include js.html %}
+
+    </body>
+</html>

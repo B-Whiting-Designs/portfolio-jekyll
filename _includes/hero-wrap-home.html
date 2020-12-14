@@ -86,7 +86,7 @@
 <!-- hero-wrap end-->
 {% endif %}
 
-{% if page.layout == "folio-single" %}
+{% if page.layout == "folio-single" or page.layout == "folio-single-2" %}
 <!-- hero-slider-wrap -->
 <div class="fs-slider-wrap full-height fl-wrap">
   <div class="fs-slider lightgallery">
@@ -105,7 +105,7 @@
                 {% if page.completed %}
                   {{ page.completed | date_to_long_string }}
                 {% else %}
-                  In Progress
+                  {{ page.category }}
                 {% endif %}
               </div>
               <h1>{{ page.slider_1_caption }}</h1>
