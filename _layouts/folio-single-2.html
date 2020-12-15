@@ -110,7 +110,7 @@
                                                 <li {% unless page.next.url %}style="width: 100%;"{% endunless %}>
                                                     <a href="{{ page.previous.url }}" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span>Prev - {{ page.previous.title }}</span></a>
                                                     <div class="content-nav-media">
-                                                        <div class="bg"  data-bg="{{ page.previous.image_preview }}"></div>
+                                                        <div class="bg"  data-bg="{{ page.previous.slide_1 }}"></div>
                                                     </div>
                                                 </li>
 												{% endif %}
@@ -118,7 +118,7 @@
                                                 <li {% unless page.previous.url %}style="width: 100%;"{% endunless %}>
                                                     <a href="{{ page.next.url }}" class="rn ajax"><span >Next - {{ page.next.title }}</span> <i class="fal fa-long-arrow-right"></i></a>
                                                     <div class="content-nav-media">
-                                                        <div class="bg"  data-bg="{{ page.next.image_preview }}"></div>
+                                                        <div class="bg"  data-bg="{{ page.next.slide_1 }}"></div>
                                                     </div>
                                                 </li>
 												{% endif %}
