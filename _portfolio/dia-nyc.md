@@ -52,7 +52,7 @@ alt_url: https://dia-nyc.netlify.app/
 
 alt_text: dev site
 
-completed: 
+completed: 2019-09-31
 
 
 ---
