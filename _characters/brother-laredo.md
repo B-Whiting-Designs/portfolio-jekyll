@@ -16,7 +16,7 @@ mini_caption: An acolyte of the sheltered faith that is never closed minded on w
 name: Brother Laredo [luh-RAY-doh]
 class: Sorcerer (Storm Sorcery) and Cleric (Tempest Domain)
 starting_level: '5'
-level: '5'
+level: '7'
 age: '50'
 race: Half-Elf
 weapon: |

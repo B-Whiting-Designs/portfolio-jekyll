@@ -16,7 +16,7 @@ mini_caption: When you want to be mysterious about your past and just be sneaky 
 name: Crorkiox
 class: Rouge and Blood Hunter (Order of the Ghostslayer)
 starting_level: '5'
-level: '5'
+level: '7'
 age: '18'
 race: Dark Elf (Drow)
 weapon: |

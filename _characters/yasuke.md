@@ -16,7 +16,7 @@ mini_caption: A man of quick one witted lines and a bull in a china store.
 name: Yasuke Kenshin
 class: Fighter (Samurai)
 starting_level: '5'
-level: '5'
+level: '7'
 age: '???'
 race: Minatour
 weapon: |

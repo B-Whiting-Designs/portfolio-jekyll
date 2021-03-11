@@ -16,7 +16,7 @@ mini_caption: An Eladrin Elf that has a past that he is working to find out whil
 name: Andril
 class: Paladin (Oath of the Crown)
 starting_level: '5'
-level: '5'
+level: '7'
 age: '20'
 race: Eladrin
 weapon: |

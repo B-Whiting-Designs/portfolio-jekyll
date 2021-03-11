@@ -16,7 +16,7 @@ mini_caption: A Paladin with a dark past, friendly demeanor, and going into batt
 name: Sakis Sarugi
 class: Paladin (Oath of Vengance) and Warlock (The Fiend)
 starting_level: '5'
-level: '5'
+level: '7'
 age: '21'
 race: Human
 weapon: |
