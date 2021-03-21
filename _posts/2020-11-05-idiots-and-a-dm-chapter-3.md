@@ -1,7 +1,7 @@
 ---
 layout: post
 title: >-
-  Iditots and a DM Ep. 2 - A Glutton for Punishment
+  Iditots and a DM Ep. 3 - Slaying the Dragon
 featured_image: /images/uploads/dnd.jpg
 
 image_caption: Idiots and a DM - Dungeons and Dragons
@@ -23,11 +23,9 @@ comments: true
   
 ---
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/7LbaQBZkv9VATkBR7gIxUh" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+{% include podcast-embed.html %}
 
-The crew has managed to get past a skeleton, a mutated beast, a mimic, and a few rats. Survived a Hydra that nearly killed the Orc and down to 3 party members from the first session that could play. This episode they are coming back from a long rest and must find a way to get out of the dungeon with their bodies in one and get their adventures guild license so they can make money. Will they break down and fail or triumph over it all?!
-
-P.S. The other players aren't dead - they just are not able to play for this session
+With falling down to only 3 members left in their party with Bloodfiend and Pyria going about their own adventures and the end of Pa-gog Tukor due to an underground fight club, what is the party to do now?! Well look for new recruits that's what. And what better place to start than the actual Adventure's Guild tavern. Their they will meet an old Cleric that loves to make witty remarks and an unusual wizard that loves to be his own person. What quest will they go on this time around that the DM gives them access to?
 
 Listed below are the people involved in this episode and their characters they are playing:
 

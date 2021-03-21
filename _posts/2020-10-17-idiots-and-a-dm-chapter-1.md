@@ -23,13 +23,13 @@ comments: true
   
 ---
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/2DdSGl8xoz02ERoE7IihES" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+{% include podcast-embed.html %}
 
 So this is the first podcast brought to you by the Idiots and a DM crew. We are doing this podcast as a way of sharing our experience of a newbie dungeon and dragons group. Well not all the way tho, 2 of us have played it before in various sessions. This episode will be the first of many to come - hopefully.
 
 The audio quality is a bit bad for many of us due to it being last minute and we all are doing it remote with either our phones' or laptops while the DM has his top of the line products. So bare with us during this moment. Our first journey starts in a town and earns our licenses to be adventures. 
 
-Listen now on your [Spotify](https://open.spotify.com/episode/2DdSGl8xoz02ERoE7IihES?si=bMmEirQMTmSy-PrhowKPzw), [Google Podcast](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8zOWQ2M2EyNC9wb2RjYXN0L3Jzcw/episode/ZWIyMDIzMDgtZDZlOS00MDEyLWI1N2ItYWE4YjMzM2FmOTJk?sa=X&ved=0CA0QkfYCahcKEwjYwcaAqfjsAhUAAAAAHQAAAAAQAQ), or [Anchor](https://anchor.fm/idiots-and-dm/episodes/Idiots-and-a-DM---It-Can-Parkour-eliugs).
+You can listen now on any of your favorite podcast applications such as Spotify, Apple Podcast, Anchor, and Google Podcast.
 
 
 <ul class="list-unstyled">
