@@ -44,7 +44,7 @@
         </div>
         <div id="contact-form" class="cf-wrap">
             <div id="message"></div>
-            <form  class="custom-form" name="contact-form" method="POST" accept-charset="UTF-8" netlify-honeypot="false-field" data-netlify="true">
+            <form class="custom-form" name="contact-form" method="POST" accept-charset="UTF-8" data-netlify-recaptcha="true" data-netlify="true">
                 <fieldset>
                     <p class="hidden">
                         <label>Don't fill out this field if your human: <input name="false-field"></label>
@@ -60,6 +60,7 @@
                         </div>
                     </div>
                     <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <div class="clearfix"></div>
                     <button class="btn   color-bg" id="submit">Send Message</button>
                 </fieldset>
