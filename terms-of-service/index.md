@@ -1,7 +1,7 @@
 ---
 
 layout: page
-title: Privacy Policy
+title: Terms & Conditions
 header_image: /images/uploads/pexels-photo-891059.jpeg
 slide_1: /images/uploads/pexels-photo-891059.jpeg
 
