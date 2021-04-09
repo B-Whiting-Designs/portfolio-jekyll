@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+
+		{% include head.html %}
+
+	</head>
+
+	<body>
+        <!--loader-->
+        <div class="loader-wrap color-bg">
+            <div class="loader-bg"></div>
+            <div class="loader-inner">
+                <div class="loader"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- Main  -->
+        <div id="main">
+            <!-- header-->
+            {% include header.html %}
+            <!-- header end -->
+            <!-- wrapper -->
+            <div id="wrapper">
+                <!-- content-holder  -->
+                <div class="content-holder scroll-content" data-pagetitle="{{ page.title }}">
+                    {% include nav-menu.html %}
+					{% include hero-wrap-home.html %}
+                    <!--content -->
+                    <div class="content">
+                        <!-- section -->
+                        <section id="sec1">
+                            <div class="col-wc_dec"></div>
+                            <div class="container">
+                                <!-- text-block end -->
+                                <div class="text-block fl-wrap no-mar-top">
+                                    <div class="row">
+                                        <div class="col-md-8 sin-anim">
+                                            <h3 class="pr-subtitle mar-top"> The Details</h3>
+                                            <!-- accordion-->
+                                            {{ page.content }}
+                                            <!-- accordion end -->
+                                        </div>
+                                    </div>
+                                    <div class="limit-box2 fl-wrap"></div>
+                                </div>
+                                <!-- text-block end -->
+                            </div>
+                            <div class="sec-lines"></div>
+                            <div class="col-wc_dec col-wc_dec2 col-wc_dec3"></div>
+                        </section>
+                        <!-- section end -->
+                    </div>
+                    <!--content  end -->
+                    <!--content  end -->
+                    <div class="limit-box fl-wrap"></div>
+                    <!--footer-->
+                    {% include footer.html %}
+                    <!--footer  end -->
+                </div>
+                <!-- content-holder end -->
+            </div>
+            <!--wrapper end -->
+            <!-- cursor-->
+            <div class="element">
+                <div class="element-item"></div>
+            </div>
+            <!-- cursor end-->
+        </div>
+        <!-- Main end -->
+
+        {% include js.html %}
+
+    </body>
+</html>
