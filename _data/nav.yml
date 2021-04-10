@@ -10,6 +10,12 @@
 - title: Idiots and a DM - My Podcast
   url: /idiots-and-a-dm/
   location: navigation
+- title: Privacy Policy
+  url: /privacy-policy/
+  location: navigation
+- title: Terms & Services
+  url: /terms-of-service/
+  location: navigation
 - title: Contact Me
   url: /contact-me
   location: navigation
