@@ -19,6 +19,7 @@ title: Case Studies
 			<a href="#" class="gallery-filter " data-filter=".non_profit">Non Profit</a>
 			<a href="#" class="gallery-filter " data-filter=".commercial">Commercial</a>
 			<a href="#" class="gallery-filter " data-filter=".mockup">Mockup</a>
+            <a href="#" class="gallery-filter " data-filter=".graphic_design">Graphic Design</a>
         </div>
         <div class="folio-counter">
             <div class="num-album"></div>
