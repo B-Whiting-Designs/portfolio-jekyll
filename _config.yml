@@ -44,7 +44,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-sitemap
-  - jekyll-webp
 
 # exclude settings
 exclude:

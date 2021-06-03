@@ -42,33 +42,7 @@
                     <!-- fixed-column-wrap end-->
 					{% include hero-wrap-home.html %}
                     <!-- column-wrap -->
-                    <div class="column-wrap">
-                        <!--content -->
-                        <div class="content">
-							{% include page-scroll-nav.html %}
-                            <!--section about -->
-							{% include about-me.html %}
-							<!--section end -->
-                            <div class="section-separator bot-element"><span class="fl-wrap"></span></div>
-                            <!--section services -->
-                            {% include services.html %}
-							<!--section end -->
-                            <div class="section-separator bot-element"><span class="fl-wrap"></span></div>
-                            <!--section skills -->
-							{% include skills.html %}
-                            <!--section cta -->
-							{% include cta-home.html %}
-							<!--section end -->
-                            <!--section resume -->
-							{% include resume.html %}
-							<!--section end -->
-                            <div class="section-separator bot-element"><span class="fl-wrap"></span></div>
-                            <!--section clients  -->
-							{% include clients.html %}
-                            <!--section end -->
-                            <div class="limit-box fl-wrap"></div>
-                        </div>
-                    </div>
+                    {{ content }}
                     <!--content  end -->
                     <!--footer-->
 					{% include footer.html %}
