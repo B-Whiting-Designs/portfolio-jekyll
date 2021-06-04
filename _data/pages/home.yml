@@ -97,11 +97,11 @@
 
 - order: '03'
   section: skills
-  
+
   title: Skill Check
   text: Constantly training myself to grow and expand as a Ui/Ux designer &amp; developer
 
-  content: 
+  content:
     - title: The Skills
       skills:
         - title: Photoshop
@@ -156,7 +156,7 @@
         - Bootstrap framework first used
         - Worked with AngularJS and Ionic for application development
         - Adobe Creative Suite experience
-  
+
   download:
     - url: https://docs.google.com/document/d/1guDGbJxuSKsndlc_mz0BkfxQYcu3G_VwELPZmbvW5a0/edit?usp=sharing
       text: Download Resume
@@ -173,13 +173,13 @@
         - url: https://arttransforms.org/wp-content/uploads/2017/11/wanda.jpg
           alt: Art Transforms Inc. Founder
       message: He took a look at the old website and suggested immediate changes to bring the website's appearance current. He met and exceeded the needs of the organization.  He demonstrated a high level of quality, dependability, affordability and creativity.  The design was clean and user friendly.  He communicated with me so he could understand my vision for the website. With no hesitation I recommend Brian Whiting to get the best out of a website.  Not only did he design a beautiful, artsy website I learned a lot about web designing from Brian.
-      website: 
+      website:
         - url: https://arttransforms.org/
           text: Art Transforms Inc.
       number: '01'
     - client: S. D. Johnson
       image:
-        - url: https://scontent.fapa1-1.fna.fbcdn.net/v/t1.0-9/98330208_111875183867443_1633188235159011328_n.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=pYqi1UnoMAYAX-Fum0F&_nc_ht=scontent.fapa1-1.fna&oh=c96a8a57d71b7184655233c67b9bddf7&oe=5FEE08D0
+        - url: https://scontent.fapa1-1.fna.fbcdn.net/v/t1.6435-9/98330208_111875183867443_1633188235159011328_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=kWqFV8So7ZgAX_Q0dAM&_nc_ht=scontent.fapa1-1.fna&oh=4ab144cd5d8df19ff82238b13b2ae3e5&oe=60DF2273
           alt: The Poetic Mistress
       message: Mr. Whiting’s services were beyond what I expected and he is very knowledgeable about web design which definitely helps when developing one’s website. Mr. Whiting is professional and knows his craft very well. I am extremely pleased with his services and I plan to refer others to him in the near future. Communication with Mr. Whiting was essential and he was available to handle the tasks that I required for my business.
       website:
@@ -195,6 +195,14 @@
         - url: https://www.disabledinaction.org/
           text: Disabled In Action
       number: '03'
+    - client: S. D. Johnson
+      image:
+        - url: https://scontent.fapa1-1.fna.fbcdn.net/v/t1.6435-9/98330208_111875183867443_1633188235159011328_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=kWqFV8So7ZgAX_Q0dAM&_nc_ht=scontent.fapa1-1.fna&oh=4ab144cd5d8df19ff82238b13b2ae3e5&oe=60DF2273
+          alt: The Poetic Mistress
+      message: I highly recommend B. Whiting Designs to design my website as the service is professional, authentic, and turn-around time is great. I have used his services twice and will continue to use his services for my website needs.
+      website:
+        - url: https://poeticmistress.com/
+          text: The Poetic Mistress
 
   logos:
       - image: /images/thumbs/ati-images/logo-v1.png
@@ -209,4 +217,3 @@
       - image: https://poeticmistress.com/wp-content/uploads/2020/09/logo-text-removebg-e1600904395925.png
         alt: S.D. Johnson - Poetic Mistress
         url: https://poeticmistress.com/
-      
