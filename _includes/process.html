@@ -1,0 +1,33 @@
+{% assign progress = site.data.pages.home | where: "section", "process" %}
+{% for process in progress %}
+<section class="hidden-section bot-element">
+  <div class="container">
+    <div class="section-title fl-wrap">
+      <h3>{{ process.title }}</h3>
+      <p>{{ process.text }}</p>
+    </div>
+    <!--process-wrap  -->
+    <div class="process-wrap fl-wrap">
+      <ul>
+        {% assign procontent = process.content %}
+        {% for procontent in procontent %}
+        <li>
+          <div class="time-line-icon">
+            <i class="{{ procontent.icon }}"></i>
+          </div>
+          <h4>{{ procontent.title }}</h4>
+          {% for details in procontent.details %}
+          <div class="process-details">
+            <h6>{{ details.heading }}</h6>
+            <p>{{ details.text }}</p>
+          </div>
+          <span class="process-numder">{{ details.number | append: '.' }}</span>
+          {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!--process-wrap   end-->
+  </div>
+</section>
+{% endfor %}
