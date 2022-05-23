@@ -119,6 +119,12 @@
         - title: Back-end Development
           percent: 55
           position: 5
+        - title: UI/UX
+          percent: 92
+          position: 6
+        - title: Digital Media
+          percent: 72
+          position: 7
 
 - order: '04'
   section: resume
@@ -134,9 +140,18 @@
       info: I started working as a freelancer since middle school when I was getting my feet wet. I only was able to make websites using Notepad in basic HTML and inline CSS. Worked with over 20 different projects during my time on and off as a freelancer. While working, I dabbled in Ruby, custom video game coding languages such as Eclipse and Gen2D (SandScript), and occasional WordPress. Lately has transitioned to JekyllRB for easier and faster development process.
       description-list:
         - Custom developmet and design
-        - Built non-profit organization websites
+        - Built non-profit organization, small to mid scale business websites
         - Increase overall conversion rate by 25.8% on average
     - order: 2
+      title: Discount Forklift
+      date: Feb. 2022 - May 2022
+      heading: Discounted Digital Media Coordinator
+      info: Worked on graphic designs for the equipment after photoshoots, took videos of salesman quality controls for clients, uploaded videos to YouTube page, and provided assistance to website media needs. Handled website email marketing campaigns, setup process for organized leads generations, handled weekly email blasts for nationwide clientelle.
+      description-list:
+        - Emailed over 13k+ clientelle with a 10.3% to 12% opening rate. Click rate of 22% average on each email.
+        - Handled SEO needs for photo updates to meet web standards
+        - Worked on merchandise designs for future merchandise ideas
+    - order: 3
       title: Native Rank
       date: Feb. 2019 - Aug. 2019
       heading: One of their first web designers
@@ -148,7 +163,7 @@
         - Worked with WordPress, Adobe XD, and Photoshop with them for all client websites
     - order: 3
       title: Madness Labs
-      date: 2014 - 2015, 2019
+      date: 2014 - 2015, 2019, 2020
       heading: First agency startup job
       info: Started with them as my first agency and their first web designer. Built the company first website as a startup and helped with development projects for the clients and applications made. Got my grasp on Ruby while working with the company that later helped me with expanding my horizon with the new flat cms and static site generators.
       description-list:
