@@ -3,10 +3,12 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-node_modules
-dist
 
 # Local Netlify folder
+<<<<<<< HEAD
 .netlify 
 # Local Netlify folder
 .netlify
+=======
+.netlify
+>>>>>>> parent of e4dbb7b (Revert "fix for lfs problems")
