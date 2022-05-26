@@ -194,7 +194,7 @@
       number: '01'
     - client: S. D. Johnson
       image:
-        - url: https://scontent.fapa1-1.fna.fbcdn.net/v/t1.6435-9/98330208_111875183867443_1633188235159011328_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=kWqFV8So7ZgAX_Q0dAM&_nc_ht=scontent.fapa1-1.fna&oh=4ab144cd5d8df19ff82238b13b2ae3e5&oe=60DF2273
+        - url: https://poeticmistress.com/wp-content/uploads/2020/06/IMG_0190-scaled.jpg
           alt: The Poetic Mistress
       message: Mr. Whiting’s services were beyond what I expected and he is very knowledgeable about web design which definitely helps when developing one’s website. Mr. Whiting is professional and knows his craft very well. I am extremely pleased with his services and I plan to refer others to him in the near future. Communication with Mr. Whiting was essential and he was available to handle the tasks that I required for my business.
       website:
@@ -203,7 +203,7 @@
       number: '02'
     - client: Disabled In Action - NYC Metro
       image:
-        - url: https://www.disabledinaction.org/uploads/dia-logo.png
+        - url: /images/thumbs/dia-nyc-images/dia-logo.png
           alt: Disabled In Action - NYC Metro
       message: We want to personally thank you for all your time and work in designing and building the new Disabled In Action website. Our old site was outdated and poorly maintained, which hindered our public image. The newly designed site is a start to energize our organization as we renew our fight for a better more accessible society.
       website:
@@ -212,7 +212,7 @@
       number: '03'
     - client: S. D. Johnson
       image:
-        - url: https://scontent.fapa1-1.fna.fbcdn.net/v/t1.6435-9/98330208_111875183867443_1633188235159011328_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=kWqFV8So7ZgAX_Q0dAM&_nc_ht=scontent.fapa1-1.fna&oh=4ab144cd5d8df19ff82238b13b2ae3e5&oe=60DF2273
+        - url: https://poeticmistress.com/wp-content/uploads/2020/06/IMG_0190-scaled.jpg
           alt: The Poetic Mistress
       message: I highly recommend B. Whiting Designs to design my website as the service is professional, authentic, and turn-around time is great. I have used his services twice and will continue to use his services for my website needs.
       website:
@@ -226,9 +226,12 @@
       - image: /images/thumbs/craft-images/craftpainters-logo.png
         alt: Craft Painters
         url: https://craftpainters.com/
-      - image: https://www.disabledinaction.org/uploads/dia-logo.png
+      - image: /images/thumbs/dia-nyc-images/dia-logo.png
         alt: Disabled In Action
         url: https://www.disabledinaction.org/
-      - image: https://poeticmistress.com/wp-content/uploads/2020/09/logo-text-removebg-e1600904395925.png
+      - image: /images/thumbs/poetic-mistress/pm-logo.png
         alt: S.D. Johnson - Poetic Mistress
         url: https://poeticmistress.com/
+      - image: https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/co_aurora_web-developers_2022.svg
+        alt: Expertise.com Award Listing
+        url: https://www.expertise.com/co/aurora/web-developers#BWhitingDesigns
